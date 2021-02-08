@@ -1,4 +1,3 @@
-
 <?php
    /*
     Template Name: Assets
@@ -12,6 +11,9 @@
 <a href="" class="btn">Button Sample</a>
 
 <!-- comment -->
+
+<!-- shawn comment -->
+<div class="div-test">test</div>
 
 <?php get_footer(); ?>
 
