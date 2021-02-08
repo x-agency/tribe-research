@@ -1,6 +1,6 @@
 h1,.h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:40px;color:#682145}
-.btn{font-family:'Open Sans',sans-serif;cursor:pointer;-webkit-transition:.3s ease all;transition:.3s ease all}
-.btn:hover{-webkit-transition:.3s;transition:.3s}
+body .btn{background-color:#4cafd9;color:#682145;padding:12px 30px;font-family:'Montserrat',sans-serif;font-weight:700;cursor:pointer;-webkit-transition:.3s ease all;transition:.3s ease all;text-transform:uppercase;border-radius:30px;font-size:16px;border:0}
+body .btn:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;transition:.3s}
 .navbar.scrolled{-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);-webkit-transition:.3s ease;transition:.3s ease}
 .modal-open .navbar.scrolled{background-color:white;-webkit-transition:.3s ease;transition:.3s ease;-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0);box-shadow:0 10px 22px 0 rgba(0,0,0,0)}
 .navbar{width:100%;z-index:9999;-webkit-transition:.3s ease;transition:.3s ease;position:fixed;top:0;padding:0 0 4px 0}
