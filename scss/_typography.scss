@@ -1,22 +1,21 @@
 // Header and Body Font Mixins. If a third font is used can name special-font or something similar.
-@mixin header-font {
-    // font-family: ;
-    font-style: normal;
+@mixin primary-font {
+    font-family: 'Montserrat', sans-serif;
 }
 
 @mixin body-font {
-    // font-family: ;
+    font-family: 'Open Sans', sans-serif;
 }
-
-// If Custom Font - Drop the @font-face items here
-// @font-face {
-
-// }
 
 
 
 // Preliminary Theme Fonts, Sizes and Colors - This overrides Bootstraps predefined settings
 h1 {
+
+    @include primary-font;
+    font-weight: 700;
+    font-size: 40px;
+    color: $purple;
 
     // H1 on Mobile
     @include respond-below(md) {}
