@@ -1096,8 +1096,6 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
 .site-content{width:100% !important}
-.test{color:blue}
-.shawn-css{color:green}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
