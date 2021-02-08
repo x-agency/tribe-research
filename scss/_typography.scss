@@ -7,6 +7,24 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@mixin special-font {
+    font-family: 'Housky';
+}
+
+// Imported Font Face
+
+@font-face {
+    font-family: 'Housky';
+    src: url('/wp-content/themes/tribe-research/fonts/HouskyDemo.woff2') format('woff2'),
+        url('/wp-content/themes/tribe-research/HouskyDemo.woff') format('woff'),
+        url('/wp-content/themes/tribe-research/HouskyDemo.svg#HouskyDemo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 
 // Preliminary Theme Fonts, Sizes and Colors - This overrides Bootstraps predefined settings
