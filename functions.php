@@ -18,7 +18,7 @@ define( 'CHILD_THEME_TRIBE_CLINICAL_RESEARCH_VERSION', '1.0.0' );
  */
 function child_enqueue_styles() {
 
-	wp_enqueue_style( 'tribe-clinical-research-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_TRIBE_CLINICAL_RESEARCH_VERSION, 'all' );
+	wp_enqueue_style( 'tribe-clinical-research-theme-css', get_stylesheet_directory_uri() . '/css//main.css', array('astra-theme-css'), CHILD_THEME_TRIBE_CLINICAL_RESEARCH_VERSION, 'all' );
 
 }
 
