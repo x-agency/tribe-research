@@ -3,11 +3,19 @@ h1,.h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:40px;color:
 body .btn{background-color:#4cafd9;color:#682145;padding:12px 30px;font-family:'Montserrat',sans-serif;font-weight:700;cursor:pointer;-webkit-transition:.3s ease all;transition:.3s ease all;text-transform:uppercase;border-radius:30px;font-size:16px;border:0}
 body .btn:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;transition:.3s}
 .navbar.scrolled{-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);-webkit-transition:.3s ease;transition:.3s ease}
-.modal-open .navbar.scrolled{background-color:white;-webkit-transition:.3s ease;transition:.3s ease;-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0);box-shadow:0 10px 22px 0 rgba(0,0,0,0)}
-.navbar{width:100%;z-index:9999;-webkit-transition:.3s ease;transition:.3s ease;position:fixed;top:0;padding:0 0 4px 0}
+.modal-open .navbar.scrolled{background-color:#682145;-webkit-transition:.3s ease;transition:.3s ease;-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0);box-shadow:0 10px 22px 0 rgba(0,0,0,0)}
+.navbar{width:100%;z-index:9999;-webkit-transition:.3s ease;transition:.3s ease;position:fixed !important;top:0;padding:30px 100px 30px 45px}
+.navbar #navbarNav{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 .navbar .navbar-brand{padding-left:50px}
-.navbar .navbar-brand svg{width:150px}
-#menu-main .menu-item{margin:5px 25px}
+.navbar .navbar-brand svg{width:160px}
+#menu-main{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#menu-main li:not(:last-child) a:hover:after{opacity:1;bottom:0}
+#menu-main li:not(:last-child) a:after{content:"";position:absolute;bottom:-10px;left:0;width:100%;height:2px;background-color:#4cafd9;-webkit-transition:.3s ease all;transition:.3s ease all;opacity:0}
+#menu-main li a{position:relative}
+#menu-main li:last-child a{background-color:#4cafd9 !important;color:#682145;padding:14px 35px;font-family:'Montserrat',sans-serif;font-weight:700;cursor:pointer;-webkit-transition:.3s ease all;transition:.3s ease all;border-radius:30px;border:0}
+#menu-main li:last-child a:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;transition:.3s}
+#menu-main .nav-item{margin:5px 25px}
+#menu-main .nav-item a{color:white;font-size:17px;font-weight:600;font-family:'Montserrat',sans-serif;letter-spacing:-0.045rem}
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -1096,6 +1104,7 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
 .site-content{width:100% !important}
+.home-hero{background-image:url(/wp-content/themes/tribe-research/img/home-hero.jpg);background-size:cover;height:100vh;width:100%}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
@@ -2030,7 +2039,7 @@ legend{font-size:1.5rem}
 .fs-lg-2{font-size:2rem !important}
 .fs-lg-3{font-size:1.75rem !important}
 .fs-lg-4{font-size:1.5rem !important}
-}@media(max-width:1229px){#menu-main .menu-item{font-size:14px}
+}@media(max-width:1229px){#menu-main .nav-item{font-size:14px}
 }@media(max-width:1199.98px){.table-responsive-xl{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .modal-fullscreen-xl-down{width:100vw;max-width:none;height:100%;margin:0}
 .modal-fullscreen-xl-down .modal-content{height:100%;border:0;border-radius:0}

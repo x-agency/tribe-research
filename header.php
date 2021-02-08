@@ -44,6 +44,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 >
 	<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( astra_default_strings( 'string-header-skip-link', false ) ); ?></a>
+
+	<nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <?php
+				echo file_get_contents( get_theme_file_uri( '/img/tcr-logo.svg' ) );
+				?>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <?php
+	 	  wp_nav_menu( array(
+	 	  'menu'              => 'main',
+	 	  'theme_location'    => 'primary',
+	 	  'depth'             => 2,
+	 	  'container'         => 'div',
+	 	  'container_class'   => '',
+	 	  'container_id'      => '',
+	 	  'menu_class'        => 'navbar-nav',
+	 	  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+	 	  'walker'            => new wp_bootstrap_navwalker())
+	 	  );
+	  ?>
+            </div>
+            <div class="hamburger-menu " data-toggle="modal" data-target="#modalMenu">
+                <span class="line-1 line"></span>
+                <span class="line-2 line"></span>
+                <span class="line-3 line"></span>
+            </div>
+        </nav>
+
 	<?php 
 	astra_header_before(); 
 

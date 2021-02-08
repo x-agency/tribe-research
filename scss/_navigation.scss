@@ -13,7 +13,7 @@
 
 .modal-open {
     .navbar.scrolled {
-        background-color: white;
+        background-color: $purple;
         transition: 0.3s ease;
         -webkit-box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0);
         -moz-box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0);
@@ -27,9 +27,13 @@
     width: 100%;
     z-index: 9999;
     transition: 0.3s ease;
-    position: fixed;
+    position: fixed !important;
     top: 0;
-    padding: 0 0 4px 0;
+    padding: 30px 100px 30px 45px;
+
+    #navbarNav {
+        justify-content: flex-end;
+    }
 
 
     // Styles for Navigation Menu Items - USE Class .nav-right 
@@ -44,16 +48,83 @@
         }
 
         svg {
-            width: 150px;
+            width: 160px;
         }
     }
 }
 
 // Default Styles for Nav Menu Items - Font family and Size in typography.scss
 #menu-main {
+    align-items: center;
 
-    .menu-item {
+    li {
+        &:not(:last-child) {
+            a {
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                        bottom: 0px;
+                    }
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $blue;
+                    transition: .3s ease all;
+                    opacity: 0;
+                }
+            }
+        }
+
+        a {
+            position: relative;
+
+
+        }
+
+
+
+        &:last-child {
+            a {
+                background-color: $blue !important;
+                color: $purple;
+                padding: 14px 35px;
+                @include primary-font;
+                font-weight: 700;
+                cursor: pointer;
+                transition: .3s ease all;
+                border-radius: 30px;
+                border: 0px;
+
+                &:hover {
+                    background-color: $purple;
+                    color: $blue;
+                    transition: .3s;
+                }
+            }
+
+
+        }
+    }
+
+    .nav-item {
         margin: 5px 25px;
+
+        .menu-btn {}
+
+        a {
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            @include primary-font;
+            letter-spacing: -0.045rem;
+        }
+
 
         @media (max-width: 1229px) {
             font-size: 14px;

@@ -8,7 +8,9 @@
     ?>
 <?php get_header(); ?>
 
-
+<div id="hero" class="home-hero">
+    
+</div>
 
 <?php get_footer(); ?>
 
