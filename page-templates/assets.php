@@ -11,6 +11,8 @@
 
 <a href="" class="btn">Button Sample</a>
 
+<!-- comment -->
+
 <?php get_footer(); ?>
 
 
