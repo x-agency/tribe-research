@@ -26,7 +26,7 @@
             <p>The health and quality of life of millions has been improved because of advances in science and technology, and the willingness of individuals like you to take part in clinical research. The role of our study volunteers in clinical research is crucial in the quest for knowledge that will improve health and provide hope for future generations. With your help, the research studies at Tribe Clinical Research will help shape the future of medicine.</p>
             <p>Become a study volunteer to learn more about your condition, get access to new medications and treatments, and help further medical research for the entire healthcare community. During a clinical trial, the study volunteer will meet with a board-certified physician and receive one on one medical care. There is no cost to the study volunteer, in fact, most clinical trials study volunteers are compensated for their time and participation while in the study.</p>
         </div>
-        <div class="col-lg-5 offset-lg-1">
+        <div class="col-lg-5 offset-lg-2">
             <p>We have managed over 100 phase II to IV clinical trials in partnership with over 20 pharmaceutical companies. Studies conducted include: Diabetes Type 1, Diabetes Type 2, COPD, Asthma and Allergies, Irritable Bowel Syndrome, GERD, Inflammatory Bowel Disease, Hepatitis C, Osteoarthritis, Osteoporosis, Hypertension, Hyperlipidemia, Adolescent Migraine, Adult Migraine, Obesity, Vaccinations and Acute Coronary Syndrome.</p>
             <p>Tribe Clinical Research is recognized for excellent patient care, outstanding patient enrollment and quality data management. We continually exceed standards of Good Clinical Practices.</p>
         </div>

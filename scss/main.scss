@@ -201,7 +201,7 @@ h2 {
 
             img {
                 margin: 0;
-                margin-bottom: 2em;
+                margin-bottom: 4em;
             }
         }
     }
@@ -230,6 +230,14 @@ h2 {
             @include primary-font;
             font-weight: bold;
         }
+    }
+
+    .col-lg-6 p {
+        max-width: 75ch;
+    }
+
+    .col-lg-6:last-child p {
+        margin-left: auto;
     }
 }
 
@@ -286,6 +294,7 @@ h2 {
         left: 10em;
         background: white;
         padding: 5em;
+        box-shadow: 0px 0px 25px 0px #0000000f;
 
         h2 {
             color: #616060;
