@@ -164,38 +164,153 @@ body {
     }
 }
 
+<<<<<<< HEAD
 // *About Page Styles
+=======
+// About Page Styles
+h2 {
+    color: $purple;
+    @include primary-font;
+}
+
+>>>>>>> 56135892d1e596a559e7417d99490500868b690a
 .hero {
-    /*background-image: url('/wp-content/uploads/2021/02/about-hero.jpg');
-    background-repeat: no-repeat;*/
+    .content {
+        position: relative;
+        padding-bottom: 5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 79vw;
+        margin: -15% auto 0;
 
-    .grid {
-        display: grid;
-        grid: auto auto / 40% 60%;
-
-        img {
-            grid-area: 1 / 1 / 1 / 2;
+        > img {
+            flex: 0 0 43%;
+            max-width: 43%;
         }
 
-        img.bg {
-            grid-area: 1 / 1 / 2 / 3;
-        }
+        .text {
+            flex: 0 0 52%;
+            width: 80ch;
+            align-self: start;
 
-        .special {
-            @include special-font;
-            font-size: calc(max(200px, min(27vw, 520px)));
-            color: #d6d5d5;
-            opacity: 0.35;
-            grid-area: 1 / 2 / 2 / 2;
-        }
+            h1 {
+                color: $blue;
+                font-size: calc(max(30px, min(3.75vw, 66px)));
+            }
 
-        h1:nth-child(4) {
-            color: $blue;
-            grid-area: 2 / 2 / 2 / 2;
+            img {
+                margin: 0;
+                margin-bottom: 2em;
+            }
         }
     }
 }
 
+.difference {
+    .col-12 {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            display: block;
+            position: absolute;
+            background: #cecece;
+            top: 50%;
+        }
+
+        .title {
+            display: inline-block;
+            background: white;
+            position: relative;
+            padding-right: 1em;
+            color: $purple;
+            @include primary-font;
+            font-weight: bold;
+        }
+    }
+}
+
+.mission {
+    margin-bottom: 5em;
+
+    .line {
+        width: 3px;
+        height: 145px;
+        background: #cecece;
+        margin: 0 auto;
+    }
+
+    h2, p {
+        text-align: center;
+        margin: 0.5em auto;
+        max-width: 100ch;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+
+    .col-md-6 {
+        
+        svg {
+            max-width: 145px;
+            max-height: 145px;
+            width: 8vw;
+            height: auto;
+            margin-bottom: 2.5em;
+        }
+        
+        p {
+            max-width: 23ch;
+        }
+
+        .title {
+            color: $blue;
+            font-family: 'poppins';
+            font-size: calc(max(18px, min(1.5vw, 25px)));
+        }
+    }
+}
+
+.team {
+    position: relative;
+
+    .foreground {
+        width: 656px;
+        height: 632px;
+        position: absolute;
+        top: 5em;
+        left: 10em;
+        background: white;
+        padding: 5em;
+
+        h2 {
+            color: #616060;
+            font-family: 'poppins';
+            font-size: calc(max(20px, min(2.5vw, 40px)));
+            letter-spacing: -1px;
+            position: relative;
+
+            &.alt {
+                color: $blue;
+                margin-bottom: 1em;
+
+                &::after {
+                    content: '';
+                    width: 321px;
+                    height: 2px;
+                    background: #cecece;
+                    position: absolute;
+                    bottom: 0.25em;
+                    left: 9em;
+                }
+            }
+        }
+    }
+}
 
 // **Sponsors Page Styles
 
