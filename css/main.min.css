@@ -1112,6 +1112,7 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 .rounded-start{border-bottom-left-radius:.25rem !important;border-top-left-radius:.25rem !important}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
+.line{width:2px;height:145px;background:#cecece;margin:0 auto;position:relative;z-index:2}
 .st0{-webkit-clip-path:none !important;clip-path:none !important}
 .site-content{width:100% !important}
 body{background-color:#e0e0e0}
@@ -1133,6 +1134,8 @@ body{background-color:#e0e0e0}
 #home-intro .intro-wrapper p{margin-top:50px}
 #home-intro .intro-wrapper .special-font{position:absolute;top:-50px;left:-150px;width:100%;opacity:.8}
 #home-intro .intro-wrapper .special-font img{width:100%;-webkit-transform-origin:top left;transform-origin:top left;-webkit-transform:scale(1.3);transform:scale(1.3)}
+.page-template-home .line{height:175px;margin-top:-40px}
+#home-trial .title-block{background-color:#f1f1f1;text-align:center;padding:50px 50px 125px}
 h2,.h2{color:#682145;font-family:'Montserrat',sans-serif}
 .hero .content{position:relative;padding-bottom:5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:79vw;margin:-15% auto 0}
 .hero .content>img{-webkit-box-flex:0;-ms-flex:0 0 43%;flex:0 0 43%;max-width:43%}
@@ -1143,7 +1146,7 @@ h2,.h2{color:#682145;font-family:'Montserrat',sans-serif}
 .difference .col-12::before{content:'';width:100%;height:2px;display:block;position:absolute;background:#cecece;top:50%}
 .difference .col-12 .title{display:inline-block;background:white;position:relative;padding-right:1em;color:#682145;font-family:'Montserrat',sans-serif;font-weight:bold}
 .mission{margin-bottom:5em}
-.mission .line{width:3px;height:145px;background:#cecece;margin:0 auto}
+.mission .line{width:2px;height:145px;background:#cecece;margin:0 auto}
 .mission h2,.mission .h2,.mission p{text-align:center;margin:.5em auto;max-width:100ch}
 .mission p{margin:0 auto}
 .mission .col-md-6 svg{max-width:145px;max-height:145px;width:8vw;height:auto;margin-bottom:2.5em}

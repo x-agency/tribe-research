@@ -9,6 +9,15 @@
 
 // Global Styles
 
+.line {
+    width: 2px;
+    height: 145px;
+    background: #cecece;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
 .st0 {
     clip-path: none !important;
 }
@@ -164,7 +173,24 @@ body {
     }
 }
 
-// About Page Styles
+.page-template-home {
+    .line {
+        height: 175px;
+        margin-top: -40px;
+    }
+}
+
+#home-trial {
+    .title-block {
+        background-color: $gray;
+        text-align: center;
+        padding: 50px 50px 125px
+    }
+}
+
+
+
+// *About Page Styles
 h2 {
     color: $purple;
     @include primary-font;
@@ -233,7 +259,7 @@ h2 {
     margin-bottom: 5em;
 
     .line {
-        width: 3px;
+        width: 2px;
         height: 145px;
         background: #cecece;
         margin: 0 auto;
@@ -308,6 +334,8 @@ h2 {
         }
     }
 }
+
+
 
 // **Sponsors Page Styles
 

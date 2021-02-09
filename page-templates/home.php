@@ -44,4 +44,12 @@
         </div>
     </div>
 </section>
+<div class="line"></div>
+<section id="home-trial">
+    <div class="container-fluid title-block">
+        <h1>Participate in a Clinical Trial</h1>
+        <p>Tribe Clinical Research offers several options to get involved. Contact us if you're interested in helping
+            move medicine forward.</p>
+    </div>
+</section>
 <?php get_footer(); ?>
