@@ -122,7 +122,43 @@ body {
     }
 }
 
+<<<<<<< Updated upstream
 // **About Page Styles
+=======
+// About Page Styles
+.hero {
+    /*background-image: url('/wp-content/uploads/2021/02/about-hero.jpg');
+    background-repeat: no-repeat;*/
+
+    .grid {
+        display: grid;
+        grid: auto auto / 40% 60%;
+
+        img {
+            grid-area: 1 / 1 / 1 / 2;
+        }
+
+        img.bg {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+
+        .special {
+            @include special-font;
+            font-size: calc(max(200px, min(27vw, 520px)));
+            color: #d6d5d5;
+            opacity: 0.35;
+            grid-area: 1 / 2 / 2 / 2;
+        }
+
+        h1:nth-child(4) {
+            color: $blue;
+            grid-area: 2 / 2 / 2 / 2;
+        }
+    }
+}
+
+
+>>>>>>> Stashed changes
 
 // **Clinical Trial Page Styles
 

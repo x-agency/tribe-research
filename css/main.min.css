@@ -798,7 +798,6 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 .ratio-21x9{--aspect-ratio:calc(9 / 21 * 100%)}
 .fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}
 .fixed-bottom{position:fixed;right:0;bottom:0;left:0;z-index:1030}
-.sticky-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
 .visually-hidden,.visually-hidden-focusable:not(:focus){position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0,0,0,0) !important;white-space:nowrap !important;border:0 !important}
 .stretched-link::after{position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;content:""}
 .text-truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -833,7 +832,6 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 .position-relative{position:relative !important}
 .position-absolute{position:absolute !important}
 .position-fixed{position:fixed !important}
-.position-sticky{position:-webkit-sticky !important;position:sticky !important}
 .top-0{top:0 !important}
 .top-50{top:50% !important}
 .top-100{top:100% !important}
@@ -1116,8 +1114,16 @@ body{background-color:#e0e0e0}
 .home-hero .hero-wrapper .hero-inner .hero-box{background-color:#4cafd9;padding:30px 15% 30px 20%;-webkit-transform:translateY(55px);transform:translateY(55px)}
 .home-hero .hero-wrapper .hero-inner .hero-box p{font-family:'Montserrat',sans-serif;color:white;font-size:20px;font-weight:700}
 .home-hero .hero-wrapper .hero-inner .hero-box p:last-child{color:#682145;font-size:30px}
+<<<<<<< Updated upstream
 #home-intro{margin-top:100px}
 #home-intro .intro-wrapper .right{padding:0 60px}
+=======
+.hero .grid{display:grid;grid:auto auto / 40% 60%}
+.hero .grid img{grid-area:1 / 1 / 1 / 2}
+.hero .grid img.bg{grid-area:1 / 1 / 2 / 3}
+.hero .grid .special{font-family:'Housky';font-size:calc(max(200px, min(27vw, 520px)));color:#d6d5d5;opacity:.35;grid-area:1 / 2 / 2 / 2}
+.hero .grid h1:nth-child(4),.hero .grid .h1:nth-child(4){color:#4cafd9;grid-area:2 / 2 / 2 / 2}
+>>>>>>> Stashed changes
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
@@ -1215,7 +1221,6 @@ body{background-color:#e0e0e0}
 .modal-dialog-scrollable{height:calc(100% - 3.5rem)}
 .modal-dialog-centered{min-height:calc(100% - 3.5rem)}
 .modal-sm{max-width:300px}
-.sticky-sm-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
 .float-sm-start{float:left !important}
 .float-sm-end{float:right !important}
 .float-sm-none{float:none !important}
@@ -1432,7 +1437,6 @@ body{background-color:#e0e0e0}
 .list-group-horizontal-md>.list-group-item.active{margin-top:0}
 .list-group-horizontal-md>.list-group-item+.list-group-item{border-top-width:1px;border-left-width:0}
 .list-group-horizontal-md>.list-group-item+.list-group-item.active{margin-left:-1px;border-left-width:1px}
-.sticky-md-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
 .float-md-start{float:left !important}
 .float-md-end{float:right !important}
 .float-md-none{float:none !important}
@@ -1650,7 +1654,6 @@ body{background-color:#e0e0e0}
 .list-group-horizontal-lg>.list-group-item+.list-group-item{border-top-width:1px;border-left-width:0}
 .list-group-horizontal-lg>.list-group-item+.list-group-item.active{margin-left:-1px;border-left-width:1px}
 .modal-lg,.modal-xl{max-width:800px}
-.sticky-lg-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
 .float-lg-start{float:left !important}
 .float-lg-end{float:right !important}
 .float-lg-none{float:none !important}
@@ -1879,7 +1882,6 @@ legend{font-size:1.5rem}
 .list-group-horizontal-xl>.list-group-item+.list-group-item{border-top-width:1px;border-left-width:0}
 .list-group-horizontal-xl>.list-group-item+.list-group-item.active{margin-left:-1px;border-left-width:1px}
 .modal-xl{max-width:1140px}
-.sticky-xl-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
 .float-xl-start{float:left !important}
 .float-xl-end{float:right !important}
 .float-xl-none{float:none !important}
