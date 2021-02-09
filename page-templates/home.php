@@ -39,7 +39,3 @@
 <?php get_footer(); ?>
 
 
-
-<script>
-new WOW().init();
-</script>
