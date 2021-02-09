@@ -1120,7 +1120,7 @@ body{background-color:#e0e0e0}
 #home-intro{margin-top:100px}
 #home-intro .intro-wrapper .right{padding:0 60px}
 #home-intro .intro-wrapper p{margin-top:70px}
-h2,.h2{color:#682145;font-family:'Montserrat',sans-serif;font-weight:bold}
+h2,.h2{color:#682145;font-family:'Montserrat',sans-serif}
 .hero .content{position:relative;padding-bottom:5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:79vw;margin:-15% auto 0}
 .hero .content>img{-webkit-box-flex:0;-ms-flex:0 0 43%;flex:0 0 43%;max-width:43%}
 .hero .content .text{-webkit-box-flex:0;-ms-flex:0 0 52%;flex:0 0 52%;width:80ch;-ms-flex-item-align:start;align-self:start}
@@ -1129,9 +1129,18 @@ h2,.h2{color:#682145;font-family:'Montserrat',sans-serif;font-weight:bold}
 .difference .col-12{position:relative}
 .difference .col-12::before{content:'';width:100%;height:2px;display:block;position:absolute;background:#cecece;top:50%}
 .difference .col-12 .title{display:inline-block;background:white;position:relative;padding-right:1em;color:#682145;font-family:'Montserrat',sans-serif;font-weight:bold}
+.mission{margin-bottom:5em}
 .mission .line{width:3px;height:145px;background:#cecece;margin:0 auto}
 .mission h2,.mission .h2,.mission p{text-align:center;margin:.5em auto;max-width:100ch}
 .mission p{margin:0 auto}
+.mission .col-md-6 svg{max-width:145px;max-height:145px;width:8vw;height:auto;margin-bottom:2.5em}
+.mission .col-md-6 p{max-width:23ch}
+.mission .col-md-6 .title{color:#4cafd9;font-family:'poppins';font-size:calc(max(18px, min(1.5vw, 25px)))}
+.team{position:relative}
+.team .foreground{width:656px;height:632px;position:absolute;top:5em;left:10em;background:white;padding:5em}
+.team .foreground h2,.team .foreground .h2{color:#616060;font-family:'poppins';font-size:calc(max(20px, min(2.5vw, 40px)));letter-spacing:-1px;position:relative}
+.team .foreground h2.alt,.team .foreground .alt.h2{color:#4cafd9;margin-bottom:1em}
+.team .foreground h2.alt::after,.team .foreground .alt.h2::after{content:'';width:321px;height:2px;background:#cecece;position:absolute;bottom:.25em;left:9em}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
