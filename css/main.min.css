@@ -1125,10 +1125,12 @@ h2,.h2{color:#682145;font-family:'Montserrat',sans-serif}
 .hero .content>img{-webkit-box-flex:0;-ms-flex:0 0 43%;flex:0 0 43%;max-width:43%}
 .hero .content .text{-webkit-box-flex:0;-ms-flex:0 0 52%;flex:0 0 52%;width:80ch;-ms-flex-item-align:start;align-self:start}
 .hero .content .text h1,.hero .content .text .h1{color:#4cafd9;font-size:calc(max(30px, min(3.75vw, 66px)))}
-.hero .content .text img{margin:0;margin-bottom:2em}
+.hero .content .text img{margin:0;margin-bottom:4em}
 .difference .col-12{position:relative}
 .difference .col-12::before{content:'';width:100%;height:2px;display:block;position:absolute;background:#cecece;top:50%}
 .difference .col-12 .title{display:inline-block;background:white;position:relative;padding-right:1em;color:#682145;font-family:'Montserrat',sans-serif;font-weight:bold}
+.difference .col-lg-6 p{max-width:75ch}
+.difference .col-lg-6:last-child p{margin-left:auto}
 .mission{margin-bottom:5em}
 .mission .line{width:3px;height:145px;background:#cecece;margin:0 auto}
 .mission h2,.mission .h2,.mission p{text-align:center;margin:.5em auto;max-width:100ch}
@@ -1137,7 +1139,7 @@ h2,.h2{color:#682145;font-family:'Montserrat',sans-serif}
 .mission .col-md-6 p{max-width:23ch}
 .mission .col-md-6 .title{color:#4cafd9;font-family:'poppins';font-size:calc(max(18px, min(1.5vw, 25px)))}
 .team{position:relative}
-.team .foreground{width:656px;height:632px;position:absolute;top:5em;left:10em;background:white;padding:5em}
+.team .foreground{width:656px;height:632px;position:absolute;top:5em;left:10em;background:white;padding:5em;-webkit-box-shadow:0 0 25px 0 #0000000f;box-shadow:0 0 25px 0 #0000000f}
 .team .foreground h2,.team .foreground .h2{color:#616060;font-family:'poppins';font-size:calc(max(20px, min(2.5vw, 40px)));letter-spacing:-1px;position:relative}
 .team .foreground h2.alt,.team .foreground .alt.h2{color:#4cafd9;margin-bottom:1em}
 .team .foreground h2.alt::after,.team .foreground .alt.h2::after{content:'';width:321px;height:2px;background:#cecece;position:absolute;bottom:.25em;left:9em}
