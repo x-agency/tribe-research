@@ -63,11 +63,15 @@ body {
     p {
         @include body-font;
         font-size: 16px;
-        line-height: 2.4rem;
+        line-height: 2rem;
     }
 
     #main-menu {
         .menu-item {}
     }
 
+}
+
+.special-font {
+    @include special-font;
 }

@@ -27,7 +27,7 @@
 <section id="home-intro">
     <div class="container">
         <div class="row intro-wrapper">
-            <div class="col-md-5">
+            <div class="col-md-5 left">
                 <img src="/wp-content/themes/tribe-research/img/home-img-1.jpg" alt="">
             </div>
             <div class="col-md-7 right">
@@ -37,6 +37,9 @@
                     mind at ease, these studies have already passed a number of benefit and safety requirements and are
                     almost ready for general public release. We invite you to join us on the journey to better health.
                 </p>
+                <div class="link"><a href="" class="simple-link">Our Difference
+                        <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
+                <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>
             </div>
         </div>
     </div>

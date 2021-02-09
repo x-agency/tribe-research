@@ -22,10 +22,41 @@ body {
 }
 
 
-// Extra Button Styles - Can be used for a simple link that is not formatted as buttons
 
 .simple-link {
+    color: $blue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    @include ease;
 
+    svg {
+        width: 22px;
+        margin-left: 6px;
+        @include ease;
 
-    &:hover {}
+        path {
+            @include ease;
+        }
+    }
+
+    &:hover {
+
+        color: $purple;
+        @include ease;
+
+        svg {
+            transform: translateX(10px);
+            @include ease;
+
+            path {
+                fill: $blue;
+                @include ease;
+            }
+
+        }
+    }
 }
+
+
+// Extra Button Styles - Can be used for a simple link that is not formatted as buttons
