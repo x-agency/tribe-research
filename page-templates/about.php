@@ -10,13 +10,14 @@
 
 <section class="hero">
     <div class="grid">
+        <img class="bg" src="/wp-content/uploads/2021/02/about-hero.jpg">    
         <img src="/wp-content/uploads/2021/02/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">
         <h1 class="special">about</h1>
         <h1>TRIBE CLINICAL RESEARCH</h1>
     </div>
 </section>
 
-<section class="difference container-fluid">
+<section class="difference container">
     <div class="row">
         <div class="col-12"><h2 class="title">The Tribe Difference</h1></div>
         <div class="col-lg-6">
@@ -30,7 +31,7 @@
     </div>
 </section>
 
-<section class="mission container-fluid">
+<section class="mission container">
     <div class="row">
         <div class="col-12">
             <div class="line"></div>
@@ -61,7 +62,7 @@
 </section>
 
 <section class="team">
-    <div class="background"><img src=""></div>
+    <div class="background"><img src="/wp-content/uploads/2021/02/our-team.jpg"></div>
     <div class="foreground">
         <div>
             <h2>Our Team:</h2>
