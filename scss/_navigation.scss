@@ -5,8 +5,15 @@
     -moz-box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.54);
     box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.54);
     transition: 0.3s ease;
+    background-color: $purple;
 
     // Other elements to be changed on scroll within the navbar go here
+    .navbar-brand {
+        svg {
+            width: 100px;
+            transition: .3s ease;
+        }
+    }
 
 
 }
@@ -54,6 +61,7 @@
 
         svg {
             width: 130px;
+            transition: .3s ease;
 
             @include respond-above(xxl) {
                 width: 160px;

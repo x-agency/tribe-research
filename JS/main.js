@@ -1,3 +1,10 @@
+// Scroll navbar
+$(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
+});
+
+
 $(document).ready(function () {
     $(".hamburger-menu").click(function () {
         $(this).toggleClass("is-active");
@@ -32,11 +39,7 @@ $(document).ready(function () {
 
 //this is immediately invoked, separate from the document ready status
 (function ($) {
-    // Scroll navbar
-    $(document).scroll(function () {
-        var $nav = $(".navbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > 10);
-    });
+  
 
     // Smooth Scroll to Anchor
     var scrollToTarget = function (target, clickEvent) {
@@ -115,3 +118,4 @@ $(document).ready(function () {
         stopVideo();
     })
 });
+
