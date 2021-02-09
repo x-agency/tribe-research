@@ -114,6 +114,12 @@ body {
 // Home Intro Section
 #home-intro {
     margin-top: 100px;
+
+    .intro-wrapper {
+        .right {
+            padding: 0 60px;
+        }
+    }
 }
 
 // **About Page Styles

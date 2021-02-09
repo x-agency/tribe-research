@@ -26,33 +26,44 @@
 
 
 // Preliminary Theme Fonts, Sizes and Colors - This overrides Bootstraps predefined settings
-h1 {
+body {
 
-    @include primary-font;
-    font-weight: 700;
-    font-size: 40px;
-    color: $purple;
 
-    // H1 on Mobile
-    @include respond-below(md) {}
+    h1 {
 
-    // If Font has special Highlighted Words
-    // span {
+        @include primary-font;
+        font-weight: 700;
+        font-size: 2vw;
+        color: $purple;
 
-    // }
+        @media (min-width: 1981px) {
+            font-size: 40px;
+        }
 
-}
+        // H1 on Mobile
+        @include respond-below(xxl) {
+            font-size: 35px;
+        }
 
-h2 {}
+        // If Font has special Highlighted Words
+        // span {
 
-h3 {}
+        // }
 
-h4 {}
+    }
 
-h5 {}
+    h2 {}
 
-p {}
+    h3 {}
 
-#main-menu {
-    .menu-item {}
+    h4 {}
+
+    h5 {}
+
+    p {}
+
+    #main-menu {
+        .menu-item {}
+    }
+
 }

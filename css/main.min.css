@@ -1,5 +1,5 @@
 @font-face{font-family:'Housky';src:url("/wp-content/themes/tribe-research/fonts/HouskyDemo.woff2") format("woff2"),url("/wp-content/themes/tribe-research/HouskyDemo.woff") format("woff"),url("/wp-content/themes/tribe-research/HouskyDemo.svg#HouskyDemo") format("svg");font-weight:normal;font-style:normal;font-display:swap}
-h1,.h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:40px;color:#682145}
+body h1,body .h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:2vw;color:#682145}
 body .btn{background-color:#4cafd9;color:#682145;padding:12px 30px;font-family:'Montserrat',sans-serif;font-weight:700;cursor:pointer;-webkit-transition:.3s ease all;transition:.3s ease all;text-transform:uppercase;border-radius:30px;font-size:16px;border:0}
 body .btn:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;transition:.3s}
 .navbar.scrolled{-webkit-box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);box-shadow:0 10px 22px 0 rgba(0,0,0,0.54);-webkit-transition:.3s ease;transition:.3s ease;background-color:#682145}
@@ -1117,6 +1117,7 @@ body{background-color:#e0e0e0}
 .home-hero .hero-wrapper .hero-inner .hero-box p{font-family:'Montserrat',sans-serif;color:white;font-size:20px;font-weight:700}
 .home-hero .hero-wrapper .hero-inner .hero-box p:last-child{color:#682145;font-size:30px}
 #home-intro{margin-top:100px}
+#home-intro .intro-wrapper .right{padding:0 60px}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
@@ -2058,6 +2059,8 @@ legend{font-size:1.5rem}
 .home-hero .hero-wrapper .hero-inner{width:65%}
 .home-hero .hero-wrapper .hero-inner .title-wrapper .subtitle{font-size:1.4vw}
 .home-hero .hero-wrapper .hero-inner .hero-box{padding:50px 15% 50px 20%}
+}@media(min-width:1981px){body h1,body .h1{font-size:40px}
+}@media(max-width:1399px){body h1,body .h1{font-size:35px}
 }@media(max-width:1229px){#menu-main .nav-item{font-size:14px}
 }@media(max-width:1199.98px){.table-responsive-xl{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .modal-fullscreen-xl-down{width:100vw;max-width:none;height:100%;margin:0}

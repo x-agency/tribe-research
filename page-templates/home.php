@@ -26,16 +26,14 @@
 </section>
 <section id="home-intro">
     <div class="container">
-        <div class="row">
+        <div class="row intro-wrapper">
             <div class="col-md-5">
                 <img src="/wp-content/themes/tribe-research/img/home-img-1.jpg" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7 right">
                 <h1>Welcome to Tribe Clinical Research.</h1>
             </div>
         </div>
     </div>
 </section>
 <?php get_footer(); ?>
-
-
