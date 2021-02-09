@@ -164,16 +164,12 @@ body {
     }
 }
 
-<<<<<<< HEAD
-// *About Page Styles
-=======
 // About Page Styles
 h2 {
     color: $purple;
     @include primary-font;
 }
 
->>>>>>> 56135892d1e596a559e7417d99490500868b690a
 .hero {
     .content {
         position: relative;
@@ -184,7 +180,7 @@ h2 {
         width: 79vw;
         margin: -15% auto 0;
 
-        > img {
+        >img {
             flex: 0 0 43%;
             max-width: 43%;
         }
@@ -201,7 +197,7 @@ h2 {
 
             img {
                 margin: 0;
-                margin-bottom: 4em;
+                margin-bottom: 2em;
             }
         }
     }
@@ -231,14 +227,6 @@ h2 {
             font-weight: bold;
         }
     }
-
-    .col-lg-6 p {
-        max-width: 75ch;
-    }
-
-    .col-lg-6:last-child p {
-        margin-left: auto;
-    }
 }
 
 .mission {
@@ -251,7 +239,8 @@ h2 {
         margin: 0 auto;
     }
 
-    h2, p {
+    h2,
+    p {
         text-align: center;
         margin: 0.5em auto;
         max-width: 100ch;
@@ -262,7 +251,7 @@ h2 {
     }
 
     .col-md-6 {
-        
+
         svg {
             max-width: 145px;
             max-height: 145px;
@@ -270,7 +259,7 @@ h2 {
             height: auto;
             margin-bottom: 2.5em;
         }
-        
+
         p {
             max-width: 23ch;
         }
@@ -294,7 +283,6 @@ h2 {
         left: 10em;
         background: white;
         padding: 5em;
-        box-shadow: 0px 0px 25px 0px #0000000f;
 
         h2 {
             color: #616060;
