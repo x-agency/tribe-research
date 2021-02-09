@@ -1120,6 +1120,11 @@ body{background-color:#e0e0e0}
 #home-intro{margin-top:100px}
 #home-intro .intro-wrapper .right{padding:0 60px}
 #home-intro .intro-wrapper p{margin-top:70px}
+.hero .grid{display:grid;grid:auto auto / 40% 60%}
+.hero .grid img{grid-area:1 / 1 / 1 / 2}
+.hero .grid img.bg{grid-area:1 / 1 / 2 / 3}
+.hero .grid .special{font-family:'Housky';font-size:calc(max(200px, min(27vw, 520px)));color:#d6d5d5;opacity:.35;grid-area:1 / 2 / 2 / 2}
+.hero .grid h1:nth-child(4),.hero .grid .h1:nth-child(4){color:#4cafd9;grid-area:2 / 2 / 2 / 2}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
