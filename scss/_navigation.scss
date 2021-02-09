@@ -25,11 +25,16 @@
 //  Default Navbar Settings - Change as needed to match style
 .navbar {
     width: 100%;
+    max-width: 1980px;
     z-index: 9999;
     transition: 0.3s ease;
     position: fixed !important;
     top: 0;
-    padding: 30px 100px 30px 45px;
+    padding: 30px 50px 30px 30px;
+
+    @include respond-above(xxl) {
+        padding: 30px 100px 30px 45px;
+    }
 
     #navbarNav {
         justify-content: flex-end;
@@ -48,7 +53,11 @@
         }
 
         svg {
-            width: 160px;
+            width: 130px;
+
+            @include respond-above(xxl) {
+                width: 160px;
+            }
         }
     }
 }
@@ -118,8 +127,12 @@
         .menu-btn {}
 
         a {
+            @include respond-above(xxl) {
+                font-size: 17px;
+            }
+
             color: white;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 600;
             @include primary-font;
             letter-spacing: -0.045rem;
