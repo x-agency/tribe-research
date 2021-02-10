@@ -1179,6 +1179,7 @@ body{background-color:#e0e0e0}
 .team .foreground h2,.team .foreground .h2{color:#616060;font-family:'poppins';font-size:calc(max(20px, min(2.5vw, 40px)));letter-spacing:-1px;position:relative}
 .team .foreground h2.alt,.team .foreground .alt.h2{color:#4cafd9;margin-bottom:1em}
 .team .foreground h2.alt::after,.team .foreground .alt.h2::after{content:'';width:321px;height:2px;background:#cecece;position:absolute;bottom:.25em;left:9em}
+.controls svg{max-width:34px;max-height:26px}
 @media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}
 }@media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .form-control::file-selector-button{-webkit-transition:none;transition:none}
