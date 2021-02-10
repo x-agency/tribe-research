@@ -404,11 +404,14 @@ body {
     .col-md-6 {
 
         svg {
-            max-width: 145px;
             max-height: 145px;
-            width: 8vw;
+            width: calc(max(80px, min(13vw, 145px)));
             height: auto;
-            margin-bottom: 2.5em;
+            margin-bottom: 2.5vw;
+
+            @include respond-above(xxl) {
+                margin-bottom: 2.5rem;
+            }
         }
 
         p {
@@ -425,6 +428,14 @@ body {
 
 .team {
     position: relative;
+
+    .background {
+        img {
+            min-height: 200px;
+            object-fit: cover;
+            object-position: 55%;
+        }
+    }
 
     .foreground {
         width: calc(max(300px, min(95vw, 656px)));

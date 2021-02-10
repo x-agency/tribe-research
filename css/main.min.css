@@ -1159,10 +1159,11 @@ body{background-color:#e0e0e0}
 .mission .line{width:2px;height:145px;background:#cecece;margin:0 auto}
 .mission h2,.mission .h2,.mission p{text-align:center;margin:.5em auto;max-width:100ch}
 .mission p{margin:0 auto}
-.mission .col-md-6 svg{max-width:145px;max-height:145px;width:8vw;height:auto;margin-bottom:2.5em}
+.mission .col-md-6 svg{max-height:145px;width:calc(max(80px, min(13vw, 145px)));height:auto;margin-bottom:2.5vw}
 .mission .col-md-6 p{max-width:23ch}
 .mission .col-md-6 .title{color:#4cafd9;font-family:'poppins';font-size:calc(max(18px, min(1.5vw, 25px)))}
 .team{position:relative}
+.team .background img{min-height:200px;-o-object-fit:cover;object-fit:cover;-o-object-position:55%;object-position:55%}
 .team .foreground{width:calc(max(300px, min(95vw, 656px)));min-height:632px;position:absolute;top:5em;left:10em;background:white;padding:5em}
 .team .foreground h2,.team .foreground .h2{color:#616060;font-family:'poppins';font-size:calc(max(20px, min(2.5vw, 40px)));letter-spacing:-1px;position:relative}
 .team .foreground h2.alt,.team .foreground .alt.h2{color:#4cafd9;margin-bottom:1em}
@@ -2113,6 +2114,7 @@ legend{font-size:1.5rem}
 .home-hero .hero-wrapper .hero-inner{width:65%}
 .home-hero .hero-wrapper .hero-inner .title-wrapper .subtitle{font-size:1.4vw}
 .home-hero .hero-wrapper .hero-inner .hero-box{padding:50px 15% 50px 20%}
+.mission .col-md-6 svg{margin-bottom:2.5rem}
 }@media(min-width:1700px){.hero .content{margin:-14% auto 0}
 }@media(min-width:1981px){body h1,body .h1{font-size:40px}
 }@media(max-width:1399px){body h1,body .h1{font-size:35px}
