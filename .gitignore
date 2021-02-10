@@ -1,6 +1,6 @@
 node_modules
 wpgulp.config.js
 css
-css/main.css
-css/main.css.map
-css/main.min.css
+/css/main.css
+/css/main.css.map
+/css/main.min.css
