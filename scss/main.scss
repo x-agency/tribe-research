@@ -32,6 +32,11 @@
     }
 }
 
+//Hide Astra Mobile Navbar
+.ast-header-break-point #ast-mobile-header {
+    display: none !important;
+}
+
 body {
     background-color: #e0e0e0;
 }
