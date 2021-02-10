@@ -77,5 +77,6 @@
 </section>
 
 <!-- Template Part -->
+<?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>

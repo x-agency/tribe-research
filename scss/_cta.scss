@@ -1,0 +1,96 @@
+#cta {
+    margin: 150px 0 100px;
+
+    .cta-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .block-1 {
+            background-image: url(/wp-content/themes/tribe-research/img/cta-img-1.png);
+            justify-content: flex-end;
+        }
+
+        .block-2 {
+            background-image: url(/wp-content/themes/tribe-research/img/cta-img-2.png);
+        }
+
+        .cta-link {
+            width: 47%;
+            text-decoration: none;
+
+            @include respond-above(md) {
+                &:hover {
+                    .cta-block {
+                        @include ease;
+                        background-color: $purple;
+
+                        .cta-text-wrapper {
+                            .cta-text {
+                                color: white;
+                                @include ease;
+                            }
+
+                            .cta-arrow {
+                                svg {
+                                    transform: translateX(15px);
+                                    @include ease;
+
+                                    path {
+                                        fill: white;
+                                        @include ease;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .cta-block {
+                background-color: #f1f1f1;
+                width: 100%;
+                padding: 100px 40px 80px;
+                display: flex;
+
+                background-size: cover;
+
+                .cta-text-wrapper {
+
+
+                    .cta-text {
+                        @include primary-font;
+                        font-weight: 700;
+                        text-align: center;
+                        font-size: 25px;
+                        color: black;
+
+
+                    }
+
+                    .cta-arrow {
+                        text-align: center;
+                        margin-top: 5px;
+
+                        svg {
+                            width: 40px;
+                            transform: translateX(0);
+                            @include ease;
+
+                            path {
+                                @include ease;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+}

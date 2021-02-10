@@ -25,6 +25,16 @@ body .btn:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;tr
 #menu-main li:last-child a:hover{background-color:#682145;color:#4cafd9;-webkit-transition:.3s;transition:.3s}
 #menu-main .nav-item{margin:5px 25px}
 #menu-main .nav-item a{color:white;font-size:15px;font-weight:600;font-family:'Montserrat',sans-serif;letter-spacing:-0.045rem}
+#cta{margin:150px 0 100px}
+#cta .cta-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+#cta .cta-wrapper .block-1{background-image:url(/wp-content/themes/tribe-research/img/cta-img-1.png);-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+#cta .cta-wrapper .block-2{background-image:url(/wp-content/themes/tribe-research/img/cta-img-2.png)}
+#cta .cta-wrapper .cta-link{width:47%;text-decoration:none}
+#cta .cta-wrapper .cta-link .cta-block{background-color:#f1f1f1;width:100%;padding:100px 40px 80px;display:-webkit-box;display:-ms-flexbox;display:flex;background-size:cover}
+#cta .cta-wrapper .cta-link .cta-block .cta-text-wrapper .cta-text{font-family:'Montserrat',sans-serif;font-weight:700;text-align:center;font-size:25px;color:black}
+#cta .cta-wrapper .cta-link .cta-block .cta-text-wrapper .cta-arrow{text-align:center;margin-top:5px}
+#cta .cta-wrapper .cta-link .cta-block .cta-text-wrapper .cta-arrow svg{width:40px;-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:.3s ease all;transition:.3s ease all}
+#cta .cta-wrapper .cta-link .cta-block .cta-text-wrapper .cta-arrow svg path{-webkit-transition:.3s ease all;transition:.3s ease all}
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -1424,7 +1434,11 @@ body{background-color:#e0e0e0}
 .text-sm-start{text-align:left !important}
 .text-sm-end{text-align:right !important}
 .text-sm-center{text-align:center !important}
-}@media(min-width:768px){.container,.container-sm,.container-md{max-width:85%}
+}@media(min-width:768px){#cta .cta-wrapper .cta-link:hover .cta-block{-webkit-transition:.3s ease all;transition:.3s ease all;background-color:#682145}
+#cta .cta-wrapper .cta-link:hover .cta-block .cta-text-wrapper .cta-text{color:white;-webkit-transition:.3s ease all;transition:.3s ease all}
+#cta .cta-wrapper .cta-link:hover .cta-block .cta-text-wrapper .cta-arrow svg{-webkit-transform:translateX(15px);transform:translateX(15px);-webkit-transition:.3s ease all;transition:.3s ease all}
+#cta .cta-wrapper .cta-link:hover .cta-block .cta-text-wrapper .cta-arrow svg path{fill:white;-webkit-transition:.3s ease all;transition:.3s ease all}
+.container,.container-sm,.container-md{max-width:85%}
 .col-md{-webkit-box-flex:1;-ms-flex:1 0 0;flex:1 0 0}
 .row-cols-md-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}
 .row-cols-md-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}
