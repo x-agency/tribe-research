@@ -9,9 +9,9 @@
 <?php get_header(); ?>
 
 <section class="hero">
-    <img class="bg" src="/wp-content/uploads/2021/02/about-hero.jpg">    
+    <img class="bg" src="/wp-content/themes/tribe-research/img/about-hero.jpg">    
     <div class="content">
-        <img src="/wp-content/uploads/2021/02/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">
+        <img src="/wp-content/themes/tribe-research/img/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">
         <div class="text">
             <img src="/wp-content/themes/tribe-research/img/about-text.png"/>
             <h1>TRIBE CLINICAL RESEARCH</h1>
@@ -64,7 +64,7 @@
 </section>
 
 <section class="team">
-    <div class="background"><img src="/wp-content/uploads/2021/02/our-team.jpg"></div>
+    <div class="background"><img src="/wp-content/themes/tribe-research/img/our-team.jpg"></div>
     <div class="foreground">
         <div>
             <h2>Our Team:</h2>
