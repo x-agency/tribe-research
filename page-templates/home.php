@@ -51,5 +51,34 @@
         <p>Tribe Clinical Research offers several options to get involved. Contact us if you're interested in helping
             move medicine forward.</p>
     </div>
+    <div class="container-fluid trial-blocks">
+        <div class="row trial-blocks-inner">
+            <!-- Trial Block 1 -->
+            <div class="col-md-4 trial-block">
+                <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-1.jpg" alt=""></div>
+                <div class="trial-title">For Volunteers</div>
+                <p>Our specialized care team will work with you in order to link you with the appropriate studies based
+                    on your medical history and needs. The future of medicine depends on you. Learn more about how you
+                    can get involved.</p>
+                <div class="btn-wrapper"><a href="" class="btn">Learn More</a></div>
+            </div>
+            <!-- Trial Block 2 -->
+            <div class="col-md-4 trial-block">
+                <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-2.jpg" alt=""></div>
+                <div class="trial-title">For Sponsors</div>
+                <p>Tribe Clinical Research has managed over 100 phase II to IV clinical trials in partnership with
+                    university hospitals and over 20 pharmaceutical companies. Learn about what we can offer.</p>
+                <div class="btn-wrapper"><a href="" class="btn">Learn More</a></div>
+            </div>
+            <!-- Trial Block 3 -->
+            <div class="col-md-4 trial-block">
+                <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-3.jpg" alt=""></div>
+                <div class="trial-title">Current Clinical Trials</div>
+                <p>Our current clinical trials span several different categories, including illnesses such as asthma,
+                    diabetes, gout, migraines, as well as research in cardivascular and gastrointestinal diseases. </p>
+                <div class="btn-wrapper"><a href="" class="btn">View Trials</a></div>
+            </div>
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>

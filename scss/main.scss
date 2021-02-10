@@ -181,10 +181,70 @@ body {
 }
 
 #home-trial {
+    position: relative;
+    margin: -50px 0 100px;
+
     .title-block {
         background-color: $gray;
         text-align: center;
-        padding: 50px 50px 125px
+
+        padding: 75px 50px 125px;
+
+        h1 {
+            color: $blue;
+        }
+    }
+
+    .trial-blocks {
+        background-color: $purple;
+
+        .trial-blocks-inner {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+            margin-top: -50px;
+
+
+            .trial-block {
+                margin: -75px 10px 5px;
+                transform: translateY(20px);
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+
+
+
+
+
+                .trial-title {
+                    text-align: center;
+                    color: $blue;
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin: 20px 0;
+                    width: 100%;
+                    flex: 0 1 auto;
+                }
+
+                p {
+                    color: white;
+                    width: 100%;
+                    flex: 0 1 auto;
+                }
+
+
+                .btn-wrapper {
+                    text-align: center;
+                    margin-top: 15px;
+                    width: 100%;
+                    flex: 0 1 auto;
+                }
+            }
+
+
+        }
     }
 }
 
