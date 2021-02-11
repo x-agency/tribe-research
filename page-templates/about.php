@@ -8,7 +8,7 @@
     ?>
 <?php get_header(); ?>
 
-<section class="hero">
+<section class="hero hero-overlap">
     <img class="bg" src="/wp-content/themes/tribe-research/img/about-hero.jpg">    
     <div class="content">
         <img src="/wp-content/themes/tribe-research/img/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">

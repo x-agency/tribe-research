@@ -267,86 +267,88 @@ body {
         font-size: calc(max(12px, min(1.5vw, 16px)));
     }
 
-    .hero {
-    
+}
+
+.hero-overlap {
+
+    @include respond-above(xl) {
+        padding-bottom: 18vw;
+    }
+
+    > img {
+        min-height: 500px;
+        object-fit: cover;
+
+        @include respond-below(xl) {
+            min-height: 300px;
+            object-position: 75%;
+        }
+    }
+
+    .content {
+        position: relative;
+        padding-bottom: 5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 79vw;
+        max-width: 1510px;
+        margin: -35% auto 0;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        @include respond-above(xs) {
+            margin: -22% auto 0;
+        }
+
         @include respond-above(xl) {
-            padding-bottom: 18vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: -17% auto 0;
+            flex-direction: row;
+            text-align: left;
         }
-    
+
+        @media (min-width: 1700px) {
+            margin: -14% auto 0;
+        }
+        
+
         > img {
-            min-height: 500px;
-            object-fit: cover;
-    
+            flex: 0 0 43%;
+            max-width: 43%;
+
             @include respond-below(xl) {
-                min-height: 300px;
-                object-position: 75%;
+                flex: 0 0 100%;
+                max-width: 100%;
             }
         }
-    
-        .content {
-            position: relative;
-            padding-bottom: 5em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 79vw;
-            max-width: 1510px;
-            margin: -35% auto 0;
-            flex-direction: column-reverse;
-            text-align: center;
-    
-            @include respond-above(xs) {
-                margin: -22% auto 0;
+
+        .text {
+            flex: 0 0 52%;
+            max-width: 80ch;
+            align-self: start;
+
+            @include respond-below(xl) {
+                text-align: center;
+                margin: 0 auto;
             }
-    
-            @include respond-above(xl) {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                margin: -17% auto 0;
-                flex-direction: row;
-                text-align: left;
+
+            h1 {
+                color: $blue;
+                font-size: calc(max(30px, min(4vw, 66px)));
             }
-    
-            @media (min-width: 1700px) {
-                margin: -14% auto 0;
-            }
-            
-    
-            > img {
-                flex: 0 0 43%;
-                max-width: 43%;
-    
-                @include respond-below(xl) {
-                    flex: 0 0 100%;
-                    max-width: 100%;
-                }
-            }
-    
-            .text {
-                flex: 0 0 52%;
-                max-width: 80ch;
-                align-self: start;
-    
-                @include respond-below(xl) {
-                    text-align: center;
-                    margin: 0 auto;
-                }
-    
-                h1 {
-                    color: $blue;
-                    font-size: calc(max(30px, min(4vw, 66px)));
-                }
-    
-                img {
-                    margin: 0;
-                    margin-bottom: 2rem;
-                    width: calc(max(300px, min(50vw, 605px)));
-                }
+
+            img {
+                margin: 0;
+                margin-bottom: 2rem;
+                width: calc(max(300px, min(50vw, 605px)));
             }
         }
     }
 }
+
 
 
 
