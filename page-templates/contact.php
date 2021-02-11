@@ -1,6 +1,6 @@
 <?php
    /*
-    Template Name: Sponsors
+    Template Name: Contact
     */
     if ( ! defined( 'ABSPATH' ) ) {
       exit; // Exit if accessed directly.
