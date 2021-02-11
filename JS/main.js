@@ -35,6 +35,17 @@ $(document).ready(function () {
         videoSrc.replace("autoplay=1", "autoplay=0")
         );
     });
+
+    //trials page filter box
+    $('.toggle-container').click(function() {
+        $('.filter').toggleClass('open');
+        $('.filter-toggle').toggleClass('open');
+    });
+
+    $('.filter-btn').click(function() {
+        $(this).toggleClass('active');
+    });
+
 });
 
 //this is immediately invoked, separate from the document ready status
@@ -118,4 +129,3 @@ $(document).ready(function () {
         stopVideo();
     })
 });
-

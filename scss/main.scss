@@ -266,87 +266,89 @@ body {
     p {
         font-size: calc(max(12px, min(1.5vw, 16px)));
     }
-}
 
-.hero {
+    .hero {
     
-    @include respond-above(xl) {
-        padding-bottom: 18vw;
-    }
-
-    > img {
-        min-height: 500px;
-        object-fit: cover;
-
-        @include respond-below(xl) {
-            min-height: 300px;
-            object-position: 75%;
-        }
-    }
-
-    .content {
-        position: relative;
-        padding-bottom: 5em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 79vw;
-        max-width: 1510px;
-        margin: -35% auto 0;
-        flex-direction: column-reverse;
-        text-align: center;
-
-        @include respond-above(xs) {
-            margin: -22% auto 0;
-        }
-
         @include respond-above(xl) {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: -17% auto 0;
-            flex-direction: row;
-            text-align: left;
+            padding-bottom: 18vw;
         }
-
-        @media (min-width: 1700px) {
-            margin: -14% auto 0;
-        }
-        
-
+    
         > img {
-            flex: 0 0 43%;
-            max-width: 43%;
-
+            min-height: 500px;
+            object-fit: cover;
+    
             @include respond-below(xl) {
-                flex: 0 0 100%;
-                max-width: 100%;
+                min-height: 300px;
+                object-position: 75%;
             }
         }
-
-        .text {
-            flex: 0 0 52%;
-            max-width: 80ch;
-            align-self: start;
-
-            @include respond-below(xl) {
-                text-align: center;
-                margin: 0 auto;
+    
+        .content {
+            position: relative;
+            padding-bottom: 5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 79vw;
+            max-width: 1510px;
+            margin: -35% auto 0;
+            flex-direction: column-reverse;
+            text-align: center;
+    
+            @include respond-above(xs) {
+                margin: -22% auto 0;
             }
-
-            h1 {
-                color: $blue;
-                font-size: calc(max(30px, min(4vw, 66px)));
+    
+            @include respond-above(xl) {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: -17% auto 0;
+                flex-direction: row;
+                text-align: left;
             }
-
-            img {
-                margin: 0;
-                margin-bottom: 2rem;
-                width: calc(max(300px, min(50vw, 605px)));
+    
+            @media (min-width: 1700px) {
+                margin: -14% auto 0;
+            }
+            
+    
+            > img {
+                flex: 0 0 43%;
+                max-width: 43%;
+    
+                @include respond-below(xl) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+    
+            .text {
+                flex: 0 0 52%;
+                max-width: 80ch;
+                align-self: start;
+    
+                @include respond-below(xl) {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+    
+                h1 {
+                    color: $blue;
+                    font-size: calc(max(30px, min(4vw, 66px)));
+                }
+    
+                img {
+                    margin: 0;
+                    margin-bottom: 2rem;
+                    width: calc(max(300px, min(50vw, 605px)));
+                }
             }
         }
     }
 }
+
+
 
 .difference {
     .col-12 {
@@ -489,14 +491,206 @@ body {
 }
 
 // **Trials Page styles
-.controls {
+.page-template-trials {
 
-    svg {
-        max-width: 34px;
-        max-height: 26px;
+    .hero {
+        position: relative;
+
+        .title {
+            position: absolute;
+            left: 12.5%;
+            bottom: 0;
+            text-align: center;
+
+            img {
+                margin-bottom: 2em;
+                width: calc(max(175px, min(40vw, 637px)));
+            }
+    
+            h1 {
+                color: white;
+                font-size: calc(max(40px, min(4.5vw, 87px)));
+                margin: 0;
+                line-height: 0.7em;
+            }
+        }
     }
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 1399px) {
+        flex-direction: column;
+    }
+
+    h2 {
+        @include primary-font;
+        color: $purple;
+        font-weight: bold;
+    }
+
+    .filter {
+        display: flex;
+
+        .toggle-container {
+            position: absolute;
+            right: 0;
+            width: 70px;
+            height: 57px;
+        }
+
+        @media (max-width: 1399px) {
+            flex-direction: column;
+            width: 30vw;
+            border: 3px solid $purple;
+            height: 100%;
+            max-height: 60px;
+            overflow: hidden;
+            transition: all 0.6s ease;
+            position: relative;
+
+            .filter-toggle {
+                position: absolute;
+                top: 21px;
+                right: 1.5em;
+                width: 17px;
+                height: 12px;
+                clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+                background: $blue;
+                transition: all 0.6s ease;
+            }
+        }
+
+        &.open {
+            max-height: 300px;
+
+            .filter-toggle {
+                transform: scaleY(-1);
+            }
+        }
+    
+        .filter-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75em 1em;
+            border: 3px solid $purple;
+            margin: 0 0.75em;
+            transition: all 0.6s ease;
+            cursor: pointer;
+
+            @include respond-above(lg) {
+                min-width: 167px;
+            }
+
+            @media (max-width: 1399px) {
+                border: none;
+                border-top: 1px solid $purple;
+            }
+
+            p, svg path {
+                color: black;
+                fill: black;
+                transition: all 0.6s ease;
+            }
+
+            &.active {
+                background: $purple;
+
+                @media (max-width: 1399px) {
+                    margin: 0 0 -1px 0 !important; /* Eat the top of next Item's border*/
+                }
+
+                p, svg path {
+                    color: white;
+                    fill: white;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-left: 2.5em;
+
+                @media (max-width: 1399px) {
+                    margin-left: 0.75em;
+                    border-top: none;
+                }
+            }
+
+            svg {
+                width: 38px;
+                height: 35px;
+            }
+
+            p {
+                margin: 0;
+                margin-left: 1em;
+                font-size: calc(max(14px, min(1vw, 20px)));
+                font-family: 'poppins';
+            }
+        }   
+    }
+}
+
+.studies {
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    h2 {
+        color: $blue;
+        font-size: calc(max(34px, min(5vw, 40px)));;
+        margin: 1em 0;
+    }
+
+    .study {
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        min-width: 332px;
+        margin-right: 3em;
+        width: calc(25% - 3em);
+
+        @media (max-width: 1399px) {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            .study-image .btn {
+                opacity: 1;
+            }
+        }
+
+        .study-image {
+            position: relative;
+            min-width: 332px;
+            min-height: 390px;
+            background: $purple;
+            margin: 0 auto;
+
+            .btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                transition: all 0.6s ease;
+                white-space: nowrap;
+                opacity: 0;
+            }
+        }
+
+        .study-title {
+            font-size: calc(max(14px, min(3vw, 20px)));
+            font-family: 'poppins';
+        }
+    }
+}
 
 // **Sponsors Page Styles
 
