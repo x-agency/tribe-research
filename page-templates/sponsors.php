@@ -23,61 +23,58 @@
     <div class="row">
         <div class="controls col-12 my-5">
             <h2>Explore</h2>
-                <div class="filter">
-                    <div class="toggle-container"><div class="filter-toggle"></div></div>
-                    <div class="btn-alt">
-                        <a href="#our-site">
-                            <p>Our Site</p>
-                        </a>
-                    </div>
-                    <div class="btn-alt">
-                        <a href="#monitor-guidelines">
-                            <p>Monitor Guidelines</p>
-                        </a>
-                    </div>
-                    <div class="btn-alt">
-                        <a href="#daily-schedule">
-                            <p>Daily Schedule</p>
-                        </a>
-                    </div>
-                    <div class="btn-alt">
-                        <a href="#our-area">
-                            <p>Our Area</p>
-                        </a>
-                    </div>
-                    <div class="btn-alt">
-                        <a href="#hotels-restaurants">
-                            <p>Restaurants/Hotels</p>
-                        </a>
-                    </div>
+            <div class="filter">
+                <div class="toggle-container"><div class="filter-toggle"></div></div>
+                <div class="btn-alt">
+                    <a href="#our-site">
+                        <p>Our Site</p>
+                    </a>
+                </div>
+                <div class="btn-alt">
+                    <a href="#monitor-guidelines">
+                        <p>Monitor Guidelines</p>
+                    </a>
+                </div>
+                <div class="btn-alt">
+                    <a href="#daily-schedule">
+                        <p>Daily Schedule</p>
+                    </a>
+                </div>
+                <div class="btn-alt">
+                    <a href="#our-area">
+                        <p>Our Area</p>
+                    </a>
+                </div>
+                <div class="btn-alt">
+                    <a href="#hotels-restaurants">
+                        <p>Restaurants/Hotels</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="anchor" id="our-site"></div>
-        <div>
-            <p class="title"></p>
-            <ul class="col-lg-6">
-                <li>Easy access to a major airport</li>
-                <li>Designated monitoring space with private space available at your request</li>
-                <li>Telephone for monitor use</li>
-                <li>High speed wireless DSL</li>
-                <li>High volume copier</li>
-            </ul>
-            <ul class="col-lg-6">
-                <li>Shredder</li>
-                <li>Fax machine</li>
-                <li>On site storage of all documents</li>
-                <li>Low query rates with rapid resolution</li>
-                <li>Full time Data/Quality Assurance Coordinator</li>
-            </ul>
-            <a href="" class="btn">Take Our Virtual Tour</a>
-        </div>
+        <p class="title offset-lg-1">At our site, we offer:</p>
+        <ul class="col-lg-5 offset-lg-1">
+            <li><span>Easy access to a major airport</span></li>
+            <li><span>Designated monitoring space with private space available at your request</span></li>
+            <li><span>Telephone for monitor use</span></li>
+            <li><span>High speed wireless DSL</span></li>
+            <li><span>High volume copier</span></li>
+        </ul>
+        <ul class="col-lg-4">
+            <li><span>Shredder</span></li>
+            <li><span>Fax machine</span></li>
+            <li><span>On site storage of all documents</span></li>
+            <li><span>Low query rates with rapid resolution</span></li>
+            <li><span>Full time Data/Quality Assurance Coordinator</span></li>
+        </ul>
+        <a href="" class="btn purple">Take Our Virtual Tour</a>
     </div>
     <div class="row">
         <div class="testimonial">
-            <div class="quote"></div>
+            <p class="quote">“</p>
             <p>I love your site and I wish it was mine. Monitors often tell sites only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
             <p class="author">Monitor</p>
             <p class="source">Tribe Clinical Research</p>
@@ -89,11 +86,11 @@
     <div class="section-hero">
         <div class="anchor" id="monitor-guidelines"></div>
         <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-monitor-hero.jpg">
-        <img src="/wp-content/themes/tribe-research/img/monitor-text.png" alt="Monitor Guidelines">
-        <div class="line"></div>
+        <img class="monitor-text" src="/wp-content/themes/tribe-research/img/monitor-text.png" alt="Monitor Guidelines">
     </div>
     <div class="container">
         <div class="row">
+            <div class="line"></div>
             <p>We look forward to working with you and hope these guidelines ensure a more efficient use of your time and ours during your monitoring visit. Due to our current study volume and increased patient visit schedule we ask that you adhere to the following guidelines.</p>
             <ul>
                 <li><span>Please try and schedule your next RMV at each visit.</span>This will allow us to adjust our schedule accordingly and give you adequate time during your visit with us. Also, please give us advance warning if you will be bringing a co-CRA or manager with you so we can accommodate everyone comfortably.</li>
@@ -103,26 +100,24 @@
                 <li><span>For your convenience, there is a fax/copier machine available to you</span>located in the front office. You are welcome to utilize this machine as needed, but we do ask to please keep copying to a minimum and to only make copies concerning our site.</li>
             </ul>
         </div>
-        <div class="row">
+        <div class="row daily-schedule">
             <div class="anchor" id="daily-schedule"></div>
+            <h2></h2>
             <div>
-                <h2></h2>
-                <div>
-                    <div class="time">
-                        <p><span>Monitoring Visit:</span></p>
-                        <p>8:30am - 4:30pm</p>
-                        <p>(Monday-Thursday)</p>
-                    </div>
-                    <div class="vseparator"></div>
-                    <div class="time">
-                        <p><span>Medical Director:</span></p>
-                        <p>11:00am - 1:00pm</p>
-                        <p>(Monday, Wednesday, Thursday)</p>
-                    </div>
+                <div class="time">
+                    <p><span>Monitoring Visit:</span></p>
+                    <p>8:30am - 4:30pm</p>
+                    <p>(Monday-Thursday)</p>
                 </div>
-                <p><span>Coordinators assigned to your study will be available after 2:00 p.m.</span></p>
-                <a href="#" class="btn">Download Monitor Guidelines</a>
+                <div class="vseparator"></div>
+                <div class="time">
+                    <p><span>Medical Director:</span></p>
+                    <p>11:00am - 1:00pm</p>
+                    <p>(Monday, Wednesday, Thursday)</p>
+                </div>
             </div>
+            <p><span>Coordinators assigned to your study will be available after 2:00 p.m.</span></p>
+            <a href="#" class="btn">Download Monitor Guidelines</a>
         </div>
     </div>
 </section>
@@ -184,6 +179,8 @@
         </div>
     </div>
 </section>
+
+<?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
 

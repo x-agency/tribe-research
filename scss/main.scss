@@ -16,6 +16,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    padding: 0;
 }
 
 .st0 {
@@ -695,6 +696,167 @@ body {
 }
 
 // **Sponsors Page Styles
+
+.page-template-sponsors {
+
+    .hero-overlap {
+        
+        .content {
+
+            .text {
+                align-self: center;
+            }
+        }
+    }
+}
+
+.explore {
+
+    .row:nth-child(2) {
+        background: #f3f3f3;
+        display: flex;
+        padding-top: 3em;
+        font-family: 'poppins';
+
+        .title {
+            font-size: calc(max(25px, min(3vw, 30px)));
+            font-family: 'poppins';
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            padding-left: 1.25em;
+            list-style: circle;
+            color: $purple;
+            font-size: calc(max(25px, min(3vw, 30px)));
+
+            li {
+                margin-bottom: 0.5em; 
+
+                span {
+                    color: $blue;
+                    font-size: calc(max(20px, min(3vw, 25px)));
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+
+        .btn {
+            margin: 0 auto -1.5em;
+        }
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 110ch;
+        margin: 7em auto 3em;
+        position: relative;
+
+        p {
+            font-size: calc(max(20px, min(3vw, 25px)));
+        }
+
+        .author {
+            font-size: calc(max(25px, min(3vw, 30px)));
+            font-family: 'poppins';
+            color: $purple;
+            margin: 1em 0 0;
+        }
+
+        .source {
+            font-size: calc(max(12px, min(3vw, 16px)));
+            font-family: 'poppins';
+            font-style: italic;
+        }
+
+        .quote {
+            font-family: 'poppins';
+            font-size: calc(max(125px, min(12.5vw, 235px)));
+            position: absolute;
+            top: 0.4em;
+            left: -0.325em;
+            display: inline-block;
+            color: $blue;
+        }
+    }
+}
+
+.monitor {
+    .section-hero {
+        position: relative;
+
+        .monitor-text {
+            position: absolute;
+            top: 50%;
+            left: 17.5%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .container {
+        max-width: 970px;
+        
+        p {
+            margin-bottom: 5em;
+        }
+
+        .line {
+            margin: -9% auto 1em;
+            height: 185px;
+        }
+
+        ul {
+            //https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+            list-style: none;
+            counter-reset: number;
+            position: relative;
+            
+
+            li {
+                @include body-font;
+                font-size: calc(max(12px, min(3vw, 16px)));
+                position: relative;
+                margin-bottom: 5em;
+
+                span {
+                    color: $blue;
+                    font-size: calc(max(20px, min(3vw, 25px)));
+                    font-family: 'poppins';
+                    display: block;
+                }
+
+                &::before {
+                    counter-increment: number;
+                    content: counter(number) ".";
+                    background: #fcfaee;
+                    color: $purple;
+                    border-radius: 50%;
+                    font-size: 33px;
+                    font-family: 'poppins';
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: -2.25em;
+                    top: -0.25em;
+                }
+            }
+        }
+    }
+
+    .daily-schedule {
+        background: #f3f3f3;
+
+        p {
+            margin-bottom: 0.5em;
+        }
+    }
+}
 
 // **Volunteers Page Styles
 
