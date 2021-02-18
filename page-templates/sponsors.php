@@ -25,27 +25,27 @@
             <h2>Explore</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <div class="btn-alt">
+                <div class="filter-btn">
                     <a href="#our-site">
                         <p>Our Site</p>
                     </a>
                 </div>
-                <div class="btn-alt">
+                <div class="filter-btn">
                     <a href="#monitor-guidelines">
                         <p>Monitor Guidelines</p>
                     </a>
                 </div>
-                <div class="btn-alt">
+                <div class="filter-btn">
                     <a href="#daily-schedule">
                         <p>Daily Schedule</p>
                     </a>
                 </div>
-                <div class="btn-alt">
+                <div class="filter-btn">
                     <a href="#our-area">
                         <p>Our Area</p>
                     </a>
                 </div>
-                <div class="btn-alt">
+                <div class="filter-btn">
                     <a href="#hotels-restaurants">
                         <p>Restaurants/Hotels</p>
                     </a>
@@ -56,14 +56,14 @@
     <div class="row">
         <div class="anchor" id="our-site"></div>
         <p class="title offset-lg-1">At our site, we offer:</p>
-        <ul class="col-lg-5 offset-lg-1">
+        <ul class="col-xl-5 offset-xl-1 mb-0">
             <li><span>Easy access to a major airport</span></li>
             <li><span>Designated monitoring space with private space available at your request</span></li>
             <li><span>Telephone for monitor use</span></li>
             <li><span>High speed wireless DSL</span></li>
             <li><span>High volume copier</span></li>
         </ul>
-        <ul class="col-lg-4">
+        <ul class="col-xl-4">
             <li><span>Shredder</span></li>
             <li><span>Fax machine</span></li>
             <li><span>On site storage of all documents</span></li>
