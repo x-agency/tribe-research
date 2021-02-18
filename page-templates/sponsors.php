@@ -102,7 +102,7 @@
         </div>
         <div class="row daily-schedule">
             <div class="anchor" id="daily-schedule"></div>
-            <h2></h2>
+            <h2>Daily Schedule</h2>
             <div>
                 <div class="time">
                     <p><span>Monitoring Visit:</span></p>
@@ -130,7 +130,7 @@
             <div>
                 <h2 class="alt">Our Area</h2>
                 <p>We would like to share some information to help you enjoy your stay in the area. Our site is easily accessible from Greer or Greenville. If you find a favorite hotel or restaurant, please let us know so that we can share the information with other CRA’s working at our site. We hope you find this information helpful and will love the area as much as we do!</p>
-                <a href="#" class="link arrow">Directions</a>
+                <a href="#" class="simple-link arrow">Directions<?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
             </div>
         </div>
     </div>
@@ -142,11 +142,11 @@
                     <div class="filter">
                         <div class="toggle-container"><div class="filter-toggle"></div></div>
                         <div class="filter-btn">
-                            <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
+                            <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
                             <p>Hotels</p>
                         </div>
                         <div class="filter-btn">
-                            <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
+                            <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
                             <p>Restaurants</p>
                         </div>
                     </div>
@@ -154,22 +154,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-3 offset-lg-3">
                 <h2>I-85/Pelham Road Area</h2>
                 <?php for($i = 0; $i < 8; $i++) : ?>
                     <div class="area">
-                        <a href="#" class="link arrow">Directions</a>
+                        <a href="#" class="simple-link">Hampton Inn & Suites Downtown Greenville, Riverplace <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                         <p class="road">5009 Pelham Road</p>
                         <p class="city">Greenville, SC 29615</p>
                         <p class="number">(864) 297-5353</p>
                     </div>
                 <?php endfor; ?> 
             </div>
-            <div class="col-lg-6">
-                <h2>I-85/Pelham Road Area</h2>
+            <div class="col-lg-3 offset-lg-1">
+                <h2>Downtown Greenville Area</h2>
                 <?php for($i = 0; $i < 4; $i++) : ?>
                     <div class="area">
-                        <a href="#" class="link arrow">Directions</a>
+                        <a href="#" class="simple-link">Directions <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                         <p class="road">5009 Pelham Road</p>
                         <p class="city">Greenville, SC 29615</p>
                         <p class="number">(864) 297-5353</p>
