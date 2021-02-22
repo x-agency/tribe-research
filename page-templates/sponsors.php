@@ -141,11 +141,11 @@
                 <h2>Search Area By:</h2>
                     <div class="filter">
                         <div class="toggle-container"><div class="filter-toggle"></div></div>
-                        <div class="filter-btn">
+                        <div class="filter-btn hotels">
                             <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
                             <p>Hotels</p>
                         </div>
-                        <div class="filter-btn">
+                        <div class="filter-btn restaurants">
                             <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
                             <p>Restaurants</p>
                         </div>
@@ -154,7 +154,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 offset-lg-3">
+            <div class="col-lg-3 offset-lg-3 hotels">
                 <h2>I-85/Pelham Road Area</h2>
                 <?php for($i = 0; $i < 8; $i++) : ?>
                     <div class="area">
@@ -165,7 +165,7 @@
                     </div>
                 <?php endfor; ?> 
             </div>
-            <div class="col-lg-3 offset-lg-1">
+            <div class="col-lg-3 offset-lg-1 restaurants">
                 <h2>Downtown Greenville Area</h2>
                 <?php for($i = 0; $i < 4; $i++) : ?>
                     <div class="area">

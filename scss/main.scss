@@ -460,6 +460,7 @@ body {
     left: 10em;
     background: white;
     padding: 5em;
+    box-shadow: 0 0 20px 0 #0000001f;
 
     @include respond-below(xl) {
         position: relative;
@@ -617,9 +618,10 @@ body {
                     margin: 0 0 -1px 0 !important; /* Eat the top of next Item's border*/
                 }
 
-                p, svg path {
+                p, svg * {
                     color: white;
                     fill: white;
+                    stroke: white;
                 }
             }
 
@@ -980,8 +982,21 @@ body {
 }
 
 .our-area {
+    
     .foreground {
         min-height: unset;
+        margin-top: -427px;
+        position: relative;
+        margin-bottom: 10em;
+
+        @media (max-width: 1199px) {
+            margin: 0 auto;
+            box-shadow: none;
+
+            .alt::after {
+                display: none;
+            }
+        }
     }
 
     #Icons {
@@ -1002,6 +1017,22 @@ body {
         &::after {
 
         }
+    }
+
+    div:not(.filter-btn).hotels, div:not(.filter-btn).restaurants {
+        transition: all 0.6s ease;
+    }
+
+    div:not(.filter-btn).hotels.active, div:not(.filter-btn).restaurants.active {
+        margin: 0 auto;
+    }
+
+    div:not(.filter-btn).hotels.inactive, div:not(.filter-btn).restaurants.inactive {
+        opacity: 0;
+        pointer-events: none;
+        width: 0px;
+        padding: 0;
+        margin: 0;
     }
 
     .area {
