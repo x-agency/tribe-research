@@ -43,7 +43,11 @@ $(document).ready(function () {
     });
 
     $('.filter-btn').click(function() {
-        $(this).toggleClass('active');
+        if ( $(this).hasClass('hotels') ) {
+            $('.hotels').toggleClass('active');
+        } else if ( $(this).hasClass('restaurants') ) {
+            $('.restaurants').toggleClass('active');
+        }
     });
 
 });
