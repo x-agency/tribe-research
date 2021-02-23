@@ -25,31 +25,31 @@
             <h2>Explore</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <div class="filter-btn">
-                    <a href="#our-site">
+                <a class="simple-link" href="#our-site">
+                    <div class="btn-alt">
                         <p>Our Site</p>
-                    </a>
-                </div>
-                <div class="filter-btn">
-                    <a href="#monitor-guidelines">
+                    </div>
+                </a>
+                <a class="simple-link" href="#monitor-guidelines">
+                    <div class="btn-alt">
                         <p>Monitor Guidelines</p>
-                    </a>
-                </div>
-                <div class="filter-btn">
-                    <a href="#daily-schedule">
+                    </div>
+                </a>
+                <a class="simple-link" href="#daily-schedule">
+                    <div class="btn-alt">
                         <p>Daily Schedule</p>
-                    </a>
-                </div>
-                <div class="filter-btn">
-                    <a href="#our-area">
+                    </div>
+                </a>
+                <a class="simple-link" href="#our-area">
+                    <div class="btn-alt">
                         <p>Our Area</p>
-                    </a>
-                </div>
-                <div class="filter-btn">
-                    <a href="#hotels-restaurants">
+                    </div>
+                </a>
+                <a class="simple-link" href="#hotels-restaurants">
+                    <div class="btn-alt">
                         <p>Restaurants/Hotels</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -141,11 +141,11 @@
                 <h2>Search Area By:</h2>
                     <div class="filter">
                         <div class="toggle-container"><div class="filter-toggle"></div></div>
-                        <div class="filter-btn hotels">
+                        <div class="filter-btn hotels active">
                             <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
                             <p>Hotels</p>
                         </div>
-                        <div class="filter-btn restaurants">
+                        <div class="filter-btn restaurants active">
                             <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
                             <p>Restaurants</p>
                         </div>
@@ -154,7 +154,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 offset-lg-3 hotels">
+            <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
                 <?php for($i = 0; $i < 8; $i++) : ?>
                     <div class="area">
@@ -165,7 +165,7 @@
                     </div>
                 <?php endfor; ?> 
             </div>
-            <div class="col-lg-3 offset-lg-1 restaurants">
+            <div class="col-lg-3 offset-lg-1 restaurants active">
                 <h2>Downtown Greenville Area</h2>
                 <?php for($i = 0; $i < 4; $i++) : ?>
                     <div class="area">
