@@ -41,7 +41,7 @@
                 <h2 class="alt">Reasons for Research</h2>
                 <p>Clinical trials are designed to advance medical science and the improve quality of life for so many people. But no part of a clinical trial is as vital to its success as participating volunteers. Without them, new medical breakthroughs simply would not occur.</p>
                 <p>Interested in learning more? Watch our video.</p>
-                <a href="#" class="btn">Watch Our Video</a>
+                <a href="#" class="btn purple">Watch Our Video</a>
             </div>
         </div>
     </div>
@@ -70,21 +70,59 @@
     <div class="row">
         <div class="anchor" id="our-site"></div>
         <p class="title offset-lg-1">At our site, we offer:</p>
-        <ul class="col-xl-5 offset-xl-1 mb-0">
-            <li><span>Easy access to a major airport</span></li>
-            <li><span>Designated monitoring space with private space available at your request</span></li>
-            <li><span>Telephone for monitor use</span></li>
-            <li><span>High speed wireless DSL</span></li>
-            <li><span>High volume copier</span></li>
-        </ul>
-        <ul class="col-xl-4">
-            <li><span>Shredder</span></li>
-            <li><span>Fax machine</span></li>
-            <li><span>On site storage of all documents</span></li>
-            <li><span>Low query rates with rapid resolution</span></li>
-            <li><span>Full time Data/Quality Assurance Coordinator</span></li>
-        </ul>
-        <a href="" class="btn purple">Take Our Virtual Tour</a>
+        <div class="col-xl-5 offset-xl-1 mb-0">
+            <div class="faq-item">
+                <p class="title">What is a clinical trial?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why are clinical trials done?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why should I participate in a clinical trial?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Are clinical trials safe?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Who can participate in a clinical trial?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">What can volunteers expect if they choose to participate?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Will it cost me anything?</p>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="faq-item">
+                <p class="title">Do I have to travel?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">What is informed consent?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Is my information private?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Can someone volunteer for more than one study?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">How long does a study last?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why should minorities and women participate in clinical trials?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Do I have to report my compensation as income?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why do you need my social security number?</p>
+            </div>
+        </div>
     </div>
     <div class="testimonial">
         <p class="quote">“</p>
