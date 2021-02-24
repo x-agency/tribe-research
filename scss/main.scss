@@ -813,46 +813,46 @@ svg * {
             margin: 0 auto -1.5em;
         }
     }
+}
 
-    .testimonial {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 110ch;
-        margin: 7em auto 3em;
-        position: relative;
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 110ch;
+    margin: 7em auto 3em;
+    position: relative;
 
-        p {
-            font-size: calc(max(20px, min(3vw, 25px)));
-        }
+    p {
+        font-size: calc(max(20px, min(3vw, 25px)));
+    }
 
-        .author {
-            font-size: calc(max(25px, min(3vw, 30px)));
-            font-family: 'poppins';
-            color: $purple;
-            margin: 1em 0 0;
-        }
+    .author {
+        font-size: calc(max(25px, min(3vw, 30px)));
+        font-family: 'poppins';
+        color: $purple;
+        margin: 1em 0 0;
+    }
 
-        .source {
-            font-size: calc(max(12px, min(3vw, 16px)));
-            font-family: 'poppins';
-            font-style: italic;
-        }
+    .source {
+        font-size: calc(max(12px, min(3vw, 16px)));
+        font-family: 'poppins';
+        font-style: italic;
+    }
 
-        .quote {
-            font-family: 'poppins';
-            font-size: calc(max(125px, min(12.5vw, 235px)));
-            position: absolute;
-            top: 0.4em;
-            left: -0.325em;
-            display: inline-block;
-            color: $blue;
-        }
+    .quote {
+        font-family: 'poppins';
+        font-size: calc(max(125px, min(12.5vw, 235px)));
+        position: absolute;
+        top: 0.4em;
+        left: -0.325em;
+        display: inline-block;
+        color: $blue;
+    }
 
-        @media (max-width: 1200px) {
-            .quote, p:nth-child(2) {
-                margin-left: 3rem;
-            }
+    @media (max-width: 1200px) {
+        .quote, p:nth-child(2) {
+            margin-left: 3rem;
         }
     }
 }
@@ -1038,10 +1038,6 @@ svg * {
         @media (max-width: 1199px) {
             text-align: center;
         }
-
-        &::after {
-
-        }
     }
 
     div:not(.filter-btn).hotels, div:not(.filter-btn).restaurants {
@@ -1088,5 +1084,228 @@ svg * {
 }
 
 // **Volunteers Page Styles
+.page-template-volunteers {
+    .hero-overlap {
+
+        @media (max-width: 1199px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+
+        .text {
+            img {
+                margin-bottom: 10rem;
+                width: calc(max(300px, min(50vw, 774px)));
+            }
+        }
+    }
+}
+
+.benefits {
+    .foreground {
+        min-height: unset;
+        margin-top: -44em;
+        position: relative;
+        margin-bottom: 20em;
+
+        @media (max-width: 1199px) {
+            margin: 0 auto 5rem;
+            box-shadow: none;
+
+            .alt::after {
+                display: none;
+            }
+        }
+
+        h2.alt {
+            color: $purple;
+
+            &::after {
+                left: 11em;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: -1.5em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.benefit {
+    text-align: center;
+
+    svg {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 2em;
+    }
+
+    p {
+        font-size: calc(max(14px, min(1vw, 18px)));
+        color: #2a2a2a;
+        max-width: 35ch;
+        margin: 0 auto;
+    }
+}
+
+p.title {
+    color: $blue;
+    font-size: calc(max(16px, min(1.5vw, 25px)));
+    font-weight: bold;
+    font-family: 'poppins';
+}
+
+.gray-container {
+    background: #f3f3f3;
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    h2 {
+        color: #616060;
+        font-family: 'poppins';
+        font-size: calc(max(30px, min(3vw, 40px)));
+        margin-bottom: 1em;
+    }
+}
+
+.faq-item {
+    overflow: hidden;
+    position: relative;
+    max-height: 3em; /*Will be overwritten with javascript but here as a failsafe*/
+    transition: all 0.6s;
+
+    p {
+        margin-left: 3rem;
+    }
+
+    .title {
+        position: relative;
+    }
+
+    .title::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: $purple;
+        transition: all 0.6s;
+        position: absolute;
+        left: -3rem;
+        top: 0.25em;
+        clip-path: polygon(
+                        33% 0%, 66% 0%, 66% 33%, 100% 33%, 
+                        100% 66%, 66% 66%, 66% 100%, 33% 100%,
+                        33% 66%, 0% 66%, 0% 33%, 33% 33%
+                    );
+    }
+
+    &.open {
+        max-height: 20em; /*Will be overwritten with javascript but here as a failsafe*/
+        
+        .title::before {
+            /* Keeping the same number of points allows the path to transition between states*/
+            clip-path: polygon(
+                33% 33%, 66% 33%, 66% 33%, 100% 33%, 
+                100% 66%, 66% 66%, 66% 66%, 33% 66%,
+                33% 66%, 0% 66%, 0% 33%, 33% 33%
+            );
+        }
+    }
+}
+
+.faq {
+    .testimonial {
+        .quote {
+            left: -0.375em;
+        }
+        .source {
+            white-space: nowrap;
+        }
+
+        img {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .author-container {
+            width: 624px;
+        }
+
+        @media (max-width: 1200px) {
+            .author-container {
+                text-align: center;
+                width: unset;
+
+                img {
+                    float: unset;
+                }
+
+                .source {
+                    white-space: unset;
+                }
+            }
+        }
+    }
+}
+
+.resources {
+    .container-fluid {
+        background: $purple;
+
+        .row {
+            padding: 5rem 0;
+            align-items: center;
+        }
+        
+        h2 {
+            color: $blue;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: calc(max(25px, min(3vw, 40px)));
+            font-weight: bold;
+            letter-spacing: -0.04em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .cooking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0;
+
+        .content {
+            display: flex;
+            max-width: 1137px;
+            margin: 3rem 0;
+
+            @media (max-width: 1199px) {
+                display: block;
+                text-align: center;
+            }
+
+            p {
+                max-width: 80ch;
+            }
+        }
+
+        img {
+            width: calc(max(300px, min(90vw, 1137px)));
+        }
+    
+        .btn {
+            font-size: calc(max(14px, min(1vw, 18px)));
+            color: black;
+            flex: 0 0 auto;
+            height: 3em;
+            margin-left: 2em;
+        }
+    }
+}
 
 // **Contact Page Styles

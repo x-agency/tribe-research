@@ -19,7 +19,7 @@
     </div>
 </section>
 
-<section class="trial container">
+<section class="trial container difference mb-5">
     <div class="row">
         <div class="col-12 mb-3"><h2 class="title">What is a Clinical Trial?</h1></div>
         <div class="col-lg-6">
@@ -46,18 +46,18 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-6">
+        <div class="row justify-content-center justify-content-xl-space-between mb-5">
+            <div class="col-xl-4 col-lg-6 benefit">
                 <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-1.svg'); ?>
                 <p class="title">First Access</p>
                 <p>Participating in a clinical trial may give you access to experimental, cutting-edge treatment options. Plus, you will have a dedicated medical team that carefully monitors you throughout the trial.</p>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 benefit">
                 <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-2.svg'); ?>
                 <p class="title">Hope for Others</p>
                 <p>When you participate in a clinical trial, you are contributing to research that could bring new treatments one step closer to reaching many patients across the world. The trial may not only help advance the science for your disease or illness, but could also make progress for related areas of science.</p>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 benefit">
                 <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-3.svg'); ?>
                 <p class="title">Better Treatment</p>
                 <p>Clinical research can systematically test to determine which treatments are more effective, improving the safety and quality of healthcare.</p>
@@ -67,11 +67,12 @@
 </section>
 
 <section class="faq container">
-    <div class="row">
+    <div class="row gray-container">
         <div class="anchor" id="our-site"></div>
-        <p class="title offset-lg-1">At our site, we offer:</p>
+        <h2 class="offset-lg-1">Frequently Asked Questions:</h2>
         <div class="col-xl-5 offset-xl-1 mb-0">
             <div class="faq-item">
+                <div class="faq-expand"></div>
                 <p class="title">What is a clinical trial?</p>
                 <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
             </div>
@@ -127,49 +128,47 @@
     <div class="testimonial">
         <p class="quote">“</p>
         <p>Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
-        <div class="author">
+        <div class="author-container">
             <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
-            <p class="name">Dr. Ronald K. Mayfield</p>
-            <p class="position">Medical Director and an investigator at Tribe Clinical Research</p>
+            <p class="author">Dr. Ronald K. Mayfield</p>
+            <p class="source">Medical Director and an investigator at Tribe Clinical Research</p>
         </div>
     </div>
 </section>
 
 <section class="resources">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row justify-content-xl-space-between justify-content-center">
             <div class="col-12">
                 <h2>Resources</h2>
             </div>
-            <div class="col-xl-2 col-lg-6">
+            <div class="col-xl-2 col-lg-6 offset-xl-1 text-center mb-xl-0 mb-5">
                 <img src="/wp-content/themes/tribe-research/img/volunteers-logo-1.png">
             </div>
-            <div class="col-xl-2 col-lg-6">
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
                 <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
             </div>
-            <div class="col-xl-2 col-lg-6">
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
                 <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
             </div>
-            <div class="col-xl-2 col-lg-6">
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
                 <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
             </div>
-            <div class="col-xl-2 col-lg-6">
+            <div class="col-xl-2 col-lg-6 text-center">
                 <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12"><img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc"></div>
-            <div class="col-xl-7">
-                <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
-            </div>
-            <div class="col-xl-5">
-                <a href="" class="btn">Visit Youtube Channel</a>
-            </div>
+    <div class="cooking">
+        <img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc">
+        <div class="content">
+            <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
+            <a href="" class="btn">Visit Youtube Channel</a>
         </div>
     </div>
 </section>
+
+<?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
 
