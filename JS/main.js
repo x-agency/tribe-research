@@ -50,6 +50,23 @@ $(document).ready(function () {
         }
     });
 
+    //volunteers page faq accordion
+    $('.faq-item').each( function() {
+        faqItemHeightClosed = $(this).children('.title').height();
+        faqItemHeightOpen = $(this).height();
+        $(this).attr("data-closed", faqItemHeightClosed);
+        $(this).attr("data-open", faqItemHeightOpen);
+        $(this).css("max-height", "calc( 1em + " + faqItemHeightClosed + "px");
+    });
+
+    //open the item
+    $('.faq-item').click(function() {
+        if ( $(this).hasClass('open') ) { //close the item
+            $(this).css("max-height", "calc( 1em + " + $(this).attr("data-closed") + "px").removeClass('open');
+        } else {
+            $(this).css("max-height", "calc( 1em + " + $(this).attr("data-open") + "px").addClass('open');
+        }
+    });
 });
 
 //this is immediately invoked, separate from the document ready status

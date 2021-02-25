@@ -8,6 +8,168 @@
     ?>
 <?php get_header(); ?>
 
+<section class="hero hero-overlap">
+    <img class="bg" src="/wp-content/themes/tribe-research/img/volunteers-hero.jpg">    
+    <div class="content">
+        <div class="text">
+            <img src="/wp-content/themes/tribe-research/img/volunteers-title.png"/>
+            <p>If you or a family member is interested in participating in a current clinical trial or if you would like more information about future trials, please contact us to speak with one of our team members.</p>
+        </div>
+        <img src="/wp-content/themes/tribe-research/img/volunteers-1.jpg" alt="Female doctor with hand on shoulder of female patient.">  
+    </div>
+</section>
+
+<section class="trial container difference mb-5">
+    <div class="row">
+        <div class="col-12 mb-3"><h2 class="title">What is a Clinical Trial?</h1></div>
+        <div class="col-lg-6">
+            <p>A <a href="/clinical-trials" class="simple-link">clinical trial</a> is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            <p>Many clinical trials are done to see if a new drug or device is safe and effective for people to use. Clinical trials are also done for other reasons. Some compare existing treatments to determine which is better. The current, approved treatments are called the “standard treatments.” Sometimes clinical trials are used to study different ways to use the standard treatments so they will be more effective, easier to use, and/or decrease side effects. Sometimes, studies are done to learn how to best use the treatment in a different population, such as children, in whom the treatment was not previously tested.</p>
+        </div>
+        <div class="col-lg-6">
+            <p>Participants in clinical trials can play a more active role in their own health care, gain access to new research treatments before they are widely available, and help others by contributing to medical research. It is no exaggeration to say that a large share of the credit for current treatment successes belongs to the people who participated in the clinical trials conducted over the last decade.</p>        
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="section-hero">
+        <div class="background"><img src="/wp-content/themes/tribe-research/img/volunteers-2.jpg"></div>
+        <div class="foreground">
+            <div>
+                <h2>The Benefits:</h2>
+                <h2 class="alt">Reasons for Research</h2>
+                <p>Clinical trials are designed to advance medical science and the improve quality of life for so many people. But no part of a clinical trial is as vital to its success as participating volunteers. Without them, new medical breakthroughs simply would not occur.</p>
+                <p>Interested in learning more? Watch our video.</p>
+                <a href="#" class="btn purple">Watch Our Video</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center justify-content-xl-space-between mb-5">
+            <div class="col-xl-4 col-lg-6 benefit">
+                <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-1.svg'); ?>
+                <p class="title">First Access</p>
+                <p>Participating in a clinical trial may give you access to experimental, cutting-edge treatment options. Plus, you will have a dedicated medical team that carefully monitors you throughout the trial.</p>
+            </div>
+            <div class="col-xl-4 col-lg-6 benefit">
+                <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-2.svg'); ?>
+                <p class="title">Hope for Others</p>
+                <p>When you participate in a clinical trial, you are contributing to research that could bring new treatments one step closer to reaching many patients across the world. The trial may not only help advance the science for your disease or illness, but could also make progress for related areas of science.</p>
+            </div>
+            <div class="col-xl-4 col-lg-6 benefit">
+                <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-3.svg'); ?>
+                <p class="title">Better Treatment</p>
+                <p>Clinical research can systematically test to determine which treatments are more effective, improving the safety and quality of healthcare.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq container">
+    <div class="row gray-container">
+        <div class="anchor" id="our-site"></div>
+        <h2 class="offset-lg-1">Frequently Asked Questions:</h2>
+        <div class="col-xl-5 offset-xl-1 mb-0">
+            <div class="faq-item">
+                <div class="faq-expand"></div>
+                <p class="title">What is a clinical trial?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why are clinical trials done?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why should I participate in a clinical trial?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Are clinical trials safe?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Who can participate in a clinical trial?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">What can volunteers expect if they choose to participate?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Will it cost me anything?</p>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="faq-item">
+                <p class="title">Do I have to travel?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">What is informed consent?</p>
+                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Is my information private?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Can someone volunteer for more than one study?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">How long does a study last?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why should minorities and women participate in clinical trials?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Do I have to report my compensation as income?</p>
+            </div>
+            <div class="faq-item">
+                <p class="title">Why do you need my social security number?</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <p class="quote">“</p>
+        <p>Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
+        <div class="author-container">
+            <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
+            <p class="author">Dr. Ronald K. Mayfield</p>
+            <p class="source">Medical Director and an investigator at Tribe Clinical Research</p>
+        </div>
+    </div>
+</section>
+
+<section class="resources">
+    <div class="container-fluid">
+        <div class="row justify-content-xl-space-between justify-content-center">
+            <div class="col-12">
+                <h2>Resources</h2>
+            </div>
+            <div class="col-xl-2 col-lg-6 offset-xl-1 text-center mb-xl-0 mb-5">
+                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-1.png">
+            </div>
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
+            </div>
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
+            </div>
+            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
+            </div>
+            <div class="col-xl-2 col-lg-6 text-center">
+                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
+            </div>
+        </div>
+    </div>
+    <div class="cooking">
+        <img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc">
+        <div class="content">
+            <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
+            <a href="" class="btn">Visit Youtube Channel</a>
+        </div>
+    </div>
+</section>
+
+<?php get_template_part('template-parts/cta') ?>
+
 <?php get_footer(); ?>
 
 
