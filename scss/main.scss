@@ -453,6 +453,12 @@ body {
     position: relative;
 }
 
+@include respond-above(xl) {
+    .team {
+        padding-bottom: calc(min(20vw, 280px));
+    }
+}
+
 .background {
     img {
         min-height: 200px;
@@ -478,6 +484,8 @@ body {
         padding: 2.5em 0;
         margin: 0 auto;
         text-align: center;
+        box-shadow: none;
+        min-height: unset;
     }
 
     h2 {
@@ -500,7 +508,7 @@ body {
                 bottom: 0.25em;
                 left: 9em;
 
-                @include respond-below(lg) {
+                @include respond-below(xl) {
                     display: none;
                 }
             }
@@ -701,6 +709,23 @@ svg * {
     .row {
         flex-wrap: wrap;
         justify-content: center;
+        transition: all 0.6s ease;
+
+        opacity: 0;
+        pointer-events: none;
+        width: 0px;
+        max-height: 0px;
+        padding: 0;
+        margin: 0;
+        transition: all 0.6s;
+
+        &.active {
+            margin: 0 auto;
+            pointer-events: auto;
+            opacity: 1;
+            width: auto;
+            max-height: unset;
+        }
     }
     
     h2 {

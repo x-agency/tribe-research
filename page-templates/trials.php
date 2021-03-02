@@ -23,27 +23,27 @@
 
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <div class="filter-btn">
+                <div class="filter-btn active" id="pediatrics">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
                     <p>Pediatrics</p>
                 </div>
                 
-                <div class="filter-btn">
+                <div class="filter-btn" id="diabetes">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials2.svg'); ?>
                     <p>Diabetes</p>
                 </div>
 
-                <div class="filter-btn">
+                <div class="filter-btn" id="cardiac">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials3.svg'); ?>
                     <p>Cardiac</p>
                 </div>
 
-                <div class="filter-btn">
+                <div class="filter-btn" id="pulmonary">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials4.svg'); ?>
                     <p>Pulmonary</p>
                 </div>
 
-                <div class="filter-btn">
+                <div class="filter-btn" id="digestive">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials5.svg'); ?>
                     <p>Digestive</p>
                 </div>
@@ -55,7 +55,7 @@
 <section class="studies container">
 <?php 
     for ($i = 0; $i < 5; $i++) : ?>
-        <div class="row">
+        <div class="row pediatrics active">
             <div class="col-12 p-0">
                 <h2>Pediatric:</h2>
             </div>

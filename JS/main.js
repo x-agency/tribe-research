@@ -42,6 +42,27 @@ $(document).ready(function () {
         $('.filter-toggle').toggleClass('open');
     });
 
+    // trials page set max height
+    $('.studies .row').each(function() {
+        maxHeight = $('.studies .row').height();
+        $(this).attr("data-open", maxHeight);
+    });
+
+    //trials page filter {
+    $('.filter-btn').click(function() {
+        id = $(this).attr("id");
+
+        $(this).toggleClass('active');
+        if ( $('.studies .row.' + id).hasClass('active') ) {
+            $('.studies .row.' + id).removeClass('active')
+        } else {
+            $('.studies .row.' + id).addClass('active').css("max-height", $('.studies .row.' + id).attr("data-open") + "px");
+        }
+    });
+
+    
+
+    // sponsors page filter
     $('.filter-btn').click(function() {
         if ( $(this).hasClass('hotels') ) {
             $('.hotels').toggleClass('active');
