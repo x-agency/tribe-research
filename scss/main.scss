@@ -55,7 +55,7 @@ body {
 }
 
 #page {
-    max-width: 1980px;
+    max-width: 1920px;
     margin: 0 auto;
     background-color: white;
 }
@@ -1170,6 +1170,10 @@ p.title {
     font-size: calc(max(16px, min(1.5vw, 25px)));
     font-weight: bold;
     font-family: 'poppins';
+
+    &.purple {
+        color: $purple;
+    }
 }
 
 .gray-container {
@@ -1496,6 +1500,93 @@ p.title {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+// **Footer Styles
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 10.625vw 7.5rem;
+
+    img {
+        max-height: 85px;
+        max-width: 180px;
+    }
+
+    .menu {
+        display: flex;
+        width: 60%;
+        justify-content: space-evenly;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background: #cecece;
+                position: absolute;
+                left: -1rem;
+            }
+
+            &:nth-child(2)::before {
+                height: 4.5em;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: right;
+        flex-direction: column;
+        display: flex;
+
+        a {
+            margin-bottom: auto;
+        }
+    }
+
+    p, .title, a {
+        font-family: 'open sans', sans-serif;
+        font-size: calc(max(12px, min(1.5vw, 16px)));
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 1400px) {
+        flex-direction: column;
+        padding: 1vw 7.5vw calc(min(10vw, 320px));
+
+        img {
+            margin: 0 auto;
+            width: calc(max(25vw, 130px));
+        }
+
+        .menu {
+            margin: 3rem auto;
+            flex-direction: column;
+            width: 100%;
+
+            > div {
+                flex-direction: column;
+                text-align: center;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            > div:nth-child(3) {
+                margin-top: 1rem;
+            }
+        }
+
+        .copyright {
+            text-align: center;
         }
     }
 }

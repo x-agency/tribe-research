@@ -5,6 +5,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond-below(xl) {
+            flex-direction: column;
+        }
+
         .block-1 {
             background-image: url(/wp-content/themes/tribe-research/img/cta-img-1.png);
             justify-content: flex-end;
@@ -17,6 +21,14 @@
         .cta-link {
             width: 47%;
             text-decoration: none;
+
+            @include respond-below(xl) {
+                width: 100%;
+
+                + .cta-link {
+                    margin-top: 3rem;
+                }
+            }
 
             @include respond-above(md) {
                 &:hover {
@@ -55,6 +67,10 @@
                 display: flex;
 
                 background-size: cover;
+
+                @include respond-below(xl) {
+                    justify-content: center;
+                }
 
                 .cta-text-wrapper {
 

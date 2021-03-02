@@ -18,15 +18,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php astra_content_bottom(); ?>
 	</div> <!-- ast-container -->
 	</div><!-- #content -->
-<?php 
-	astra_content_after();
-		
-	astra_footer_before();
-		
-	astra_footer();
-		
-	astra_footer_after(); 
-?>
+
+	<!-- Custom Footer Code -->
+	<footer>
+		<img src="/wp-content/themes/tribe-research/img/footer-logo.png" class="logo">
+		<div class="menu">
+			<div class="">
+				<a class="simple-link link-dark" href="/about">About Us</a>
+				<a class="simple-link link-dark" href="/clinical-trials">Clinical Trials</a>
+				<a class="simple-link link-dark" href="/volunteers">Volunteers</a>
+				<a class="simple-link link-dark" href="/sponsors">Sponsors</a>
+			</div>
+			<div class="">
+				<p class="simple-link link-dark">Contact</p>
+				<a href="/terms-of-service" class="simple-link">Terms of Service</a>
+				<a href="/privacy-policy" class="simple-link">Privacy Policy</a>
+			</div>
+			<div>
+				<p class="title purple">Get in Touch:</p>
+				<p><strong>Phone:</strong> <a class="simple-link link-dark" href="tel:864.334.0141">864.334.0141</a></p>
+				<p><strong>Fax:</strong> <a class="simple-link link-dark" href="fax:+18643340137">864.334.0137</a></p>
+				<p><strong>Email:</strong> <a class="simple-link link-dark" href="mailto:info@tribeclinicalresearch.com">info@tribeclinicalresearch.com</a></p>
+			</div>
+		</div>
+		<div class="copyright">
+			<a href="https://www.xagency.io" class="simple-link">Made by X</a>
+			<p class="title purple">©2020 Tribe Clinical Research.</p>
+			<p>All Rights Reserved.</p>
+		</div>
+	</footer>
+	<!-- Custom Footer Code -->
+
 	</div><!-- #page -->
 <?php 
 	astra_body_bottom();    
