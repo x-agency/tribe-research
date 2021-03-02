@@ -70,8 +70,8 @@ body {
 
 // Hero Section 
 .home-hero {
-
-    height: 100vh;
+    min-height: 100vh;
+    //height: 100vh;
     width: 100%;
 
     .hero-wrapper {
@@ -81,6 +81,7 @@ body {
         height: 95%;
         display: flex;
         align-items: flex-end;
+        padding-top: 105px;
 
         .hero-inner {
             @include respond-above(xxl) {
@@ -88,13 +89,14 @@ body {
             }
 
             width: 90%;
+            height: 100%;
 
             .title-wrapper {
                 padding: 0 0 0 20%;
 
                 h1 {
-                    font-size: 50px;
-                    line-height: 3.5rem;
+                    font-size: calc(max(25px, min(5vw, 50px)));
+                    line-height: 0.95em;
                     color: white;
                     font-weight: 700;
 
@@ -112,8 +114,8 @@ body {
                     color: $blue;
                     @include primary-font;
                     font-weight: 600;
-                    font-size: 24px;
-                    line-height: 2rem;
+                    font-size: calc(max(16px, min(5vw, 24px)));
+                    line-height: 1.15em;
                     width: 65%;
                     margin-top: 30px;
                 }
@@ -134,12 +136,12 @@ body {
                 p {
                     @include primary-font;
                     color: white;
-                    font-size: 20px;
+                    font-size: calc(max(14px, min(2.5vw, 20px)));
                     font-weight: 700;
 
                     &:last-child {
                         color: $purple;
-                        font-size: 30px;
+                        font-size: calc(max(17px, min(2.5vw, 30px)));
                     }
                 }
             }
