@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
 
     //trials page filter {
-    $('.filter-btn').click(function() {
+    $('.page-template-trials .filter-btn').click(function() {
         id = $(this).attr("id");
 
         $(this).toggleClass('active');
@@ -60,10 +60,8 @@ $(document).ready(function () {
         }
     });
 
-    
-
     // sponsors page filter
-    $('.filter-btn').click(function() {
+    $('.our-area .filter-btn').click(function() {
         if ( $(this).hasClass('hotels') ) {
             $('.hotels').toggleClass('active');
         } else if ( $(this).hasClass('restaurants') ) {
@@ -87,6 +85,11 @@ $(document).ready(function () {
         } else {
             $(this).css("max-height", "calc( 1em + " + $(this).attr("data-open") + "px").addClass('open');
         }
+    });
+
+    $('.page-template-contact label').click(function() {
+        $('.page-template-contact label').removeClass('checked');
+        $(this).addClass('checked');
     });
 });
 

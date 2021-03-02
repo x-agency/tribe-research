@@ -1494,9 +1494,15 @@ p.title {
 
         #frm_field_14_container {
             display: flex;
+            position: relative;
 
             .frm_opt_container {
                 display: flex;
+            }
+
+            .frm_error {
+                position: absolute;
+                top: 1rem;
             }
         }
     }
