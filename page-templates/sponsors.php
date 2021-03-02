@@ -139,16 +139,17 @@
             <div class="anchor" id="hotels-restaurants"></div>
             <div class="controls col-12 my-5">
                 <h2>Search Area By:</h2>
-                    <div class="filter">
-                        <div class="toggle-container"><div class="filter-toggle"></div></div>
-                        <div class="filter-btn hotels active">
-                            <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
-                            <p>Hotels</p>
-                        </div>
-                        <div class="filter-btn restaurants active">
-                            <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
-                            <p>Restaurants</p>
-                        </div>
+                <div class="filter">
+                    <div class="toggle-container">
+                        <div class="filter-toggle"></div>
+                    </div>
+                    <div class="filter-btn hotels active">
+                        <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
+                        <p>Hotels</p>
+                    </div>
+                    <div class="filter-btn restaurants active">
+                        <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
+                        <p>Restaurants</p>
                     </div>
                 </div>
             </div>
@@ -158,10 +159,10 @@
                 <h2>I-85/Pelham Road Area</h2>
                 <?php for($i = 0; $i < 8; $i++) : ?>
                     <div class="area">
-                        <a href="#" class="simple-link">Hampton Inn & Suites Downtown Greenville, Riverplace <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/34.8585984,-82.4180736/5009+Pelham+Rd,+Greenville,+SC+29615/@34.8505974,-82.4071212,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8858299ff4f848e1:0x5cd28410b572c913!2m2!1d-82.2570142!2d34.8584849" class="simple-link">Hampton Inn & Suites Downtown Greenville, Riverplace <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                         <p class="road">5009 Pelham Road</p>
                         <p class="city">Greenville, SC 29615</p>
-                        <p class="number">(864) 297-5353</p>
+                        <a class="number" href="tel:8642975353">(864) 297-5353</a>
                     </div>
                 <?php endfor; ?> 
             </div>
@@ -169,10 +170,10 @@
                 <h2>Downtown Greenville Area</h2>
                 <?php for($i = 0; $i < 4; $i++) : ?>
                     <div class="area">
-                        <a href="#" class="simple-link">Directions <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/34.8585984,-82.4180736/5009+Pelham+Rd,+Greenville,+SC+29615/@34.8505974,-82.4071212,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8858299ff4f848e1:0x5cd28410b572c913!2m2!1d-82.2570142!2d34.8584849" class="simple-link">Directions <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                         <p class="road">5009 Pelham Road</p>
                         <p class="city">Greenville, SC 29615</p>
-                        <p class="number">(864) 297-5353</p>
+                        <a class="number" href="tel:8642975353">(864) 297-5353</a>
                     </div>
                 <?php endfor; ?> 
             </div>
@@ -183,6 +184,3 @@
 <?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
-
-
-

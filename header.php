@@ -73,9 +73,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	  ?>
             </div>
             <div class="hamburger-menu " data-toggle="modal" data-target="#modalMenu">
-                <span class="line-1 line"></span>
-                <span class="line-2 line"></span>
-                <span class="line-3 line"></span>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
             </div>
         </nav>
 

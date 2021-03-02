@@ -52,12 +52,12 @@
                 <p class="title">First Access</p>
                 <p>Participating in a clinical trial may give you access to experimental, cutting-edge treatment options. Plus, you will have a dedicated medical team that carefully monitors you throughout the trial.</p>
             </div>
-            <div class="col-xl-4 col-lg-6 benefit">
+            <div class="col-xl-4 col-lg-6 benefit mt-5 mt-lg-0">
                 <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-2.svg'); ?>
                 <p class="title">Hope for Others</p>
                 <p>When you participate in a clinical trial, you are contributing to research that could bring new treatments one step closer to reaching many patients across the world. The trial may not only help advance the science for your disease or illness, but could also make progress for related areas of science.</p>
             </div>
-            <div class="col-xl-4 col-lg-6 benefit">
+            <div class="col-xl-4 col-lg-6 benefit mt-5 mt-xl-0">
                 <?php echo file_get_contents(__DIR__ . '/../img/volunteers-vector-3.svg'); ?>
                 <p class="title">Better Treatment</p>
                 <p>Clinical research can systematically test to determine which treatments are more effective, improving the safety and quality of healthcare.</p>

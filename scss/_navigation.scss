@@ -151,3 +151,148 @@
         }
     }
 }
+
+button.navbar-toggler {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    height: 100%;
+    width: 25px;
+    height: 40px;
+    margin-left: 15px;
+    display: none;
+
+    @include respond-below(lg) {
+        display: block;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        border: 1px solid $blue;
+        top: calc(50% - 31px);
+        left: calc(50% - 31px);
+        border-radius: 100%;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    > span {
+        width: 25px;
+        height: 3px;
+        right: 0;
+        background: $blue;
+        display: block;
+        position: absolute;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+
+        &.line-1 {
+            top: 11px;
+        }
+
+        &.line-2 {
+            top: 18px;
+            width: 75%;
+        }
+
+        &.line-3 {
+            top: 25px;
+            width: 75%;
+        }
+    }
+
+    &:hover span {
+
+        &.line-1, &.line-3 {
+            right: 50%;
+            width: 60%;
+            -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+        }
+
+        &.line-2 {
+            right: 0;
+            width: 100%;
+            background-color: $blue;
+        }
+    }
+
+    &.is-active {
+        transform: rotate(45deg);
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &:hover .line-1, .line-1 {
+            transform: translateY(7px);
+            right: 0;
+            width: 100%;
+        }
+
+        &:hover .line-2, .line-2 {
+            opacity: 0;
+        }
+
+        &:hover .line-3, .line-3 {
+            transform: translateY(-7px) rotate(90deg);
+            width: 100%;
+            right: 0;
+        }
+    }
+}
+
+#modalMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: $purple;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+
+        .modal-dialog {
+            pointer-events: auto;
+        }
+    }
+
+    .modal-dialog {
+        height: 65%;
+        pointer-events: none;
+
+        ul {
+            margin: 0;
+
+            .simple-link {
+                font-size: 18px;
+                line-height: 2em;
+            }
+        }
+    }
+}

@@ -19,6 +19,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div> <!-- ast-container -->
 	</div><!-- #content -->
 
+	<!-- nav modal -->
+	<div id="modalMenu" tabindex="-1" role="dialog" aria-labelledby="modalMenu">
+		<div class="modal-dialog" role="document">
+			<ul class="list-unstyled">
+				<li><a class="simple-link" href="/">Home</a></li>
+				<li><a class="simple-link" href="/about">About</a></li>
+				<li><a class="simple-link" href="/clinical-trials">Clinical Trials</a></li>
+				<li><a class="simple-link" href="/volunteers">Volunteers</a></li>
+				<li><a class="simple-link" href="/sponsors">Sponsors</a></li>
+				<li><a class="simple-link" href="/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<!-- Custom Footer Code -->
 	<footer>
 		<img src="/wp-content/themes/tribe-research/img/footer-logo.png" class="logo">

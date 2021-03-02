@@ -70,9 +70,8 @@ body {
 
 // Hero Section 
 .home-hero {
-    min-height: 100vh;
-    //height: 100vh;
     width: 100%;
+    margin-bottom: 10rem;
 
     .hero-wrapper {
         background-image: url(/wp-content/themes/tribe-research/img/home-hero.jpg);
@@ -201,7 +200,11 @@ body {
 .page-template-home {
     .line {
         height: 175px;
-        margin-top: -40px;
+        margin-top: 20px;
+
+        @media (min-width: 1900px) {
+            margin-top: -40px;;
+        }
     }
 }
 
@@ -362,7 +365,7 @@ body {
 
             img {
                 margin: 0;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
                 width: calc(max(300px, min(50vw, 605px)));
             }
         }
@@ -532,6 +535,12 @@ svg * {
 
     .hero {
         position: relative;
+
+        .bg {
+            min-height: 300px;
+            object-fit: cover;
+            object-position: 57%;
+        }
 
         .title {
             position: absolute;
@@ -796,7 +805,15 @@ svg * {
     .hero-overlap {
         
         .content {
-            margin: -14% auto 0;
+            @media (min-width: 399px) {
+                margin: -20% auto 0;
+            }
+            
+            @media (min-width: 1200px) {
+                margin: -14% auto 0;
+            }
+        
+
             .text {
                 align-self: center;
             }
@@ -1118,9 +1135,13 @@ svg * {
             font-size: calc(max(18px, min(2.5vw, 25px)));
         }
 
-        p {
+        p, .number {
             font-size: calc(max(12px, min(1vw, 18px)));
             line-height: 1em;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            display: block;
         }
 
     }
@@ -1184,8 +1205,8 @@ svg * {
     text-align: center;
 
     svg {
-        width: 145px;
-        height: 145px;
+        width: calc(max(80px, min(13vw, 145px)));
+        height: auto;
         margin-bottom: 2em;
     }
 
@@ -1320,6 +1341,12 @@ p.title {
             letter-spacing: -0.04em;
             margin-bottom: 1.5em;
         }
+
+        @include respond-below(xl) {
+            img {
+                max-width: 175px;
+            }
+        }
     }
 
     .cooking {
@@ -1327,7 +1354,7 @@ p.title {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5rem 0;
+        margin: 5rem 0.5rem 0;
 
         .content {
             display: flex;
@@ -1346,6 +1373,7 @@ p.title {
 
         img {
             width: calc(max(300px, min(90vw, 1137px)));
+            max-width: unset;
         }
     
         .btn {
@@ -1363,6 +1391,12 @@ p.title {
 
     .hero {
         position: relative;
+
+        .bg {
+            min-height: 300px;
+            object-fit: cover;
+            object-position: 57%;
+        }
         
         .title {
             position: absolute;
@@ -1370,6 +1404,11 @@ p.title {
             left: 20rem;
             width: calc(max(250px, min(40vw, 730px)));
             object-fit: contain;
+
+            @include respond-below(lg) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 }
@@ -1519,6 +1558,10 @@ p.title {
             height: 1px;
             margin: 2.5vw 0;
         }
+
+        .frm_submit {
+            text-align: center;
+        }
     }
 
     @media (max-width: 650px) {
@@ -1538,6 +1581,7 @@ p.title {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-top: 1rem;
         }
     }
 }

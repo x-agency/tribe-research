@@ -8,6 +8,7 @@ $(document).scroll(function () {
 $(document).ready(function () {
     $(".hamburger-menu").click(function () {
         $(this).toggleClass("is-active");
+        $('#modalMenu').toggleClass('show');
     });
 
     // Close modal on button click
