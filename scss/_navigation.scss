@@ -92,24 +92,15 @@
                     opacity: 0;
                 }
             }
-
-            &:hover a:after {
-                opacity: 1;
-                bottom: 0px;
-            }
         }
 
         a {
             position: relative;
-
-
         }
-
-
 
         &:last-child {
             a {
-                background-color: $blue !important;
+                background-color: $blue;
                 color: $purple;
                 padding: 14px 35px;
                 @include primary-font;
@@ -130,8 +121,15 @@
         }
     }
 
+    &:hover {
+        li:hover a:after {
+            opacity: 1;
+            bottom: 0px;
+        }
+    }
+
     .nav-item {
-        margin: 5px 25px;
+        padding: 5px 25px;
 
         .menu-btn {}
 
