@@ -163,12 +163,12 @@
                     $address1 = get_sub_field('address1');
                     $address2 = get_sub_field('address2');
                     $phone = get_sub_field('phone'); ?>
-
-                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
-                        <p class="road"><?php echo $address1;?></p>
-                        <p class="city"><?php echo $address2;?></p>
-                        <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
-
+                        <div class="area">
+                            <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                            <p class="road"><?php echo $address1;?></p>
+                            <p class="city"><?php echo $address2;?></p>
+                            <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+                        </div>
                 <?php endwhile; ?>
             </div>
             <div class="col-lg-3 offset-lg-1 restaurants active">
@@ -179,12 +179,12 @@
                     $address1 = get_sub_field('address1');
                     $address2 = get_sub_field('address2');
                     $phone = get_sub_field('phone'); ?>
-
-                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
-                        <p class="road"><?php echo $address1;?></p>
-                        <p class="city"><?php echo $address2;?></p>
-                        <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
-
+                        <div class="area">
+                            <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                            <p class="road"><?php echo $address1;?></p>
+                            <p class="city"><?php echo $address2;?></p>
+                            <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+                        </div>
                 <?php endwhile; ?>
             </div>
         </div>
