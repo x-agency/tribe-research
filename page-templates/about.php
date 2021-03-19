@@ -43,22 +43,18 @@
         <div class="col-md-6 col-xl-3 text-center pb-5">
             <?php echo file_get_contents(__DIR__ . '/../img/vector1.svg'); ?>
             <p class="title">Serve Others</p>
-            <p>Lorem ipsum dolor est c’est la view, du la fromage.</p>
         </div>
         <div class="col-md-6 col-xl-3 text-center pb-5">
             <?php echo file_get_contents(__DIR__ . '/../img/vector2.svg'); ?>
             <p class="title">Be Conscientious</p>
-            <p>Lorem ipsum dolor est c’est la view, du la fromage.</p>
         </div>
         <div class="col-md-6 col-xl-3 text-center pb-5">
             <?php echo file_get_contents(__DIR__ . '/../img/vector3.svg'); ?>
             <p class="title">Be Reliable</p>
-            <p>Lorem ipsum dolor est c’est la view, du la fromage.</p>
         </div>
         <div class="col-md-6 col-xl-3 text-center pb-5">
             <?php echo file_get_contents(__DIR__ . '/../img/vector4.svg'); ?>
             <p class="title">Show Compassion</p>
-            <p>Lorem ipsum dolor est c’est la view, du la fromage.</p>
         </div>
     </div>
 </section>

@@ -205,7 +205,7 @@
         <img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc">
         <div class="content">
             <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
-            <a href="" class="btn">Visit YouTube Channel</a>
+            <a href="https://www.youtube.com/user/CarolinaNephrologyTV/about" target="_blank" rel="noopener noreferrer" class="btn">Visit YouTube Channel</a>
         </div>
     </div>
 </section>
