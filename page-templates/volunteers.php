@@ -39,7 +39,7 @@
             <div>
                 <h2>The Benefits:</h2>
                 <h2 class="alt">Reasons for Research</h2>
-                <p>Clinical trials are designed to advance medical science and the improve quality of life for so many people. But no part of a clinical trial is as vital to its success as participating volunteers. Without them, new medical breakthroughs simply would not occur.</p>
+                <p>Clinical trials are designed to advance medical science and improve quality of life for so many people.</p>
                 <p>Interested in learning more? Watch our video.</p>
                 <a href="#" class="btn purple">Watch Our Video</a>
             </div>
@@ -125,13 +125,45 @@
             </div>
         </div>
     </div>
-    <div class="testimonial">
-        <p class="quote">“</p>
-        <p>Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
-        <div class="author-container">
-            <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
-            <p class="author">Dr. Ronald K. Mayfield</p>
-            <p class="source">Medical Director and an investigator at Tribe Clinical Research</p>
+    <div class="carousel">
+        <div class="controls">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+        <div class="track">
+            <div class="slide">
+                <div class="testimonial">
+                    <p class="quote">“</p>
+                    <p>Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
+                    <div class="author-container">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
+                        <p class="author">Dr. Ronald K. Mayfield</p>
+                        <p class="source">Medical Director and Investigator at Tribe Clinical Research</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testimonial">
+                    <p class="quote">“</p>
+                    <p>Two Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
+                    <div class="author-container">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
+                        <p class="author">Dr. Ronald K. Mayfield</p>
+                        <p class="source">Medical Director and Investigator at Tribe Clinical Research</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testimonial">
+                    <p class="quote">“</p>
+                    <p>Three Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
+                    <div class="author-container">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
+                        <p class="author">Dr. Ronald K. Mayfield</p>
+                        <p class="source">Medical Director and Investigator at Tribe Clinical Research</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -163,7 +195,7 @@
         <img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc">
         <div class="content">
             <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
-            <a href="" class="btn">Visit Youtube Channel</a>
+            <a href="" class="btn">Visit YouTube Channel</a>
         </div>
     </div>
 </section>
@@ -171,6 +203,84 @@
 <?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
+<script>
+jQuery(document).ready(function($) {
+    $carousel = $('.carousel'),
+    $track = $('.track'),
+    slideCount = $('.slide').length,
+    width = $('.slide').width(),
+    threshold = width / 4,
+    dragStart = 0,
+    dragEnd = 0,
+    count = 1,
+    $item = $('.slide');
 
+    $carousel.css("overflow", "hidden");
+    $track.css("left", ( ( slideCount * -1 ) + "00%")).css({"display":"flex", "position":"relative"});
+    $('.slide').css({"flex":"0 0 auto", "width":"100%"});
+    for (var i = 0; i < slideCount; i++) {
+        $('.slide').eq(slideCount - 1).clone().prependTo('.track');
+    }
 
+    $('.slide').on('mousedown touchstart', function(e) {
+        if ($track.hasClass('transition')) return; //if the carousel is in motion, prevent new movement until complete
+        if (e.type == 'touchstart') dragStart = e.originalEvent.touches[0].pageX; 
+        if (e.type == 'mousedown') dragStart = e.pageX;
+        $target = $(e.target);
+        $carousel.on('mousemove touchmove', function(e){ 
+            grabbed = true;
+            if (e.type == 'touchmove') dragEnd = e.originalEvent.touches[0].pageX;
+            if (e.type == 'mousemove') dragEnd = e.pageX;
+            $track.css('transform','translateX('+ dragPos() +'px)');
+            $item.css('cursor', 'grabbing');
+            dragDistance = dragPos();
+        });
+        $(document).on('mouseup touchend', function(){
+            count = dragDistance / width;
+            $item.css('cursor', 'grab');
+            if (dragPos() > threshold) { return shiftSlide(1) } //to the left
+            if (dragPos() < -threshold) { return shiftSlide(-1) } //to the right
+            count = 0;
+            shiftSlide(0);
+        });
+    });
 
+    function dragPos() {
+        return dragEnd - dragStart;
+    }
+
+    function shiftSlide(direction) {
+        if($track.hasClass('transition')) return;
+        dragEnd = dragStart;
+        count = direction === -1 ? Math.floor(count) : Math.ceil(count);
+        $(document).off('mouseup touchend');
+        $carousel.off('mousemove touchmove');
+        $track.addClass('transition').css('transform','translateX(' + (width * count) + 'px)');
+        setTimeout(function(){
+            if (direction >= 1) { // to the left
+                while (count > 0) {
+                    $track.find('.slide:first-child').before($track.find('.slide:last-child'));
+                    count--;
+                }
+            } else if (direction <= -1) { //to the right
+                while (count < 0) {
+                    $track.find('.slide:last-child').after($track.find('.slide:first-child'));
+                    count++;
+                }
+            }
+            $track.removeClass('transition')
+            $track.css('transform','translateX(0px)');
+        }, 600);
+    }
+
+    $('.prev').click(function() {
+        count = 1;
+        return shiftSlide(1);
+    });
+
+    $('.next').click(function() {
+        count = -1;
+        return shiftSlide(-1);
+    });
+});
+</script>
