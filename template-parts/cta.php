@@ -12,7 +12,7 @@
     <a href="/contact" class="cta-link">
         <div class="cta-block block-2">
             <div class="cta-text-wrapper">
-                <div class="cta-text">Ready To?<br> Get Started?</div>
+                <div class="cta-text">Let's Get Started</div>
                 <div class="cta-arrow"><?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
             </div>
         </div>

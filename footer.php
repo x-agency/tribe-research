@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 		<div class="copyright">
 			<a href="https://www.xagency.io" class="simple-link">Made by X</a>
-			<p class="title purple">©2020 Tribe Clinical Research.</p>
+			<p class="title purple">©2021 Tribe Clinical Research.</p>
 			<p>All Rights Reserved.</p>
 		</div>
 	</footer>
