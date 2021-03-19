@@ -175,19 +175,29 @@
                 <h2>Resources</h2>
             </div>
             <div class="col-xl-2 col-lg-6 offset-xl-1 text-center mb-xl-0 mb-5">
-                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-1.png">
+                <a href="https://www.diabetes.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-1.png">
+                </a>
             </div>
             <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
+                <a href="https://www.centerwatch.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
+                </a>
             </div>
             <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
+                <a href="https://www.ciscrp.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
+                </a>
             </div>
             <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
+                <a href="http://clinicalresearch.com" target="_blank" rel="noopener noreferrer">
+                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
+                </a>
             </div>
             <div class="col-xl-2 col-lg-6 text-center">
-                <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
+                <a href="http://clinicaltrials.gov/" target="_blank" rel="noopener noreferrer">
+                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
+                </a>
             </div>
         </div>
     </div>
