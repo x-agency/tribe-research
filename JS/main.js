@@ -55,7 +55,7 @@ $(document).ready(function () {
 
         $(this).toggleClass('active');
         if ( $('.studies .row.' + id).hasClass('active') ) {
-            $('.studies .row.' + id).removeClass('active')
+            $('.studies .row.' + id).removeClass('active').css("max-height", "0px");
         } else {
             $('.studies .row.' + id).addClass('active').css("max-height", $('.studies .row.' + id).attr("data-open") + "px");
         }

@@ -14,7 +14,7 @@
         <img src="/wp-content/themes/tribe-research/img/sponsors.jpg" alt="Female doctor with hand on shoulder of female patient.">
         <div class="text">
             <img src="/wp-content/themes/tribe-research/img/sponsors-text.png"/>
-            <p>We’re building a collaborative network in the upstate based on shared principles of respect and commitment to improve patient care through quality clinical research. This continued dedication to solid partnerships assists in providing quality outcomes for clinical trials while providing the best possible medical care to our study volunteers. If you are interested in partnering with us to offer clinical research at your practice, please reach out to us. Together we can make a huge impact in the filed of medicine.</p>
+            <p>We’re building a collaborative network in the Upstate based on shared principles of respect and commitment to improve patient care through quality clinical research. This continued dedication to solid partnerships assists in providing quality outcomes for clinical trials while providing the best possible medical care to our study volunteers. If you are interested in partnering with Tribe to offer clinical research at your practice, please reach out to us via our contact portal. Together we can make a huge impact in the filed of medicine.</p>
         </div>    
     </div>
 </section>
@@ -25,9 +25,9 @@
             <h2>Explore</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <a class="simple-link" href="#our-site">
+                <a class="simple-link" href="#our-facility">
                     <div class="btn-alt">
-                        <p>Our Site</p>
+                        <p>Our Facilities</p>
                     </div>
                 </a>
                 <a class="simple-link" href="#monitor-guidelines">
@@ -54,8 +54,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="anchor" id="our-site"></div>
-        <p class="title offset-lg-1">At our site, we offer:</p>
+        <div class="anchor" id="our-facility"></div>
+        <p class="title offset-lg-1">At our facilities, we offer:</p>
         <ul class="col-xl-5 offset-xl-1 mb-0">
             <li><span>Easy access to a major airport</span></li>
             <li><span>Designated monitoring space with private space available at your request</span></li>
@@ -68,14 +68,14 @@
             <li><span>Fax machine</span></li>
             <li><span>On site storage of all documents</span></li>
             <li><span>Low query rates with rapid resolution</span></li>
-            <li><span>Full time Data/Quality Assurance Coordinator</span></li>
+            <li><span>Full time data/quality assurance coordinator</span></li>
         </ul>
         <a href="" class="btn purple">Take Our Virtual Tour</a>
     </div>
     <div class="row">
         <div class="testimonial">
             <p class="quote">“</p>
-            <p>I love your site and I wish it was mine. Monitors often tell sites only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
+            <p>I love your facility and I wish it was mine. Monitors often tell facilities only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
             <p class="author">Monitor</p>
             <p class="source">Tribe Clinical Research</p>
         </div>
@@ -97,7 +97,7 @@
                 <li><span>The Quality Assurance Coordinator is considered a monitor liaison.</span>If you have any questions please direct them to him/her. The Quality Assurance Coordinator will take care of all CRF corrections, and scheduling of monitoring visits. If needed the Quality Assurance Coordinator will delegate source corrections to the appropriate medical staff member.</li>
                 <li><span>The Regulatory Coordinator is responsible for Regulatory and IRB questions.</span>(e.g. Site Delegation Logs, Enrollment Logs, & etc.). She/he will also be available to assist you.</li>
                 <li><span>We ask that Monitors do not walk to the back offices or exam rooms</span>as we want to maintain privacy for our patients. If you need to talk with a study coordinator, please ask the front office for assistance.</li>
-                <li><span>For your convenience, there is a fax/copier machine available to you</span>located in the front office. You are welcome to utilize this machine as needed, but we do ask to please keep copying to a minimum and to only make copies concerning our site.</li>
+                <li><span>For your convenience, there is a fax/copier machine available to you</span>located in the front office. You are welcome to utilize this machine as needed, but we do ask to please keep copying to a minimum and to only make copies concerning our facility.</li>
             </ul>
         </div>
         <div class="row daily-schedule">
@@ -109,15 +109,15 @@
                     <p>8:30am - 4:30pm</p>
                     <p>(Monday-Thursday)</p>
                 </div>
-                <div class="vseparator"></div>
+                <!--div class="vseparator"></div>
                 <div class="time">
                     <p><span>Medical Director:</span></p>
                     <p>11:00am - 1:00pm</p>
                     <p>(Monday, Wednesday, Thursday)</p>
-                </div>
+                </div-->
             </div>
-            <p><span>Coordinators assigned to your study will be available after 2:00 p.m.</span></p>
-            <a href="#" class="btn">Download Monitor Guidelines</a>
+            <!--p><span>Coordinators assigned to your study will be available after 2:00 p.m.</span></p>
+            <a href="#" class="btn">Download Monitor Guidelines</a-->
         </div>
     </div>
 </section>
@@ -129,7 +129,7 @@
         <div class="foreground">
             <div>
                 <h2 class="alt">Our Area</h2>
-                <p>We would like to share some information to help you enjoy your stay in the area. Our site is easily accessible from Greer or Greenville. If you find a favorite hotel or restaurant, please let us know so that we can share the information with other CRA’s working at our site. We hope you find this information helpful and will love the area as much as we do!</p>
+                <p>We would like to share some information to help you enjoy your stay in the area. Our facility is easily accessible from Greer or Greenville. If you find a favorite hotel or restaurant, please let us know so that we can share the information with other CRA’s working at our facilities. We hope you find this information helpful and will love the area as much as we do!</p>
                 <a href="#" class="simple-link arrow">Directions<?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
             </div>
         </div>
@@ -137,7 +137,7 @@
     <div class="container">
         <div class="row">
             <div class="anchor" id="hotels-restaurants"></div>
-            <div class="controls col-12 my-5">
+            <div class="controls col-12 mb-5">
                 <h2>Search Area By:</h2>
                 <div class="filter">
                     <div class="toggle-container">
@@ -157,25 +157,35 @@
         <div class="row">
             <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
-                <?php for($i = 0; $i < 8; $i++) : ?>
-                    <div class="area">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/34.8585984,-82.4180736/5009+Pelham+Rd,+Greenville,+SC+29615/@34.8505974,-82.4071212,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8858299ff4f848e1:0x5cd28410b572c913!2m2!1d-82.2570142!2d34.8584849" class="simple-link">Hampton Inn & Suites Downtown Greenville, Riverplace <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
-                        <p class="road">5009 Pelham Road</p>
-                        <p class="city">Greenville, SC 29615</p>
-                        <a class="number" href="tel:8642975353">(864) 297-5353</a>
-                    </div>
-                <?php endfor; ?> 
+                <?php while( have_rows('hotels') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                    $address1 = get_sub_field('address1');
+                    $address2 = get_sub_field('address2');
+                    $phone = get_sub_field('phone'); ?>
+
+                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                        <p class="road"><?php echo $address1;?></p>
+                        <p class="city"><?php echo $address2;?></p>
+                        <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+
+                <?php endwhile; ?>
             </div>
             <div class="col-lg-3 offset-lg-1 restaurants active">
                 <h2>Downtown Greenville Area</h2>
-                <?php for($i = 0; $i < 4; $i++) : ?>
-                    <div class="area">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/34.8585984,-82.4180736/5009+Pelham+Rd,+Greenville,+SC+29615/@34.8505974,-82.4071212,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8858299ff4f848e1:0x5cd28410b572c913!2m2!1d-82.2570142!2d34.8584849" class="simple-link">Directions <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
-                        <p class="road">5009 Pelham Road</p>
-                        <p class="city">Greenville, SC 29615</p>
-                        <a class="number" href="tel:8642975353">(864) 297-5353</a>
-                    </div>
-                <?php endfor; ?> 
+                <?php while( have_rows('restaurants') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                    $address1 = get_sub_field('address1');
+                    $address2 = get_sub_field('address2');
+                    $phone = get_sub_field('phone'); ?>
+
+                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                        <p class="road"><?php echo $address1;?></p>
+                        <p class="city"><?php echo $address2;?></p>
+                        <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+
+                <?php endwhile; ?>
             </div>
         </div>
     </div>

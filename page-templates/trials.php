@@ -27,8 +27,13 @@
                     <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
                     <p>Pediatrics</p>
                 </div>
+
+                <div class="filter-btn active" id="adults">
+                    <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
+                    <p>Adults</p>
+                </div>
                 
-                <div class="filter-btn" id="diabetes">
+                <!--div class="filter-btn" id="diabetes">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials2.svg'); ?>
                     <p>Diabetes</p>
                 </div>
@@ -46,51 +51,80 @@
                 <div class="filter-btn" id="digestive">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials5.svg'); ?>
                     <p>Digestive</p>
-                </div>
+                </div-->
             </div>
         </div>
     </div>
 </section>
 
 <section class="studies container">
-<?php 
-    for ($i = 0; $i < 5; $i++) : ?>
-        <div class="row pediatrics active">
-            <div class="col-12 p-0">
-                <h2>Pediatric:</h2>
-            </div>
-            <div class="col-md-4 col-xl-3 text-center study">
-                <div class="study-image">
-                    <img src="" alt="">
-                    <a href="#" class="btn">Download PDF</a>
-                </div>
-                <p class="study-title">Study Name</p>
-            </div>
-            <div class="col-md-4 col-xl-3 text-center study">
-                <div class="study-image">
-                    <img src="" alt="">
-                    <a href="#" class="btn">Download PDF</a>
-                </div>
-                <p class="study-title">Study Name</p>
-            </div>
-            <div class="col-md-4 col-xl-3 text-center study">
-                <div class="study-image">
-                    <img src="" alt="">
-                    <a href="#" class="btn">Download PDF</a>
-                </div>
-                <p class="study-title">Study Name</p>
-            </div>
-            <div class="col-md-4 col-xl-3 text-center study">
-                <div class="study-image">
-                    <img src="" alt="">
-                    <a href="#" class="btn">Download PDF</a>
-                </div>
-                <p class="study-title">Study Name</p>
-            </div>
+    <div class="row pediatrics active">
+        <div class="col-12 p-0">
+            <h2>Pediatric:</h2>
         </div>
-        
-    <?php endfor;
-?>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+    </div>
+
+    <div class="row adults active">
+        <div class="col-12 p-0">
+            <h2>Adult:</h2>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+        <div class="col-md-4 col-xl-3 text-center study">
+            <div class="study-image">
+                <img src="" alt="">
+                <a href="#" class="btn">Download PDF</a>
+            </div>
+            <p class="study-title">Study Name</p>
+        </div>
+    </div>
 </section>
 
 <!-- Template Part -->

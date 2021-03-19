@@ -880,7 +880,16 @@ svg * {
         padding-top: 4rem;
     }
 
-    .row>* {
+
+    .controls {
+        display: block;
+
+        .filter {
+            justify-content: center;
+        }
+    }
+
+    .row > * {
         flex-shrink: 1;
     }
 
@@ -895,6 +904,7 @@ svg * {
             font-family: 'poppins';
             margin-top: 1em;
             margin-bottom: 1em;
+            color: #616060;
 
             @media (max-width: 1000px) {
                 margin-left: 2rem;
@@ -903,7 +913,7 @@ svg * {
 
         ul {
             padding-left: 1.25em;
-            list-style: circle;
+            list-style: none;
             color: $purple;
             font-size: calc(max(25px, min(3vw, 30px)));
 
@@ -912,12 +922,25 @@ svg * {
             }
 
             li {
-                margin-bottom: 0.5em;
-
+                margin-bottom: 0.5em; 
+                position: relative;
+                margin-left: 0.5em;
                 span {
                     color: $blue;
                     font-size: calc(max(20px, min(3vw, 25px)));
                     margin-bottom: 0.5em;
+
+                    &::after {
+                        content: '';
+                        width: 21px;
+                        height: 21px;
+                        background: transparent;
+                        border: 3px solid $purple;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: -1.5em;
+                        top: 0.5em;
+                    }
                 }
             }
         }
@@ -958,9 +981,10 @@ svg * {
         font-size: calc(max(125px, min(12.5vw, 235px)));
         position: absolute;
         top: 0.4em;
-        left: -0.325em;
+        left: -0.375em;
         display: inline-block;
         color: $blue;
+        font-weight: 500;
     }
 
     @media (max-width: 1200px) {
@@ -1068,7 +1092,7 @@ svg * {
 
         >div {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             max-width: 850px;
             margin: 2.5rem auto;
@@ -1096,6 +1120,8 @@ svg * {
             }
 
             .time {
+                text-align: center;
+
                 p:nth-child(1) {
                     color: $blue;
                 }
@@ -1128,6 +1154,10 @@ svg * {
         margin-top: -427px;
         position: relative;
         margin-bottom: 10em;
+
+        h2.alt::after {
+            left: 15em;
+        }
 
         @media (max-width: 1199px) {
             margin: 0 auto;
@@ -1168,7 +1198,7 @@ svg * {
         margin: 0 auto;
         pointer-events: auto;
         opacity: 1;
-        width: calc(max(25%, 300px));
+        width: calc(max(30%, 300px));
         max-height: 150em;
     }
 
@@ -1181,6 +1211,15 @@ svg * {
         padding: 0;
         margin: 0;
         transition: all 0.6s;
+    }
+
+    .hotels, .restaurants {
+        
+        h2 {
+            border-bottom: 2px solid #cecece;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
     }
 
     .area {
@@ -1308,6 +1347,7 @@ p.title {
     overflow: hidden;
     position: relative;
     transition: all 0.6s;
+    margin-bottom: 0.5em;
 
     p {
         margin-left: 3rem;
@@ -1315,6 +1355,7 @@ p.title {
 
     .title {
         position: relative;
+        font-weight: 600;
     }
 
     .title::before {
@@ -1347,7 +1388,7 @@ p.title {
         margin-bottom: 7rem;
 
         .quote {
-            left: -0.375em;
+            left: -0.4em;
         }
 
         .source {
@@ -1737,5 +1778,38 @@ footer {
         .copyright {
             text-align: center;
         }
+    }
+}
+
+/** For Carousel **/
+.transition {
+    transition: transform 0.6s;
+}
+
+.controls {
+
+    .prev, .next {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: $purple;
+            clip-path: polygon(50% 100%, 25% 50%, 50% 0%, 60% 0%, 35% 50%, 60% 100%);
+        }
+    }
+
+    .next {
+        left: unset;
+        right: 0;
+        transform: translateY(-50%) scaleX(-1);
     }
 }
