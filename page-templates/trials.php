@@ -37,17 +37,14 @@
                     <?php echo file_get_contents(__DIR__ . '/../img/trials2.svg'); ?>
                     <p>Diabetes</p>
                 </div>
-
                 <div class="filter-btn" id="cardiac">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials3.svg'); ?>
                     <p>Cardiac</p>
                 </div>
-
                 <div class="filter-btn" id="pulmonary">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials4.svg'); ?>
                     <p>Pulmonary</p>
                 </div>
-
                 <div class="filter-btn" id="digestive">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials5.svg'); ?>
                     <p>Digestive</p>
