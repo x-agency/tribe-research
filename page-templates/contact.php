@@ -14,7 +14,7 @@
 </section>
 
 <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104791.67136430558!2d-82.43646110321126!3d34.837635877885454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88582ff6d484c119%3A0x6825106efd075ca2!2sTribe%20Clinical%20Research%20LLC!5e0!3m2!1sen!2sus!4v1614279601548!5m2!1sen!2sus" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://snazzymaps.com/embed/298694" width="100%" height="400px" style="border:none;"></iframe>
 </section>
 
 <section class="contact">

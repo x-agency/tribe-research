@@ -18,6 +18,10 @@
             background-image: url(/wp-content/themes/tribe-research/img/cta-img-2.png);
         }
 
+        .cta-block {
+            min-height: 299px;
+        }
+
         .cta-link {
             width: 47%;
             text-decoration: none;
@@ -25,7 +29,7 @@
             @include respond-below(xl) {
                 width: 100%;
 
-                + .cta-link {
+                +.cta-link {
                     margin-top: 3rem;
                 }
             }
@@ -35,6 +39,7 @@
                     .cta-block {
                         @include ease;
                         background-color: $purple;
+                        min-height: 299px;
 
                         .cta-text-wrapper {
                             .cta-text {

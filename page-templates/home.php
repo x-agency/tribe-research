@@ -13,12 +13,12 @@
             <div class="hero-inner">
                 <div class="title-wrapper">
                     <h1>The<br> Future<br> of Medicine<br> Begins<br> With You</h1>
-                    <div class="subtitle">We Invite You to Become Part of Something Bigger.</div>
+                    <div class="subtitle">We Invite You to Become Part of <br>Something Bigger.</div>
                 </div>
                 <div class="hero-box">
                     <p>Through clinical research, we’re advancing medical science and improving the quality of life for
                         so many people.</p>
-                    <p>It start's here</p>
+                    <p>It starts here</p>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     mind at ease, these studies have already passed a number of benefit and safety requirements and are
                     almost ready for general public release. We invite you to join us on the journey to better health.
                 </p>
-                <div class="link"><a href="" class="simple-link">Our Difference
+                <div class="link"><a href="/about" class="simple-link">Our Difference
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>
             </div>
@@ -60,7 +60,7 @@
                 <p>Our specialized care team will work with you in order to link you with the appropriate studies based
                     on your medical history and needs. The future of medicine depends on you. Learn more about how you
                     can get involved.</p>
-                <div class="btn-wrapper"><a href="" class="btn">Learn More</a></div>
+                <div class="btn-wrapper"><a href="/volunteers" class="btn">Learn More</a></div>
             </div>
             <!-- Trial Block 2 -->
             <div class="col-md-4 trial-block">
@@ -68,7 +68,7 @@
                 <div class="trial-title">For Sponsors</div>
                 <p>Tribe Clinical Research has managed over 100 phase II to IV clinical trials in partnership with
                     university hospitals and over 20 pharmaceutical companies. Learn about what we can offer.</p>
-                <div class="btn-wrapper"><a href="" class="btn">Learn More</a></div>
+                <div class="btn-wrapper"><a href="/sponsors" class="btn">Learn More</a></div>
             </div>
             <!-- Trial Block 3 -->
             <div class="col-md-4 trial-block">
@@ -76,7 +76,7 @@
                 <div class="trial-title">Current Clinical Trials</div>
                 <p>Our current clinical trials span several different categories, including illnesses such as asthma,
                     diabetes, gout, migraines, as well as research in cardivascular and gastrointestinal diseases. </p>
-                <div class="btn-wrapper"><a href="" class="btn">View Trials</a></div>
+                <div class="btn-wrapper"><a href="/clinical-trials" class="btn">View Trials</a></div>
             </div>
         </div>
     </div>
