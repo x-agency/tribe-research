@@ -636,6 +636,14 @@ svg * {
 
         @media (max-width: 1399px) {
             flex-direction: column;
+
+            .filter-btn + .filter-btn {
+                margin-top: 3rem;
+            }
+        }
+
+        /*@media (max-width: 1399px) {
+            flex-direction: column;
             width: calc(max(30vw, 290px));
             border: 3px solid $purple;
             height: 100%;
@@ -670,15 +678,17 @@ svg * {
                     border-top: 1px solid $purple;
                 }
             }
-        }
+        } */
 
         .simple-link:nth-child(2) .btn-alt {
             margin-left: 2.5em;
 
+            
             @media (max-width: 1399px) {
                 margin-left: 0.75em;
-                border-top: none;
+                /*border-top: none;*/
             }
+            
         }
 
         .filter-btn,
@@ -692,15 +702,18 @@ svg * {
             transition: all 0.6s ease;
             cursor: pointer;
             z-index: 1;
+            text-decoration: none;
 
             @include respond-above(lg) {
                 min-width: 167px;
             }
 
+            /*
             @media (max-width: 1399px) {
                 border: none;
                 border-top: 1px solid transparent;
             }
+            */
 
             p,
             svg path {
@@ -743,10 +756,10 @@ svg * {
 
             &:nth-child(2) {
                 margin-left: 2.5em;
-
+                
                 @media (max-width: 1399px) {
                     margin-left: 0.75em;
-                    border-top: none;
+                    /*border-top: none;*/
                 }
             }
 
@@ -963,7 +976,7 @@ svg * {
     position: relative;
 
     p {
-        font-size: calc(max(20px, min(3vw, 25px)));
+        font-size: calc(max(20px, min(3vw, 22px)));
     }
 
     .author {
@@ -981,7 +994,7 @@ svg * {
 
     .quote {
         font-family: 'poppins';
-        font-size: calc(max(125px, min(12.5vw, 235px)));
+        font-size: calc(max(125px, min(11vw, 200px)));
         position: absolute;
         top: 0.4em;
         left: -0.375em;
@@ -1045,7 +1058,7 @@ svg * {
 
                 span {
                     color: $blue;
-                    font-size: calc(max(20px, min(3vw, 25px)));
+                    font-size: calc(max(20px, min(3vw, 22px)));
                     font-family: 'poppins';
                     display: block;
                 }
@@ -1090,7 +1103,7 @@ svg * {
         p {
             margin-bottom: 0.5em;
             font-family: 'Poppins';
-            font-size: calc(max(18px, min(2.5vw, 25px)));
+            font-size: calc(max(18px, min(2.5vw, 22px)));
         }
 
         >div {
@@ -1166,6 +1179,8 @@ svg * {
             margin: 0 auto;
             box-shadow: none;
             text-align: center;
+            top: 0;
+            transform: unset;
 
             .alt::after {
                 display: none;
@@ -1184,7 +1199,7 @@ svg * {
     h2 {
         color: $purple;
         font-family: 'Poppins';
-        font-size: calc(max(18px, min(2.5vw, 25px)));
+        font-size: calc(max(18px, min(2.5vw, 22px)));
 
         @media (max-width: 1199px) {
             text-align: center;
@@ -1235,7 +1250,8 @@ svg * {
 
         a {
             font-family: 'Poppins';
-            font-size: calc(max(18px, min(2.5vw, 25px)));
+            font-size: calc(max(18px, min(2.5vw, 22px)));
+            font-weight: 600;
         }
 
         p,

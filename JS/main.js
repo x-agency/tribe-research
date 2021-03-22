@@ -37,7 +37,7 @@ $(document).ready(function () {
         );
     });
 
-    //trials page filter box
+    /*trials page filter box
     $('.toggle-container').click(function() {
         $('.filter').toggleClass('open');
         $('.filter-toggle').toggleClass('open');
@@ -68,7 +68,7 @@ $(document).ready(function () {
         } else if ( $(this).hasClass('restaurants') ) {
             $('.restaurants').toggleClass('active');
         }
-    });
+    }); */
 
     //volunteers page faq accordion
     $('.faq-item').each( function() {

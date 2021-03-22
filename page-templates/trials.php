@@ -22,16 +22,15 @@
             <h2>Search By:</h2>
 
             <div class="filter">
-                <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <div class="filter-btn active" id="pediatrics">
+                <a class="filter-btn" href="#pediatrics">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
                     <p>Pediatrics</p>
-                </div>
+                </a>
 
-                <div class="filter-btn active" id="adults">
+                <a class="filter-btn" href="#adults">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
                     <p>Adults</p>
-                </div>
+                </a>
                 
                 <!--div class="filter-btn" id="diabetes">
                     <?php echo file_get_contents(__DIR__ . '/../img/trials2.svg'); ?>
@@ -56,6 +55,7 @@
 
 <section class="studies container">
     <div class="row pediatrics active">
+        <div class="anchor" id="pediatrics"></div>
         <div class="col-12 p-0">
             <h2>Pediatric:</h2>
         </div>
@@ -90,6 +90,7 @@
     </div>
 
     <div class="row adults active">
+        <div class="anchor" id="adults"></div>
         <div class="col-12 p-0">
             <h2>Adult:</h2>
         </div>
