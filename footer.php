@@ -38,26 +38,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<img src="/wp-content/themes/tribe-research/img/footer-logo.png" class="logo">
 		<div class="menu">
 			<div class="">
-				<a class="simple-link link-dark" href="/about">About Us</a>
-				<a class="simple-link link-dark" href="/clinical-trials">Clinical Trials</a>
-				<a class="simple-link link-dark" href="/volunteers">Volunteers</a>
-				<a class="simple-link link-dark" href="/sponsors">Sponsors</a>
+				<a class="simple-link link-dark" href="/about"><strong>About Us</strong></a>
+				<a class="simple-link link-dark" href="/clinical-trials"><strong>Clinical Trials</strong></a>
+				<a class="simple-link link-dark" href="/volunteers"><strong>Volunteers</strong></a>
+				<a class="simple-link link-dark" href="/sponsors"><strong>Sponsors</strong></a>
 			</div>
 			<div class="">
-				<p class="simple-link link-dark">Contact</p>
-				<a href="/terms-of-service" class="simple-link">Terms of Service</a>
-				<a href="/privacy-policy" class="simple-link">Privacy Policy</a>
+				<p class="simple-link link-dark"><strong>Contact</strong></p>
+				<a href="/terms-of-service" class="simple-link"><strong>Terms of Service</strong></a>
+				<a href="/privacy-policy" class="simple-link"><strong>Privacy Policy</strong></a>
 			</div>
 			<div>
-				<p class="title purple">Get in Touch:</p>
+				<p class="title purple"><strong>Get in Touch:</strong></p>
 				<p><strong>Phone:</strong> <a class="simple-link link-dark" href="tel:864.334.0141">864.334.0141</a></p>
 				<p><strong>Fax:</strong> <a class="simple-link link-dark" href="fax:+18643340137">864.334.0137</a></p>
 				<p><strong>Email:</strong> <a class="simple-link link-dark" href="mailto:info@tribeclinicalresearch.com">info@tribeclinicalresearch.com</a></p>
 			</div>
 		</div>
 		<div class="copyright">
-			<a href="https://www.xagency.io" class="simple-link">Made by X</a>
-			<p class="title purple">©2021 Tribe Clinical Research.</p>
+			<a href="https://www.xagency.io" class="simple-link"><strong>Made by X</strong></a>
+			<p class="title purple"><strong>©2021 Tribe Clinical Research.</strong></p>
 			<p>All Rights Reserved.</p>
 		</div>
 	</footer>

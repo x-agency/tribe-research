@@ -18,7 +18,7 @@
                 <div class="hero-box">
                     <p>Through clinical research, we’re advancing medical science and improving the quality of life for
                         so many people.</p>
-                    <p>It starts here</p>
+                    <p>It starts here.</p>
                 </div>
             </div>
         </div>

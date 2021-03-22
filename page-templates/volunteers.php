@@ -69,60 +69,26 @@
 <section class="faq container">
     <div class="row gray-container">
         <div class="anchor" id="our-site"></div>
-        <h2 class="offset-lg-1">Frequently Asked Questions:</h2>
-        <div class="col-xl-5 offset-xl-1 mb-0">
-            <div class="faq-item">
-                <div class="faq-expand"></div>
-                <p class="title">What is a clinical trial?</p>
-                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Why are clinical trials done?</p>
-                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Why should I participate in a clinical trial?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Are clinical trials safe?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Who can participate in a clinical trial?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">What can volunteers expect if they choose to participate?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Will it cost me anything?</p>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div class="faq-item">
-                <p class="title">Do I have to travel?</p>
-                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">What is informed consent?</p>
-                <p>A clinical trial is a research study utilizing human volunteers to answer specific health questions. Carefully conducted clinical trials are the safest and fastest way to find treatments that work in people, and new ways to improve health.</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Is my information private?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Can someone volunteer for more than one study?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">How long does a study last?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Why should minorities and women participate in clinical trials?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Do I have to report my compensation as income?</p>
-            </div>
-            <div class="faq-item">
-                <p class="title">Why do you need my social security number?</p>
-            </div>
+        <h2 class="offset-lg-1">Frequently Asked Questions:</h2>        
+        <?php while( have_rows('faq') ) : the_row();
+            $q = get_sub_field('question');
+            $a = get_sub_field('answer');
+            ?>
+                <?php if (get_row_index() == 0) : ?>
+                    <div class="col-xl-5 offset-xl-1 mb-0">
+                <?php endif; ?> 
+                
+                <?php if (get_row_index() == 8) : ?>
+                    </div>
+                    <div class="col-xl-4">
+                <?php endif; ?> 
+                    <div class="faq-item">
+                        <div class="faq-expand"></div>
+                        <p class="title"><?php echo $q; ?></p>
+                        <?php echo $a; ?>
+                    </div>
+
+        <?php endwhile; ?>
         </div>
     </div>
     <div class="carousel">
