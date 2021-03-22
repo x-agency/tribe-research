@@ -83,8 +83,10 @@ body {
         align-items: flex-end;
         padding-top: 140px;
 
-        @include respond-below(md) {
-            padding-top: 35vh;
+        @include respond-below(sm) {
+            padding-top: 0;
+            background-image: url(/wp-content/themes/tribe-research/img/home-mobile.jpg);
+            background-position: 50% -30vw;
         }
 
         .hero-inner {
@@ -92,18 +94,30 @@ body {
                 width: 65%;
             }
 
-            width: 90%;
+            @include respond-above(md) {
+                width: 90%;
+            }
+
+            @include respond-above(sm) {
+                top: unset;
+                margin-bottom: 0;
+            }
+
+            width: 100%;
             height: 100%;
+            position: relative;
+            top: 75vw;
+            margin-bottom: 55vw;;
 
             .title-wrapper {
-                padding: 0 0 0 20%;
+                padding: 0 7.5vw;
+
+                @include respond-above(md) {
+                    padding: 0 0 0 20%;
+                }
 
                 br {
                     display: block;
-
-                    @include respond-below(lg) {
-                        display: none;
-                    }
                 }
 
                 h1 {
@@ -141,13 +155,15 @@ body {
 
 
             .hero-box {
-
                 background-color: $blue;
                 padding: 30px 15% 30px 20%;
-                transform: translateY(55px);
 
                 @include respond-above(xxl) {
                     padding: 50px 15% 50px 20%;
+                }
+
+                @include respond-above(md) { 
+                    transform: translateY(55px);
                 }
 
 
@@ -236,12 +252,20 @@ body {
             margin-top: -40px;
             ;
         }
+
+        @include respond-below(md) {
+            display: none;
+        }
     }
 }
 
 #home-trial {
     position: relative;
     margin: -50px 0 100px;
+
+    @include respond-below(md) {
+        margin: 50px 0 100px;
+    }
 
     .title-block {
         background-color: $gray;
@@ -463,6 +487,10 @@ body {
         height: 145px;
         background: #cecece;
         margin: 0 auto;
+
+        @include respond-below(md) {
+            display: none;
+        }
     }
 
     h2,
@@ -626,6 +654,16 @@ svg * {
     .filter {
         display: flex;
 
+        @media (max-width: 1399px) {
+            .filter-btn + .filter-btn {
+                margin-top: 3rem;
+            }
+        }
+
+        @include respond-below(lg) {
+            flex-direction: column;
+        }
+
         .toggle-container {
             position: absolute;
             right: 0;
@@ -634,13 +672,7 @@ svg * {
             z-index: 10;
         }
 
-        @media (max-width: 1399px) {
-            flex-direction: column;
-
-            .filter-btn+.filter-btn {
-                margin-top: 3rem;
-            }
-        }
+        
 
         /*@media (max-width: 1399px) {
             flex-direction: column;
@@ -696,7 +728,7 @@ svg * {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0.75em 1em;
+            padding: 0.75em;
             border: 3px solid $purple;
             margin: 0 0.75em;
             transition: all 0.6s ease;
@@ -900,6 +932,12 @@ svg * {
 
         .filter {
             justify-content: center;
+
+            @include respond-below(lg) {
+                .simple-link + .simple-link {
+                    margin-top: 1.5rem;
+                }
+            }
         }
     }
 
@@ -973,6 +1011,7 @@ svg * {
     flex-direction: column;
     align-items: center;
     max-width: 110ch;
+    width: 85%;
     margin: 7em auto 3em;
     position: relative;
 
@@ -995,13 +1034,17 @@ svg * {
 
     .quote {
         font-family: 'poppins';
-        font-size: calc(max(125px, min(7vw, 200px)));
+        font-size: calc(max(125px, min(11vw, 200px)));
         position: absolute;
-        top: 0.1em;
-        left: -0.7em !important;
+        top: 0.4em;
+        left: -0.4em;
         display: inline-block;
         color: $blue;
         font-weight: 500;
+
+        @include respond-below(md) {
+            display: none;
+        }
     }
 
     @media (max-width: 1200px) {
@@ -1009,6 +1052,10 @@ svg * {
         .quote,
         >p:nth-child(2) {
             margin-left: 3rem;
+
+            @include respond-below(md) {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -1409,7 +1456,7 @@ p.title {
     }
 }
 
-.faq {
+
     .testimonial {
         margin-bottom: 7rem;
 
@@ -1447,7 +1494,7 @@ p.title {
             }
         }
     }
-}
+
 
 .resources {
     .container-fluid {

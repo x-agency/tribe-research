@@ -36,7 +36,7 @@
 
 <section class="mission container">
     <div class="row">
-        <div class="col-12 mb-5">
+        <div class="col-12 mb-5 mt-5 mt-md-0">
             <div class="line"></div>
             <h2><strong>A Mission to Serve and Offer Hope</strong></h2>
             <p>Our mission at Tribe Clinical Research is to love, serve, and connect with our community while making small steps to advance the future of medicine through consistency, quality, passion, and integrity. </p>

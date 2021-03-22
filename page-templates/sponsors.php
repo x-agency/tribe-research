@@ -22,7 +22,7 @@
 <section class="explore container">
     <div class="row">
         <div class="controls col-12 my-5">
-            <h2>Explore</h2>
+            <h2 class="mb-4">Explore</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
                 <a class="simple-link" href="#our-facility">
@@ -158,7 +158,7 @@
             </div>
             <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
-                <?php while( have_rows('hotels') ) : the_row();
+                <?php while( have_rows('hotels_p') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');
@@ -172,9 +172,9 @@
                         </div>
                 <?php endwhile; ?>
             </div>
-            <div class="col-lg-3 offset-lg-1 restaurants active">
+            <div class="col-lg-3 offset-lg-1 hotels active">
                 <h2>Downtown Greenville Area</h2>
-                <?php while( have_rows('restaurants') ) : the_row();
+                <?php while( have_rows('hotels') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');
@@ -194,9 +194,9 @@
             <div class="anchor" id="restaurants"></div>
                 <h2><strong>Restaurants</strong></h2>
             </div>
-            <div class="col-lg-3 offset-lg-3 hotels active">
+            <div class="col-lg-3 offset-lg-3 restaurants active">
                 <h2>I-85/Pelham Road Area</h2>
-                <?php while( have_rows('hotels') ) : the_row();
+                <?php while( have_rows('restaurants_p') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');
