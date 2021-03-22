@@ -70,7 +70,7 @@
             <li><span>Low query rates with rapid resolution</span></li>
             <li><span>Full time data/quality assurance coordinator</span></li>
         </ul>
-        <a href="" class="btn purple">Take Our Virtual Tour</a>
+        <!--a href="" class="btn purple">Take Our Virtual Tour</a-->
     </div>
     <div class="row">
         <div class="testimonial">
@@ -83,12 +83,12 @@
 </section>
 
 <section class="monitor">
-    <div class="section-hero">
+    <div class="section-hero mb-5">
         <div class="anchor" id="monitor-guidelines"></div>
         <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-monitor-hero.jpg">
         <img class="monitor-text" src="/wp-content/themes/tribe-research/img/monitor-text.png" alt="Monitor Guidelines">
     </div>
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="line"></div>
             <p>We look forward to working with you and hope these guidelines ensure a more efficient use of your time and ours during your monitoring visit. Due to our current study volume and increased patient visit schedule we ask that you adhere to the following guidelines.</p>
@@ -140,21 +140,60 @@
             <div class="controls col-12 mb-5">
                 <h2>Search Area By:</h2>
                 <div class="filter">
-                    <div class="toggle-container">
-                        <div class="filter-toggle"></div>
-                    </div>
-                    <div class="filter-btn hotels active">
+                    <a href="#hotels" class="filter-btn">
                         <?php echo file_get_contents(__DIR__ . '/../img/hotels.svg'); ?>
                         <p>Hotels</p>
-                    </div>
-                    <div class="filter-btn restaurants active">
+                    </a>
+                    <a href="#restaurants" class="filter-btn">
                         <?php echo file_get_contents(__DIR__ . '/../img/restaurants.svg'); ?>
                         <p>Restaurants</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row">
+            <div class="col-12 text-center">
+            <div class="anchor" id="hotels"></div>
+                <h2>Hotels</h2>
+            </div>
+            <div class="col-lg-3 offset-lg-3 hotels active">
+                <h2>I-85/Pelham Road Area</h2>
+                <?php while( have_rows('hotels') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                    $address1 = get_sub_field('address1');
+                    $address2 = get_sub_field('address2');
+                    $phone = get_sub_field('phone'); ?>
+                        <div class="area">
+                            <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                            <p class="road"><?php echo $address1;?></p>
+                            <p class="city"><?php echo $address2;?></p>
+                            <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+                        </div>
+                <?php endwhile; ?>
+            </div>
+            <div class="col-lg-3 offset-lg-1 restaurants active">
+                <h2>Downtown Greenville Area</h2>
+                <?php while( have_rows('restaurants') ) : the_row();
+                    $title = get_sub_field('title');
+                    $link = get_sub_field('link');
+                    $address1 = get_sub_field('address1');
+                    $address2 = get_sub_field('address2');
+                    $phone = get_sub_field('phone'); ?>
+                        <div class="area">
+                            <a target="_blank" rel="noopener noreferrer" href="<?php echo $link;?>" class="simple-link"><?php echo $title;?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                            <p class="road"><?php echo $address1;?></p>
+                            <p class="city"><?php echo $address2;?></p>
+                            <a class="number" href="tel:<?php echo $phone;?>"><?php echo $phone;?></a>
+                        </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+            <div class="anchor" id="restaurants"></div>
+                <h2>Restaurants</h2>
+            </div>
             <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
                 <?php while( have_rows('hotels') ) : the_row();

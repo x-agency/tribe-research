@@ -24,8 +24,8 @@ a {
 }
 
 .anchor {
-    position: absolute;
-    margin-top: calc(-5rem - 78px);
+    position: absolute !important;
+    margin-top: calc(-5rem - 78px) !important;
 }
 
 .st0 {
@@ -496,7 +496,8 @@ body {
         .title {
             color: $blue;
             font-family: 'poppins';
-            font-size: calc(max(18px, min(1.5vw, 25px)));
+            font-size: calc(max(18px, min(1.5vw, 22px)));
+            font-weight: 600;
         }
     }
 }
@@ -905,6 +906,7 @@ svg * {
             margin-top: 1em;
             margin-bottom: 1em;
             color: #616060;
+            font-weight: 600;
 
             @media (max-width: 1000px) {
                 margin-left: 2rem;
@@ -927,8 +929,9 @@ svg * {
                 margin-left: 0.5em;
                 span {
                     color: $blue;
-                    font-size: calc(max(20px, min(3vw, 25px)));
+                    font-size: calc(max(20px, min(3vw, 22px)));
                     margin-bottom: 0.5em;
+                    font-weight: 600;
 
                     &::after {
                         content: '';
@@ -1151,9 +1154,9 @@ svg * {
 
     .foreground {
         min-height: unset;
-        margin-top: -427px;
-        position: relative;
-        margin-bottom: 10em;
+        margin: unset;
+        top: 50%;
+        transform: translateY(-50%);
 
         h2.alt::after {
             left: 15em;
@@ -1270,9 +1273,13 @@ svg * {
 .benefits {
     .foreground {
         min-height: unset;
-        margin-top: -44em;
+        margin-top: -34vw;
         position: relative;
         margin-bottom: 20em;
+
+        @media (max-width: 1599px) {
+            margin-top: -37vw;
+        }
 
         @media (max-width: 1199px) {
             margin: 0 auto 5rem;
@@ -1321,8 +1328,8 @@ svg * {
 
 p.title {
     color: $blue;
-    font-size: calc(max(16px, min(1.5vw, 25px)));
-    font-weight: bold;
+    font-size: calc(max(16px, min(1.5vw, 22px)));
+    font-weight: 600;
     font-family: 'poppins';
 
     &.purple {
@@ -1447,6 +1454,10 @@ p.title {
                 max-width: 175px;
             }
         }
+    }
+
+    a img {
+        width: 70%;
     }
 
     .cooking {

@@ -41,7 +41,7 @@
                 <h2 class="alt">Reasons for Research</h2>
                 <p>Clinical trials are designed to advance medical science and improve quality of life for so many people.</p>
                 <p>Interested in learning more? Watch our video.</p>
-                <a href="#" class="btn purple">Watch Our Video</a>
+                <a href="https://www.youtube.com/watch?v=9msDSaKbPjw" class="btn purple">Watch Our Video</a>
             </div>
         </div>
     </div>
