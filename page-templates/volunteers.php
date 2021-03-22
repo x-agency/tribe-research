@@ -74,7 +74,7 @@
             $q = get_sub_field('question');
             $a = get_sub_field('answer');
             ?>
-                <?php if (get_row_index() == 0) : ?>
+                <?php if (get_row_index() == 1) : ?>
                     <div class="col-xl-5 offset-xl-1 mb-0">
                 <?php endif; ?> 
                 
