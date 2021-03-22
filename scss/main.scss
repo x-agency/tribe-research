@@ -637,7 +637,7 @@ svg * {
         @media (max-width: 1399px) {
             flex-direction: column;
 
-            .filter-btn + .filter-btn {
+            .filter-btn+.filter-btn {
                 margin-top: 3rem;
             }
         }
@@ -683,12 +683,12 @@ svg * {
         .simple-link:nth-child(2) .btn-alt {
             margin-left: 2.5em;
 
-            
+
             @media (max-width: 1399px) {
                 margin-left: 0.75em;
                 /*border-top: none;*/
             }
-            
+
         }
 
         .filter-btn,
@@ -756,7 +756,7 @@ svg * {
 
             &:nth-child(2) {
                 margin-left: 2.5em;
-                
+
                 @media (max-width: 1399px) {
                     margin-left: 0.75em;
                     /*border-top: none;*/
@@ -903,7 +903,7 @@ svg * {
         }
     }
 
-    .row > * {
+    .row>* {
         flex-shrink: 1;
     }
 
@@ -937,9 +937,10 @@ svg * {
             }
 
             li {
-                margin-bottom: 0.5em; 
+                margin-bottom: 0.5em;
                 position: relative;
                 margin-left: 0.5em;
+
                 span {
                     color: $blue;
                     font-size: calc(max(20px, min(3vw, 22px)));
@@ -976,7 +977,7 @@ svg * {
     position: relative;
 
     p {
-        font-size: calc(max(20px, min(3vw, 22px)));
+        font-size: 17px;
     }
 
     .author {
@@ -994,10 +995,10 @@ svg * {
 
     .quote {
         font-family: 'poppins';
-        font-size: calc(max(125px, min(11vw, 200px)));
+        font-size: calc(max(125px, min(7vw, 200px)));
         position: absolute;
-        top: 0.4em;
-        left: -0.375em;
+        top: 0.1em;
+        left: -0.7em !important;
         display: inline-block;
         color: $blue;
         font-weight: 500;
@@ -1231,8 +1232,9 @@ svg * {
         transition: all 0.6s;
     }
 
-    .hotels, .restaurants {
-        
+    .hotels,
+    .restaurants {
+
         h2 {
             border-bottom: 2px solid #cecece;
             padding-bottom: 0.5em;
@@ -1329,7 +1331,7 @@ svg * {
     text-align: center;
 
     svg {
-        width: calc(max(80px, min(13vw, 145px)));
+        width: calc(max(80px, min(7vw, 145px)));
         height: auto;
         margin-bottom: 2em;
     }
@@ -1379,6 +1381,7 @@ p.title {
     .title {
         position: relative;
         font-weight: 600;
+        font-size: 18px;
     }
 
     .title::before {
@@ -1484,9 +1487,7 @@ p.title {
         margin: 5rem 0.5rem 0;
 
         .content {
-            display: flex;
-            max-width: 1137px;
-            margin: 3rem 0;
+
 
             @media (max-width: 1199px) {
                 display: block;
@@ -1495,12 +1496,16 @@ p.title {
 
             p {
                 max-width: 80ch;
+
+                @include respond-below(lg) {
+                    margin-top: 40px;
+                }
             }
         }
 
         img {
-            width: calc(max(300px, min(90vw, 1137px)));
-            max-width: unset;
+            // width: calc(max(300px, min(90vw, 1137px)));
+            // max-width: unset;
         }
 
         .btn {
@@ -1508,7 +1513,7 @@ p.title {
             color: black;
             flex: 0 0 auto;
             height: 3em;
-            margin-left: 2em;
+
         }
     }
 }
@@ -1815,7 +1820,8 @@ footer {
 
 .controls {
 
-    .prev, .next {
+    .prev,
+    .next {
         width: 50px;
         height: 50px;
         position: absolute;

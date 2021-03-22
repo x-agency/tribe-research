@@ -168,10 +168,18 @@
         </div>
     </div>
     <div class="cooking">
-        <img src="/wp-content/themes/tribe-research/img/volunteers-4.jpg" alt="The Cooking Doc">
-        <div class="content">
-            <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
-            <a href="https://www.youtube.com/user/CarolinaNephrologyTV/about" target="_blank" rel="noopener noreferrer" class="btn">Visit YouTube Channel</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                   <img src="/wp-content/themes/tribe-research/img/the-cooking-doc.jpg" alt="The Cooking Doc">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-3">
+                    <div class="content">
+                        <p>An online cooking series from Carolina Nephrology, featuring Dr. Blake Shusterman, where he combines his knowledge of nephrology with his passion for cooking.</p>
+                        <a href="https://www.youtube.com/user/CarolinaNephrologyTV/about" target="_blank" rel="noopener noreferrer" class="btn">Visit YouTube Channel</a>
+                      </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
