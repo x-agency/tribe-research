@@ -83,12 +83,12 @@
 </section>
 
 <section class="monitor">
-    <div class="section-hero mb-5">
+    <div class="section-hero">
         <div class="anchor" id="monitor-guidelines"></div>
         <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-monitor-hero.jpg">
         <img class="monitor-text" src="/wp-content/themes/tribe-research/img/monitor-text.png" alt="Monitor Guidelines">
     </div>
-    <div class="container pt-5">
+    <div class="container">
         <div class="row">
             <div class="line"></div>
             <p>We look forward to working with you and hope these guidelines ensure a more efficient use of your time and ours during your monitoring visit. Due to our current study volume and increased patient visit schedule we ask that you adhere to the following guidelines.</p>
@@ -123,7 +123,7 @@
 </section>
 
 <section class="our-area">
-    <div class="section-hero">
+    <div class="section-hero mb-5">
         <div class="anchor" id="our-area"></div>
         <div class="background"><img src="/wp-content/themes/tribe-research/img/sponsors-area-hero.jpg"></div>
         <div class="foreground">
@@ -134,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="anchor" id="hotels-restaurants"></div>
             <div class="controls col-12 mb-5">
