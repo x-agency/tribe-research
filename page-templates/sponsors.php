@@ -154,7 +154,7 @@
         <div class="row">
             <div class="col-12 text-center">
             <div class="anchor" id="hotels"></div>
-                <h2>Hotels</h2>
+                <h2><strong>Hotels</strong></h2>
             </div>
             <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
@@ -192,7 +192,7 @@
         <div class="row">
             <div class="col-12 text-center">
             <div class="anchor" id="restaurants"></div>
-                <h2>Restaurants</h2>
+                <h2><strong>Restaurants</strong></h2>
             </div>
             <div class="col-lg-3 offset-lg-3 hotels active">
                 <h2>I-85/Pelham Road Area</h2>
