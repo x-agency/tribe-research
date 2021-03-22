@@ -20,6 +20,7 @@
 </section>
 
 <section class="difference container">
+    <div class="anchor" id="difference"></div>
     <div class="row">
         <div class="col-12 mb-3"><h2 class="title">The Tribe Difference</h1></div>
         <div class="col-lg-6">
