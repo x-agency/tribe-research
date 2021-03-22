@@ -1840,3 +1840,17 @@ footer {
         transform: translateY(-50%) scaleX(-1);
     }
 }
+
+/** Default Page **/
+
+.page-template-default {
+
+    nav.navbar {
+        background: $purple;
+    }
+
+    .ast-container #primary {
+        margin-top: 10rem;
+        min-height: 65vh;
+    }
+}
