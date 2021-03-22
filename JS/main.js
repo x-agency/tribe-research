@@ -79,6 +79,33 @@ $(document).ready(function () {
         $(this).css("max-height", "calc( 1em + " + faqItemHeightClosed + "px");
     });
 
+    //reset height for faq accordion when user resizes screen
+    var rtime;
+    var timeout = false;
+    var delta = 200;
+    $(window).resize(function() {
+        rtime = new Date();
+        if (timeout === false) {
+            timeout = true;
+            setTimeout(resizeend, delta);
+        }
+    });
+
+    function resizeend() {
+        if (new Date() - rtime < delta) {
+            setTimeout(resizeend, delta);
+        } else {
+            timeout = false;
+            $('.faq-item').each( function() {
+                faqItemHeightClosed = $(this).children('.title').height();
+                faqItemHeightOpen = $(this).height();
+                $(this).attr("data-closed", faqItemHeightClosed);
+                $(this).attr("data-open", faqItemHeightOpen);
+                $(this).css("max-height", "calc( 1em + " + faqItemHeightClosed + "px");
+            });
+        }               
+    }
+
     //open the item
     $('.faq-item').click(function() {
         if ( $(this).hasClass('open') ) { //close the item
