@@ -73,7 +73,107 @@
     </div>
 </section>
 
+<section class="medical-directors container pt-5 mt-5">
+    <h2>Medical Directors:</h2>
+    <div class="carousel">
+        <div class="track">
+            <div class="slide">
+                <img src="/wp-content/themes/tribe-research/img/dobson.jpg">
+                <div>
+                    <h3>Scott Dobson, MD</h3>
+                    <p><em>Pediatrics Medical Director</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </div>
+</section>
+
 <!-- Template Part -->
 <?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
+<script>
+jQuery(document).ready(function($) {
+    $carousel = $('.carousel'),
+    $track = $('.track'),
+    slideCount = $('.slide').length,
+    width = $('.slide').width(),
+    threshold = width / 4,
+    dragStart = 0,
+    dragEnd = 0,
+    count = 1,
+    $item = $('.slide');
+
+    $carousel.css("overflow", "hidden");
+    $track.css("left", ( ( slideCount * -1 ) + "00%")).css({"display":"flex", "position":"relative"});
+    $('.slide').css({"flex":"0 0 auto", "width":"100%"});
+    for (var i = 0; i < slideCount; i++) {
+        $('.slide').eq(slideCount - 1).clone().prependTo('.track');
+    }
+
+    $('.slide').on('mousedown touchstart', function(e) {
+        if ($track.hasClass('transition')) return; //if the carousel is in motion, prevent new movement until complete
+        if (e.type == 'touchstart') dragStart = e.originalEvent.touches[0].pageX; 
+        if (e.type == 'mousedown') dragStart = e.pageX;
+        $target = $(e.target);
+        $carousel.on('mousemove touchmove', function(e){ 
+            grabbed = true;
+            if (e.type == 'touchmove') dragEnd = e.originalEvent.touches[0].pageX;
+            if (e.type == 'mousemove') dragEnd = e.pageX;
+            $track.css('transform','translateX('+ dragPos() +'px)');
+            $item.css('cursor', 'grabbing');
+            dragDistance = dragPos();
+        });
+        $(document).on('mouseup touchend', function(){
+            count = dragDistance / width;
+            $item.css('cursor', 'grab');
+            if (dragPos() > threshold) { return shiftSlide(1) } //to the left
+            if (dragPos() < -threshold) { return shiftSlide(-1) } //to the right
+            count = 0;
+            shiftSlide(0);
+        });
+    });
+
+    function dragPos() {
+        return dragEnd - dragStart;
+    }
+
+    function shiftSlide(direction) {
+        if($track.hasClass('transition')) return;
+        dragEnd = dragStart;
+        count = direction === -1 ? Math.floor(count) : Math.ceil(count);
+        $(document).off('mouseup touchend');
+        $carousel.off('mousemove touchmove');
+        $track.addClass('transition').css('transform','translateX(' + (width * count) + 'px)');
+        setTimeout(function(){
+            if (direction >= 1) { // to the left
+                while (count > 0) {
+                    $track.find('.slide:first-child').before($track.find('.slide:last-child'));
+                    count--;
+                }
+            } else if (direction <= -1) { //to the right
+                while (count < 0) {
+                    $track.find('.slide:last-child').after($track.find('.slide:first-child'));
+                    count++;
+                }
+            }
+            $track.removeClass('transition')
+            $track.css('transform','translateX(0px)');
+        }, 600);
+    }
+
+    $('.prev').click(function() {
+        count = 1;
+        return shiftSlide(1);
+    });
+
+    $('.next').click(function() {
+        count = -1;
+        return shiftSlide(-1);
+    });
+});
+</script>

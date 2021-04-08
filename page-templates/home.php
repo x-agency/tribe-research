@@ -12,8 +12,8 @@
         <div class="hero-wrapper container-fluid px-0">
             <div class="hero-inner">
                 <div class="title-wrapper">
-                    <h1>The<br> Future<br> of Medicine<br> Begins<br> With You</h1>
-                    <div class="subtitle">We Invite You to Become Part of <br>Something Bigger.</div>
+                    <h1>A Mission<br> To Serve<br> And Offer<br> Hope.</h1>
+                    <div class="subtitle">Serving Infants through Adults <br>in Upstate SC</div>
                 </div>
                 <div class="hero-box">
                     <p>Through clinical research, we’re advancing medical science and improving the quality of life for
@@ -32,11 +32,7 @@
             </div>
             <div class="col-md-7 right">
                 <h1>Welcome to Tribe Clinical Research.</h1>
-                <p>At Tribe Clinical Research, our intent is to provide the best care possible for you or your family by
-                    offering access to advanced medicinal research in the form of vaccine clinical trials. To put your
-                    mind at ease, these studies have already passed a number of benefit and safety requirements and are
-                    almost ready for general public release. We invite you to join us on the journey to better health.
-                </p>
+                <p>At Tribe Clinical Research, we intend to provide the best care possible for you or your family by offering access to advanced medicinal research in the form of vaccine clinical trials. To put your mind at ease, these studies have already passed several benefit and safety requirements and are almost ready for general public release. We invite you to join us on the journey to better health.</p>
                 <div class="link"><a href="/about#difference" class="simple-link">Our Difference
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>

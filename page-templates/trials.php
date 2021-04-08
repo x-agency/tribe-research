@@ -26,31 +26,17 @@
                     <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
                     <p>Pediatrics</p>
                 </a>
-
                 <a class="filter-btn" href="#adults">
-                    <?php echo file_get_contents(__DIR__ . '/../img/trials1.svg'); ?>
+                    <?php echo file_get_contents(__DIR__ . '/../img/adults.svg'); ?>
                     <p>Adults</p>
                 </a>
-                
-                <!--div class="filter-btn" id="diabetes">
-                    <?php echo file_get_contents(__DIR__ . '/../img/trials2.svg'); ?>
-                    <p>Diabetes</p>
-                </div>
-                <div class="filter-btn" id="cardiac">
-                    <?php echo file_get_contents(__DIR__ . '/../img/trials3.svg'); ?>
-                    <p>Cardiac</p>
-                </div>
-                <div class="filter-btn" id="pulmonary">
-                    <?php echo file_get_contents(__DIR__ . '/../img/trials4.svg'); ?>
-                    <p>Pulmonary</p>
-                </div>
-                <div class="filter-btn" id="digestive">
-                    <?php echo file_get_contents(__DIR__ . '/../img/trials5.svg'); ?>
-                    <p>Digestive</p>
-                </div-->
             </div>
         </div>
     </div>
+</section>
+
+<section class="accepting-banner">
+    <p><strong>Currently Accepting New Trials<strong></p>
 </section>
 
 <section class="studies container">
@@ -92,7 +78,7 @@
     <div class="row adults active">
         <div class="anchor" id="adults"></div>
         <div class="col-12 p-0">
-            <h2>Adult:</h2>
+            <h2>Adults:</h2>
         </div>
         <div class="col-md-4 col-xl-3 text-center study">
             <div class="study-image">

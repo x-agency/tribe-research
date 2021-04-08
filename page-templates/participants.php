@@ -1,6 +1,6 @@
 <?php
    /*
-    Template Name: Volunteers
+    Template Name: Participants
     */
     if ( ! defined( 'ABSPATH' ) ) {
       exit; // Exit if accessed directly.
@@ -12,7 +12,7 @@
     <img class="bg" src="/wp-content/themes/tribe-research/img/volunteers-hero.jpg">    
     <div class="content">
         <div class="text">
-            <img src="/wp-content/themes/tribe-research/img/volunteers-title.png"/>
+            <img src="/wp-content/themes/tribe-research/img/participants-title.png"/>
             <p>If you or a family member is interested in participating in a current clinical trial or if you would like more information about future trials, please contact us to speak with one of our team members.</p>
         </div>
         <img src="/wp-content/themes/tribe-research/img/volunteers-1.jpg" alt="Female doctor with hand on shoulder of female patient.">  
@@ -34,7 +34,7 @@
 
 <section class="benefits">
     <div class="section-hero">
-        <div class="background"><img src="/wp-content/themes/tribe-research/img/volunteers-2.jpg"></div>
+        <div class="background"><img src="/wp-content/themes/tribe-research/img/participants-banner.jpg"></div>
         <div class="foreground">
             <div>
                 <h2>The Benefits:</h2>
@@ -100,7 +100,7 @@
             <div class="slide">
                 <div class="testimonial">
                     <p class="quote">“</p>
-                    <p>Participation in clinical trials is not without risks; however, patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
+                    <p>Patients are closely monitored and there are often health benefits. Patients receive education about their disease, access to a drug that might not be available because of cost or availability outside the trial, and, in many cases, see improvement because they are paying more attention to their health.</p>
                     <div class="author-container">
                         <img src="/wp-content/themes/tribe-research/img/volunteers-3.jpg">
                         <p class="author">Dr. Ronald K. Mayfield</p>

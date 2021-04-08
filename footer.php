@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="">
 				<a class="simple-link link-dark" href="/about"><strong>About Us</strong></a>
 				<a class="simple-link link-dark" href="/clinical-trials"><strong>Clinical Trials</strong></a>
-				<a class="simple-link link-dark" href="/volunteers"><strong>Volunteers</strong></a>
+				<a class="simple-link link-dark" href="/participants"><strong>Participants</strong></a>
 				<a class="simple-link link-dark" href="/sponsors"><strong>Sponsors</strong></a>
 			</div>
 			<div class="">
