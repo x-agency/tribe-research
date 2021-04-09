@@ -45,17 +45,25 @@
         <div class="col-12 p-0">
             <h2>Pediatric:</h2>
         </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="/wp-content/themes/tribe-research/img/trial1.jpg" alt="">
-                <div class="overlay">
-                    <p class="study-desc">This study investigates a new medication for people with type two diabetes and elevated triglycerides.</p>
-                    <a href="#" class="btn">Download PDF</a>
+        <?php while ( have_rows('pediatric') ) : the_row(); 
+            $image = get_sub_field('image');
+            $desc = get_sub_field('desc');
+            $link = get_sub_field('link');
+            $title = get_sub_field('title');
+            $id = get_sub_field('id');
+        ?>
+            <div class="col-md-4 col-xl-3 text-center study">
+                <div class="study-image">
+                    <img src="<?php echo $image; ?>" alt="">
+                    <div class="overlay">
+                        <p class="study-desc"><?php echo $desc; ?></p>
+                        <a href="<?php echo $link; ?>" class="btn">Download PDF</a>
+                    </div>
                 </div>
+                <p class="study-title"><?php echo $title; ?></p>
+                <p class="study-id"><?php echo $id; ?></p>
             </div>
-            <p class="study-title">Diabetic Kidney Disease</p>
-            <p class="study-id">C1973-203</p>
-        </div>
+        <?php endwhile; ?>
     </div>
 
     <div class="row adults active">
@@ -63,17 +71,25 @@
         <div class="col-12 p-0">
             <h2>Adults:</h2>
         </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="/wp-content/themes/tribe-research/img/trial1.jpg" alt="">
-                <div class="overlay">
-                    <p class="study-desc">This study investigates a new medication for people with type two diabetes and elevated triglycerides.</p>
-                    <a href="#" class="btn">Download PDF</a>
+        <?php while ( have_rows('adult') ) : the_row(); 
+            $image = get_sub_field('image');
+            $desc = get_sub_field('desc');
+            $link = get_sub_field('link');
+            $title = get_sub_field('title');
+            $id = get_sub_field('id');
+        ?>
+            <div class="col-md-4 col-xl-3 text-center study">
+                <div class="study-image">
+                    <img src="<?php echo $image; ?>" alt="">
+                    <div class="overlay">
+                        <p class="study-desc"><?php echo $desc; ?></p>
+                        <a href="<?php echo $link; ?>" class="btn">Download PDF</a>
+                    </div>
                 </div>
+                <p class="study-title"><?php echo $title; ?></p>
+                <p class="study-id"><?php echo $id; ?></p>
             </div>
-            <p class="study-title">Diabetic Kidney Disease</p>
-            <p class="study-id">C1973-203</p>
-        </div>
+        <?php endwhile; ?>
     </div>
 </section>
 
