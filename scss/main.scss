@@ -533,12 +533,6 @@ body {
     position: relative;
 }
 
-@include respond-above(xl) {
-    .team {
-        padding-bottom: calc(min(20vw, 150px));
-    }
-}
-
 .background {
     img {
         min-height: 200px;
@@ -593,6 +587,22 @@ body {
                 }
             }
         }
+    }
+}
+
+.team {
+    padding-top: 5em;
+
+    @include respond-above(xl) {
+        .background {
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .foreground {
+        position: relative;
+        top: 0;
     }
 }
 
@@ -875,7 +885,7 @@ svg * {
 
     .row {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         transition: all 0.6s ease;
 
         opacity: 0;
@@ -915,7 +925,7 @@ svg * {
         }
 
         &:hover {
-            .study-image .btn {
+            .overlay {
                 opacity: 1;
             }
         }
@@ -928,20 +938,39 @@ svg * {
             margin: 0 auto;
 
             .btn {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 color: black;
                 transition: all 0.6s ease;
                 white-space: nowrap;
-                opacity: 0;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            background: #000000b3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.6s;
+            padding: 1rem;
+
+            p {
+                color: white;
+                font-family: 'poppins';
+                font-size: 20px;
+                letter-spacing: -0.04em;
             }
         }
 
         .study-title {
             font-size: calc(max(14px, min(3vw, 20px)));
             font-family: 'poppins';
+            margin-bottom: 0;
+            font-weight: bold;
         }
     }
 }

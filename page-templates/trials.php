@@ -47,31 +47,14 @@
         </div>
         <div class="col-md-4 col-xl-3 text-center study">
             <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
+                <img src="/wp-content/themes/tribe-research/img/trial1.jpg" alt="">
+                <div class="overlay">
+                    <p class="study-desc">This study investigates a new medication for people with type two diabetes and elevated triglycerides.</p>
+                    <a href="#" class="btn">Download PDF</a>
+                </div>
             </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
+            <p class="study-title">Diabetic Kidney Disease</p>
+            <p class="study-id">C1973-203</p>
         </div>
     </div>
 
@@ -82,31 +65,14 @@
         </div>
         <div class="col-md-4 col-xl-3 text-center study">
             <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
+                <img src="/wp-content/themes/tribe-research/img/trial1.jpg" alt="">
+                <div class="overlay">
+                    <p class="study-desc">This study investigates a new medication for people with type two diabetes and elevated triglycerides.</p>
+                    <a href="#" class="btn">Download PDF</a>
+                </div>
             </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
-        </div>
-        <div class="col-md-4 col-xl-3 text-center study">
-            <div class="study-image">
-                <img src="" alt="">
-                <a href="#" class="btn">Download PDF</a>
-            </div>
-            <p class="study-title">Study Name</p>
+            <p class="study-title">Diabetic Kidney Disease</p>
+            <p class="study-id">C1973-203</p>
         </div>
     </div>
 </section>
