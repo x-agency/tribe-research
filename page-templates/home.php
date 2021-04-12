@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-7 right">
                 <h1>Welcome to Tribe Clinical Research.</h1>
-                <p>At Tribe Clinical Research, we intend to provide the best care possible for you or your family by offering access to advanced medicinal research in the form of vaccine clinical trials. To put your mind at ease, these studies have already passed several benefit and safety requirements and are almost ready for general public release. We invite you to join us on the journey to better health.</p>
+                <p>At Tribe Clinical Research, we intend to provide the best care possible for you or your family by offering access to advanced medicinal research in the form of clinical trials. To put your mind at ease, these studies have already passed several benefit and safety requirements and are almost ready for general public release. We invite you to join us on the journey to better health.</p>
                 <div class="link"><a href="/about#difference" class="simple-link">Our Difference
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>
