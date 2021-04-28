@@ -27,13 +27,13 @@
     <div class="info">
         <h1>Contact Information:</h1>
         <p>Tribe Clinical Research</p>
-        <p>405 Memorial Drive Extension</p>
-        <p>Greer, SC 29651</p>
+        <p>545 Verdae Blvd. Suite B</p>
+        <p>Greenville, SC 29607</p>
 
         <div class="links">
             <a href="tel:864.334.0141" class="simple-link">Phone:  864.334.0141</a>
             <a href="fax:+18643340137" class="simple-link">Fax: 864.334.0137</a>
-            <a href="mailto:info@tribeclinicalresearch.com" class="simple-link">Email: info@tribeclinicalresearch.com</a>
+            <a href="mailto:info@tribecr.com" class="simple-link">Email: info@tribecr.com</a>
         </div>
 
         <p class="title">Hours of Operation:</p>

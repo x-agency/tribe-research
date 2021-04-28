@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<p class="title purple"><strong>Get in Touch:</strong></p>
 				<p><strong>Phone:</strong> <a class="simple-link link-dark" href="tel:864.334.0141">864.334.0141</a></p>
 				<p><strong>Fax:</strong> <a class="simple-link link-dark" href="fax:+18643340137">864.334.0137</a></p>
-				<p><strong>Email:</strong> <a class="simple-link link-dark" href="mailto:info@tribeclinicalresearch.com">info@tribeclinicalresearch.com</a></p>
+				<p><strong>Email:</strong> <a class="simple-link link-dark" href="mailto:info@tribecr.com">info@tribecr.com</a></p>
 			</div>
 		</div>
 		<div class="copyright">
