@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a class="simple-link link-dark" href="/sponsors"><strong>Sponsors</strong></a>
 			</div>
 			<div class="">
-				<p class="simple-link link-dark"><strong>Contact</strong></p>
+				<a href="/contact"class="simple-link link-dark"><strong>Contact</strong></a>
 				<a href="/terms-of-service" class="simple-link"><strong>Terms of Service</strong></a>
 				<a href="/privacy-policy" class="simple-link"><strong>Privacy Policy</strong></a>
 			</div>
