@@ -37,8 +37,8 @@
         </div>
 
         <p class="title">Hours of Operation:</p>
-        <p>Monday – Thursday: 7:00 am to 5:00 pm</p>
-        <p>Friday: 7:00 am to 12:30 pm</p>
+        <p>Monday – Thursday: 7:30 am to 4:30 pm</p>
+        <p>Friday: 7:30 am to 12:30 pm</p>
     </div>
 </section>
 

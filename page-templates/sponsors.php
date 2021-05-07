@@ -130,7 +130,7 @@
             <div>
                 <h2 class="alt">Our Area</h2>
                 <p>We would like to share some information to help you enjoy your stay in the area. Our facility is easily accessible from Greer or Greenville. If you find a favorite hotel or restaurant, please let us know so that we can share the information with other CRA’s working at our facilities. We hope you find this information helpful and will love the area as much as we do!</p>
-                <a href="https://www.google.com/maps/place/405+Memorial+Dr+Ext,+Greer,+SC+29651/@34.9508324,-82.240253,17z/data=!4m5!3m4!1s0x88582ac7368b3dfd:0x635254a3e3db798f!8m2!3d34.950828!4d-82.2380643" class="simple-link arrow">Directions<?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                <a href="https://goo.gl/maps/5Gyh11ZpPzQ21fsQ8" target="_blank" class="simple-link arrow">Directions<?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
             </div>
         </div>
     </div>
