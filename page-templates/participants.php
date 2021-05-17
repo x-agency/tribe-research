@@ -22,9 +22,16 @@
 
 <section class="video container">
     <div class="row">
-        <img src="" alt="">
+        <img class="modal-thumbnail" src="/wp-content/themes/tribe-research/img/modal.jpg" alt="">
     </div>
 </section>
+<div class="modal">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <div class="close">+</div>
+        <iframe src="https://player.vimeo.com/video/551633583?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</div>
 
 <!-- <section class="trial container difference mb-5">
     <div class="row">
@@ -278,5 +285,18 @@ jQuery(document).ready(function($) {
         count = -1;
         return shiftSlide(-1);
     });
+
+    $('.modal iframe').attr("data-src", $('.modal iframe').attr("src"));
+    $('.modal iframe').attr("src", "");
+
+    $('.modal-thumbnail').click(function() {
+        $('.modal').addClass('show');
+        $('.modal iframe').attr("src", $('.modal iframe').attr("data-src"));
+    });
+
+    $('.close').click(function() {
+        $('.modal').removeClass('show');
+        $('.modal iframe').attr("src", "");
+    })
 });
 </script>

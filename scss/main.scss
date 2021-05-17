@@ -1483,6 +1483,59 @@ svg * {
     }
 }
 
+.modal-thumbnail {
+    max-width: 963px;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.modal {
+    background: #0000007f;
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 7.5rem 12vw 0;
+
+    @include respond-below(lg) {
+        padding: 5.5rem 9vw 0;
+    }
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .close {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -30px;
+        right: -6rem;
+        color: white;
+        font-size: 85px;
+        font-weight: bold;
+        font-family: 'Open Sans';
+        transform: rotate(45deg);
+
+        @include respond-below(lg) {
+            font-size: 45px;
+            top: -15px;
+            right: -4.5rem;
+        }
+
+        @include respond-below(sm) {
+            top: -45px;
+            right: -30px;
+        }
+    }
+
+    > div {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .benefits {
     .foreground {
         min-height: unset;
