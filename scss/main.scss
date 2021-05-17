@@ -1020,6 +1020,11 @@ svg * {
             font-weight: bold;
             font-size: calc(max(14px, min(3vw, 20px)));
             letter-spacing: -0.04em;
+            opacity: 0;
+
+            &.active {
+                opacity: 1;
+            }
         }
 
         .simple-link {
@@ -1851,7 +1856,8 @@ p.title {
         input,
         textarea {
             background: #f3f3f3;
-            border: 2px solid $purple;
+            // border: 2px solid $purple;
+            border: 2px solid #f3f3f3;
             color: black;
             border-radius: 0;
             box-shadow: none;
@@ -1884,7 +1890,8 @@ p.title {
                     height: 1em;
                     display: inline-block;
                     background: white;
-                    border: 2px solid $purple;
+                    // border: 2px solid $purple;
+                    border: 2px solid #616060;
                     border-radius: 50%;
                     top: 0.125em;
                     position: relative;

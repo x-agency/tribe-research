@@ -8,14 +8,21 @@
     ?>
 <?php get_header(); ?>
 
+<?php $hero = get_field('hero'); ?>
 <section class="hero hero-overlap">
     <img class="bg" src="/wp-content/themes/tribe-research/img/volunteers-hero.jpg">    
     <div class="content">
         <div class="text">
             <img src="/wp-content/themes/tribe-research/img/participants-title.png"/>
-            <p>If you or a family member is interested in participating in a current clinical trial or if you would like more information about future trials, please contact us to speak with one of our team members.</p>
+            <p><?php echo $hero['body']; ?></p>
         </div>
         <img src="/wp-content/themes/tribe-research/img/volunteers-1.jpg" alt="Female doctor with hand on shoulder of female patient.">  
+    </div>
+</section>
+
+<section class="video container">
+    <div class="row">
+        <img src="" alt="">
     </div>
 </section>
 
@@ -140,31 +147,36 @@
             <div class="col-12">
                 <h2>Resources</h2>
             </div>
-            <div class="col-xl-2 col-lg-6 offset-xl-1 text-center mb-xl-0 mb-5">
-                <a href="https://www.diabetes.org/" target="_blank" rel="noopener noreferrer">
-                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-1.png">
-                </a>
-            </div>
-            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <a href="https://www.centerwatch.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
-                </a>
-            </div>
-            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <a href="https://www.ciscrp.org/" target="_blank" rel="noopener noreferrer">
-                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
-                </a>
-            </div>
-            <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
-                <a href="http://clinicalresearch.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
-                </a>
-            </div>
-            <div class="col-xl-2 col-lg-6 text-center">
-                <a href="http://clinicaltrials.gov/" target="_blank" rel="noopener noreferrer">
-                    <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
-                </a>
-            </div>
+            <?php $i = 0; while ( have_rows('resources') ) : the_row();
+                $image = get_sub_field('image');
+                $link = get_sub_field('link');
+            ?>
+                <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                    <a href="<?php echo $link; ?>" target="_blank" rel="noopener noreferrer">
+                        <img src="<?php echo $image; ?>">
+                    </a>
+                </div>
+                <!-- <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                    <a href="https://www.centerwatch.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-logo-2.png">
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                    <a href="https://www.ciscrp.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-logo-3.png">
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">
+                    <a href="http://clinicalresearch.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-logo-4.png">
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-6 text-center">
+                    <a href="http://clinicaltrials.gov/" target="_blank" rel="noopener noreferrer">
+                        <img src="/wp-content/themes/tribe-research/img/volunteers-logo-5.png">
+                    </a>
+                </div> -->
+            <?php endwhile; ?>
         </div>
     </div>
     <!-- <div class="cooking">

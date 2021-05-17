@@ -8,16 +8,18 @@
     ?>
 <?php get_header(); ?>
 
+<?php $hero = get_field('content_hero'); ?>
 <section class="hero hero-overlap">
     <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-hero.jpg">    
     <div class="content">
         <img src="/wp-content/themes/tribe-research/img/sponsors.jpg" alt="Female doctor with hand on shoulder of female patient.">
         <div class="text">
             <img src="/wp-content/themes/tribe-research/img/sponsors-text.png"/>
-            <p>We’re building a collaborative network in the Upstate based on shared principles of respect and commitment to improve patient care through quality clinical research. This continued dedication to solid partnerships assists in providing quality outcomes for clinical trials while providing the best possible medical care to our study volunteers. If you are interested in partnering with Tribe to offer clinical research at your practice, please reach out to us via our contact portal. Together we can make a huge impact in the filed of medicine.</p>
+            <p><?php echo $hero['body']; ?></p>
         </div>    
     </div>
 </section>
+
 
 <section class="explore container">
     <div class="row">
@@ -57,27 +59,39 @@
         <div class="anchor" id="our-facility"></div>
         <p class="title offset-lg-1">At our facilities, we offer:</p>
         <ul class="col-xl-5 offset-xl-1 mb-0">
-            <li><span>Easy access to a major airport</span></li>
-            <li><span>Designated monitoring space with private space available at your request</span></li>
-            <li><span>Telephone for monitor use</span></li>
-            <li><span>High speed wireless DSL</span></li>
-            <li><span>High volume copier</span></li>
+            <?php while ( have_rows('list_left') ) : the_row(); 
+                $left = get_sub_field('list_item');
+            ?>
+                <li><span><?php echo $left; ?></span></li>
+                <!-- <li><span>Easy access to a major airport</span></li>
+                <li><span>Designated monitoring space with private space available at your request</span></li>
+                <li><span>Telephone for monitor use</span></li>
+                <li><span>High speed wireless DSL</span></li>
+                <li><span>High volume copier</span></li> -->
+            <?php endwhile; ?>
         </ul>
+        
         <ul class="col-xl-4">
-            <li><span>Shredder</span></li>
-            <li><span>Fax machine</span></li>
-            <li><span>On site storage of all documents</span></li>
-            <li><span>Low query rates with rapid resolution</span></li>
-            <li><span>Full time data/quality assurance coordinator</span></li>
+            <?php while ( have_rows('list_right') ) : the_row(); 
+                $right = get_sub_field('list_item');
+            ?>
+                <li><span><?php echo $right; ?></span></li>
+                <!-- <li><span>Shredder</span></li>
+                <li><span>Fax machine</span></li>
+                <li><span>On site storage of all documents</span></li>
+                <li><span>Low query rates with rapid resolution</span></li>
+                <li><span>Full time data/quality assurance coordinator</span></li> -->
+            <?php endwhile; ?>
         </ul>
         <!--a href="" class="btn purple">Take Our Virtual Tour</a-->
     </div>
     <div class="row">
         <div class="testimonial">
+            <?php $quote = get_field('quote'); ?>
             <p class="quote">“</p>
-            <p>I love your facility and I wish it was mine. Monitors often tell facilities only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
-            <p class="author">Monitor</p>
-            <p class="source">Tribe Clinical Research</p>
+            <p><?php echo $quote['quote']; ?></p>
+            <p class="author"><?php echo $quote['author']; ?></p>
+            <p class="source"><?php echo $quote['position']; ?></p>
         </div>
     </div>
 </section>
@@ -122,15 +136,16 @@
     </div>
 </section> -->
 
+<?php $area = get_field('content_area'); ?>
 <section class="our-area">
     <div class="section-hero mb-5">
         <div class="anchor" id="our-area"></div>
         <div class="background"><img src="/wp-content/themes/tribe-research/img/sponsors-area-hero.jpg"></div>
         <div class="foreground">
             <div>
-                <h2 class="alt">Our Area</h2>
-                <p>We would like to share some information to help you enjoy your stay in the area. Our facility is easily accessible from Greer or Greenville. If you find a favorite hotel or restaurant, please let us know so that we can share the information with other CRA’s working at our facilities. We hope you find this information helpful and will love the area as much as we do!</p>
-                <a href="https://goo.gl/maps/5Gyh11ZpPzQ21fsQ8" target="_blank" class="simple-link arrow">Directions<?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                <h2 class="alt"><?php echo $area['title']; ?></h2>
+                <p><?php echo $area['body']; ?></p>
+                <a href="<?php echo $area['url']; ?>" target="_blank" class="simple-link arrow"><?php echo $area['text']; ?><?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
             </div>
         </div>
     </div>

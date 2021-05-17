@@ -52,13 +52,11 @@
             $title = get_sub_field('title');
             $id = get_sub_field('id');
         ?>
-            <div class="col-md-4 col-xl-3 text-center study">
+            <div class="col-md-4 col-xl-3 text-center study mb-5">
                 <div class="study-image">
                     <img src="<?php echo $image; ?>" alt="">
                 </div>
-                <?php if ( $enrolling == true ) : ?>
-                    <p class="enrolling">NOW ENROLLING</p>
-                <?php endif; ?>
+                <p class="enrolling <?php if ( $enrolling == true ) echo 'active'; ?>">NOW ENROLLING</p>
                 <p class="study-title"><?php echo $title; ?></p>
                 <!-- <p class="study-id"><?php echo $id; ?></p> -->
                 <a href="<?php echo $link; ?>" class="simple-link mb-3">Download PDF</a>

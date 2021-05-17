@@ -59,10 +59,11 @@
     </div>
     <div class="row">
         <div class="testimonial">
+            <?php $quote = get_field('quote'); ?>
             <p class="quote">“</p>
-            <p>I love your facility and I wish it was mine. Monitors often tell facilities only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
-            <p class="author">Monitor</p>
-            <p class="source">Tribe Clinical Research</p>
+            <p><?php echo $quote['quote']; ?></p>
+            <p class="author"><?php echo $quote['author']; ?></p>
+            <p class="source"><?php echo $quote['position']; ?></p>
         </div>
     </div>
 </section>
@@ -97,11 +98,12 @@
     <div class="background"><img src="/wp-content/themes/tribe-research/img/our-team.jpg"></div>
     <div class="foreground">
         <div>
-            <h2>Our Team:</h2>
-            <h2 class="alt">Tested & Proven</h2>
-            <p>Our clinical studies are administered by a team of healthcare professionals (physicians and nurse practitioners) who have been involved in many successful research projects.</p>
-            <p>We operate with a groundbreaking approach—partnering with primary care physicians to provide a better continuum of care for our patient volunteers.</p>
-            <p>Tribe Clinical Research is recognized for excellent patient care, outstanding patient enrollment, and quality data management. We continually exceed standards of Good Clinical Practices.</p>
+            <?php $team = get_field('content_team'); ?>
+            <h2><?php echo $team['title']; ?></h2>
+            <h2 class="alt"><?php echo $team['subtitle']; ?></h2>
+            <p><?php echo $team['body_1']; ?></p>
+            <p><?php echo $team['body_2']; ?></p>
+            <p><?php echo $team['body_3']; ?></p>
         </div>
     </div>
 </section>
@@ -110,13 +112,19 @@
     <h2>Medical Directors:</h2>
     <div class="carousel">
         <div class="track">
-            <div class="slide">
-                <img src="/wp-content/themes/tribe-research/img/dobson.jpg">
-                <div>
-                    <h3>Scott Dobson, MD</h3>
-                    <p><em>Pediatrics Medical Director</em></p>
+            <?php while ( have_rows('md') ) : the_row(); 
+                $image = get_sub_field('image');
+                $name = get_sub_field('name');
+                $position = get_sub_field('position');
+            ?>
+                <div class="slide">
+                    <img src="<?php echo $image; ?>">
+                    <div>
+                        <h3><?php echo $name; ?></h3>
+                        <p><em><?php echo $position; ?></em></p>
+                    </div>
                 </div>
-            </div>
+            <?php endwhile; ?>
         </div>
         <div class="controls">
             <div class="prev"></div>
