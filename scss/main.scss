@@ -247,6 +247,7 @@ body {
     .line {
         height: 175px;
         margin-top: 20px;
+        z-index: 0;
 
         @media (min-width: 1900px) {
             margin-top: -40px;
@@ -279,7 +280,7 @@ body {
     }
 
     .trial-blocks {
-        background-color: $purple;
+        background-color: #e1e1e1;
 
         .trial-blocks-inner {
             width: 80%;
@@ -289,7 +290,7 @@ body {
 
 
             .trial-block {
-                margin: -75px 10px 5px;
+                margin: 50px 10px 5px;
                 transform: translateY(20px);
                 flex: 1;
                 display: flex;
@@ -315,7 +316,7 @@ body {
                 }
 
                 p {
-                    color: white;
+                    color: #0d0d0d;
                     width: 100%;
                     flex: 0 1 auto;
                     flex-grow: 1;
@@ -475,6 +476,44 @@ body {
             }
         }
     }
+
+    .gray-container h2 {
+        font-size: calc(max(25px, min(3vw, 30px)));
+        font-family: 'montserrat';
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #616060;
+        font-weight: bold;
+        letter-spacing: -0.04em;
+        position: relative;
+        z-index: 0;
+
+        @media (max-width: 1000px) {
+            margin-left: 2rem;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            background: #f3f3f3;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            width: 320px;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 90%;
+            height: 2px;
+            background: #cecece;
+            position: absolute;
+            right: 0%;
+            top: 55%;
+            z-index: -2;
+        }
+    }
 }
 
 .mission {
@@ -628,6 +667,7 @@ svg * {
             height: 250px;
             border-radius: 50%;
             object-fit: cover;
+            pointer-events: none;
         }
 
         div {
@@ -691,7 +731,7 @@ svg * {
 
     h2 {
         @include primary-font;
-        color: $purple;
+        color: #616060;
         font-weight: bold;
     }
 
@@ -773,7 +813,8 @@ svg * {
             align-items: center;
             justify-content: center;
             padding: 0.75em;
-            border: 3px solid $purple;
+            background: #f3f3f3;
+            // border: 3px solid $purple;
             margin: 0 0.75em;
             transition: all 0.6s ease;
             cursor: pointer;
@@ -915,7 +956,7 @@ svg * {
     .study {
         padding: 0;
         margin: 0;
-        cursor: pointer;
+        // cursor: pointer;
         min-width: 332px;
         margin-right: 3em;
         width: calc(25% - 3em);
@@ -971,6 +1012,19 @@ svg * {
             font-family: 'poppins';
             margin-bottom: 0;
             font-weight: bold;
+        }
+
+        .enrolling {
+            background: $purple;
+            color: white;
+            font-weight: bold;
+            font-size: calc(max(14px, min(3vw, 20px)));
+            letter-spacing: -0.04em;
+        }
+
+        .simple-link {
+            text-decoration: underline;
+            display: inline-block;
         }
     }
 }
@@ -1069,14 +1123,19 @@ svg * {
 
                     &::after {
                         content: '';
-                        width: 21px;
-                        height: 21px;
-                        background: transparent;
-                        border: 3px solid $purple;
+                        // width: 21px;
+                        // height: 21px;
+                        // background: transparent;
+                        // border: 3px solid $purple;
+                        width: 9px;
+                        height: 9px;
+                        background: $purple;
                         border-radius: 50%;
                         position: absolute;
-                        left: -1.5em;
-                        top: 0.5em;
+                        // left: -1.5em;
+                        // top: 0.5em;
+                        left: -1em;
+                        top: 1em;
                     }
                 }
             }
@@ -1327,7 +1386,8 @@ svg * {
     }
 
     h2 {
-        color: $purple;
+        // color: $purple;
+        color: #616060;
         font-family: 'Poppins';
         font-size: calc(max(18px, min(2.5vw, 22px)));
 
@@ -1368,6 +1428,7 @@ svg * {
             border-bottom: 2px solid #cecece;
             padding-bottom: 0.5em;
             margin-bottom: 1em;
+            color: $purple;
         }
     }
 
@@ -1494,6 +1555,47 @@ p.title {
         font-family: 'poppins';
         font-size: calc(max(30px, min(3vw, 40px)));
         margin-bottom: 1em;
+    }
+
+    ul {
+        padding-left: 1.25em;
+        list-style: none;
+        color: $purple;
+        font-size: calc(max(25px, min(3vw, 30px)));
+
+        @media (max-width: 1000px) {
+            margin-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+            position: relative;
+            margin-left: 0.5em;
+
+            span {
+                color: $blue;
+                font-size: calc(max(20px, min(3vw, 22px)));
+                margin-bottom: 0.5em;
+                font-weight: 600;
+
+                &::after {
+                    content: '';
+                    // width: 21px;
+                    // height: 21px;
+                    // background: transparent;
+                    // border: 3px solid $purple;
+                    width: 9px;
+                    height: 9px;
+                    background: $purple;
+                    border-radius: 50%;
+                    position: absolute;
+                    // left: -1.5em;
+                    // top: 0.5em;
+                    left: -1em;
+                    top: 1em;
+                }
+            }
+        }
     }
 }
 

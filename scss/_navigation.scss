@@ -101,7 +101,7 @@
         &:last-child {
             a {
                 background-color: $blue;
-                color: $purple;
+                color: #242424;
                 padding: 14px 35px;
                 @include primary-font;
                 font-weight: 700;
@@ -111,7 +111,7 @@
                 border: 0px;
 
                 &:hover {
-                    background-color: $purple;
+                    background-color: #242424;
                     color: $blue;
                     transition: .3s;
                 }

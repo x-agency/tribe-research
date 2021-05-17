@@ -8,38 +8,41 @@
     ?>
 <?php get_header(); ?>
 
+<?php $hero = get_field('content_hero'); ?>
 <section class="hero">
     <img class="bg" src="/wp-content/themes/tribe-research/img/contact-hero.jpg">    
     <img class="title" src="/wp-content/themes/tribe-research/img/contact-title.png"/>
 </section>
 
-<section class="map">
-<iframe src="https://snazzymaps.com/embed/298694" width="100%" height="400px" style="border:none;"></iframe>
-</section>
-
+<?php $form = get_field('content_form'); ?>
 <section class="contact">
     <div class="form">
-        <h1>Let's Get Started:</h1>
-        <p>Whether you have a question about Tribe Clinical Research, need assistance, or you're in the area and would like to see our office, we're here to help!</p>
+        <h1><?php echo $form['title']; ?></h1>
+        <p><?php echo $form['body']; ?></p>
         <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 10, 'title' => false, 'description' => false ) ); ?>
     </div>
     <div class="separator"></div>
+    <?php $info = get_field('content_info'); ?>
     <div class="info">
-        <h1>Contact Information:</h1>
-        <p>Tribe Clinical Research</p>
-        <p>545 Verdae Blvd. Suite B</p>
-        <p>Greenville, SC 29607</p>
+        <h1><?php echo $info['title']; ?></h1>
+        <p><?php echo $info['address1']; ?></p>
+        <p><?php echo $info['address2']; ?></p>
+        <p><?php echo $info['address3']; ?></p>
 
         <div class="links">
-            <a href="tel:864.334.0141" class="simple-link">Phone:  864.334.0141</a>
-            <a href="fax:+18643340137" class="simple-link">Fax: 864.334.0137</a>
-            <a href="mailto:info@tribecr.com" class="simple-link">Email: info@tribecr.com</a>
+            <a href="tel:<?php echo $info['phone']; ?>" class="simple-link">Phone: <?php echo $info['phone']; ?></a>
+            <a href="fax:+1<?php echo $info['fax']; ?>" class="simple-link">Fax: <?php echo $info['fax']; ?></a>
+            <a href="mailto:<?php echo $info['email']; ?>" class="simple-link">Email: <?php echo $info['email']; ?></a>
         </div>
 
         <p class="title">Hours of Operation:</p>
-        <p>Monday – Thursday: 7:30 am to 4:30 pm</p>
-        <p>Friday: 7:30 am to 12:30 pm</p>
+        <p><?php echo $info['operation1']; ?></p>
+        <p><?php echo $info['operation2']; ?></p>
     </div>
+</section>
+
+<section class="map">
+    <iframe src="https://snazzymaps.com/embed/298694" width="100%" height="400px" style="border:none;"></iframe>
 </section>
 
 <?php get_template_part('template-parts/cta') ?>

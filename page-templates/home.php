@@ -7,23 +7,26 @@
     }
     ?>
 <?php get_header(); ?>
+
+<?php $hero = get_field('content_hero'); ?>
 <section id="hero">
     <div class="home-hero">
         <div class="hero-wrapper container-fluid px-0">
             <div class="hero-inner">
                 <div class="title-wrapper">
-                    <h1>A Mission<br> To Serve<br> And Offer<br> Hope.</h1>
-                    <div class="subtitle">Serving Infants through Adults <br>in Upstate SC</div>
+                    <h1><?php echo $hero['title']; ?></h1>
+                    <!-- <div class="subtitle">Serving Infants through Adults <br>in Upstate SC</div> -->
                 </div>
                 <div class="hero-box">
-                    <p>Through clinical research, we’re advancing medical science and improving the quality of life for
-                        so many people.</p>
-                    <p>It starts here.</p>
+                    <p><?php echo $hero['body']; ?></p>
+                    <a class="simple-link purple" href="<?php echo $hero['link_url']; ?>" target="_blank"><?php echo $hero['link_text']; ?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<?php $welcome = get_field('content_welcome'); ?>
 <section id="home-intro">
     <div class="container">
         <div class="row intro-wrapper">
@@ -31,9 +34,9 @@
                 <img src="/wp-content/themes/tribe-research/img/home-img-1.jpg" alt="">
             </div>
             <div class="col-md-7 right">
-                <h1>Welcome to Tribe Clinical Research.</h1>
-                <p>At Tribe Clinical Research, we intend to provide the best care possible for you or your family by offering access to advanced medicinal research in the form of clinical trials. To put your mind at ease, these studies have already passed several benefit and safety requirements and are almost ready for general public release. We invite you to join us on the journey to better health.</p>
-                <div class="link"><a href="/about#difference" class="simple-link">Our Difference
+                <h1><?php echo $welcome['title']; ?></h1>
+                <p><?php echo $welcome['body']; ?></p>
+                <div class="link"><a href="<?php echo $welcome['link_url']; ?>" class="simple-link"><?php echo $welcome['link_text']; ?>
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>
             </div>
@@ -42,14 +45,30 @@
 </section>
 <div class="line"></div>
 <section id="home-trial">
-    <div class="container-fluid title-block">
+    <!-- <div class="container-fluid title-block">
         <h1>Participate in a Clinical Trial</h1>
         <p>Tribe Clinical Research offers several options to get involved. Contact us if you're interested in helping
             move medicine forward.</p>
-    </div>
+    </div> -->
     <div class="container-fluid trial-blocks">
         <div class="row trial-blocks-inner">
-            <!-- Trial Block 1 -->
+
+            <?php while ( have_rows('services') ): the_row(); 
+                    $image = get_sub_field('image');
+                    $title = get_sub_field('title');
+                    $body = get_sub_field('body');
+                    $url = get_sub_field('link_url');
+                    $text = get_sub_field('link_text');
+                ?>
+                <div class="col-md-4 trial-block">
+                    <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-1.jpg" alt=""></div>
+                    <div class="trial-title"><?php echo $title; ?></div>
+                    <p><?php echo $body; ?></p>
+                    <div class="btn-wrapper"><a href="<?php echo $url;?>" target="_blank" class="btn"><?php echo $text; ?></a></div>
+                </div>
+
+            <?php endwhile; ?>
+            <!-- Trial Block 1 >
             <div class="col-md-4 trial-block">
                 <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-1.jpg" alt=""></div>
                 <div class="trial-title">For Volunteers</div>
@@ -58,7 +77,7 @@
                     can get involved.</p>
                 <div class="btn-wrapper"><a href="/volunteers" class="btn">Learn More</a></div>
             </div>
-            <!-- Trial Block 2 -->
+            <!-- Trial Block 2 >
             <div class="col-md-4 trial-block">
                 <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-2.jpg" alt=""></div>
                 <div class="trial-title">For Sponsors</div>
@@ -66,14 +85,14 @@
                     university hospitals and over 20 pharmaceutical companies. Learn about what we can offer.</p>
                 <div class="btn-wrapper"><a href="/sponsors" class="btn">Learn More</a></div>
             </div>
-            <!-- Trial Block 3 -->
+            <!-- Trial Block 3 >
             <div class="col-md-4 trial-block">
                 <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-3.jpg" alt=""></div>
                 <div class="trial-title">Current Clinical Trials</div>
                 <p>Our current clinical trials span several different categories, including illnesses such as asthma,
                     diabetes, gout, migraines, as well as research in cardivascular and gastrointestinal diseases. </p>
                 <div class="btn-wrapper"><a href="/clinical-trials" class="btn">View Trials</a></div>
-            </div>
+            </div-->
         </div>
     </div>
 </section>

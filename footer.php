@@ -45,11 +45,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<div class="">
 				<a href="/contact"class="simple-link link-dark"><strong>Contact</strong></a>
-				<a href="/terms-of-service" class="simple-link"><strong>Terms of Service</strong></a>
-				<a href="/privacy-policy" class="simple-link"><strong>Privacy Policy</strong></a>
+				<a href="/terms-of-service" class="simple-link link-dark"><strong>Terms of Service</strong></a>
+				<a href="/privacy-policy" class="simple-link link-dark"><strong>Privacy Policy</strong></a>
 			</div>
 			<div>
-				<p class="title purple"><strong>Get in Touch:</strong></p>
+				<p class="title"><strong>Get in Touch:</strong></p>
 				<p><strong>Phone:</strong> <a class="simple-link link-dark" href="tel:864.334.0141">864.334.0141</a></p>
 				<p><strong>Fax:</strong> <a class="simple-link link-dark" href="fax:+18643340137">864.334.0137</a></p>
 				<p><strong>Email:</strong> <a class="simple-link link-dark" href="mailto:info@tribecr.com">info@tribecr.com</a></p>
@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 		<div class="copyright">
 			<a href="https://www.xagency.io" class="simple-link"><strong>Made by X</strong></a>
-			<p class="title purple"><strong>©2021 Tribe Clinical Research.</strong></p>
+			<p class="title"><strong>©2021 Tribe Clinical Research.</strong></p>
 			<p>All Rights Reserved.</p>
 		</div>
 	</footer>

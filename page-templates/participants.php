@@ -19,7 +19,7 @@
     </div>
 </section>
 
-<section class="trial container difference mb-5">
+<!-- <section class="trial container difference mb-5">
     <div class="row">
         <div class="col-12 mb-3"><h2 class="title">What is a Clinical Trial?</h1></div>
         <div class="col-lg-6">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="faq container">
     <div class="row gray-container">
@@ -91,7 +91,7 @@
         <?php endwhile; ?>
         </div>
     </div>
-    <div class="carousel">
+    <!-- <div class="carousel">
         <div class="controls">
             <div class="prev"></div>
             <div class="next"></div>
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <section class="resources">
@@ -167,7 +167,7 @@
             </div>
         </div>
     </div>
-    <div class="cooking">
+    <!-- <div class="cooking">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <?php get_template_part('template-parts/cta') ?>

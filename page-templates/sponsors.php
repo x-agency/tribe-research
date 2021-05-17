@@ -22,7 +22,7 @@
 <section class="explore container">
     <div class="row">
         <div class="controls col-12 my-5">
-            <h2 class="mb-4">Explore</h2>
+            <h2 class="mb-4">Experience The Difference</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
                 <a class="simple-link" href="#our-facility">
@@ -35,11 +35,11 @@
                         <p>Monitor Guidelines</p>
                     </div>
                 </a>
-                <a class="simple-link" href="#daily-schedule">
+                <!-- <a class="simple-link" href="#daily-schedule">
                     <div class="btn-alt">
                         <p>Daily Schedule</p>
                     </div>
-                </a>
+                </a> -->
                 <a class="simple-link" href="#our-area">
                     <div class="btn-alt">
                         <p>Our Area</p>
@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<section class="monitor">
+<!-- <section class="monitor">
     <div class="section-hero">
         <div class="anchor" id="monitor-guidelines"></div>
         <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-monitor-hero.jpg">
@@ -114,13 +114,13 @@
                     <p><span>Medical Director:</span></p>
                     <p>11:00am - 1:00pm</p>
                     <p>(Monday, Wednesday, Thursday)</p>
-                </div-->
+                </div>
             </div>
             <!--p><span>Coordinators assigned to your study will be available after 2:00 p.m.</span></p>
-            <a href="#" class="btn">Download Monitor Guidelines</a-->
+            <a href="#" class="btn">Download Monitor Guidelines</a>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="our-area">
     <div class="section-hero mb-5">
@@ -137,7 +137,7 @@
     <div class="container pt-5">
         <div class="row">
             <div class="anchor" id="hotels-restaurants"></div>
-            <div class="controls col-12 mb-5">
+            <!-- <div class="controls col-12 mb-5">
                 <h2>Search Area By:</h2>
                 <div class="filter">
                     <a href="#hotels" class="filter-btn">
@@ -149,7 +149,7 @@
                         <p>Restaurants</p>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="row">
             <div class="col-12 text-center">

@@ -14,15 +14,40 @@
         <img src="/wp-content/themes/tribe-research/img/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">
         <div class="text">
             <img src="/wp-content/themes/tribe-research/img/about-text.png"/>
-            <h1>TRIBE CLINICAL RESEARCH</h1>
+            <!--h1>TRIBE CLINICAL RESEARCH</h1-->
         </div>    
     </div>
 </section>
 
 <section class="difference container">
     <div class="anchor" id="difference"></div>
-    <div class="row">
-        <div class="col-12 mb-3"><h2 class="title">The Tribe Difference</h1></div>
+    <div class="row gray-container">
+        <h2>The Tribe Difference:</h2>
+        <ul class="col-xl-5 mb-0 ms-0">
+            <?php while ( have_rows('list_left') ) : the_row();
+                $item = get_sub_field('list_item');
+            ?>
+                <li><span><?php echo $item; ?></span></li>
+                <!-- <li><span>Easy access to a major airport</span></li>
+                <li><span>Designated monitoring space with private space available at your request</span></li>
+                <li><span>Telephone for monitor use</span></li>
+                <li><span>High speed wireless DSL</span></li>
+                <li><span>High volume copier</span></li> -->
+            <?php endwhile; ?>
+        </ul>
+        <ul class="col-xl-4 offset-xl-1">
+            <?php while ( have_rows('list_left') ) : the_row();
+                $item = get_sub_field('list_item');
+            ?>
+                <li><span><?php echo $item; ?></span></li>
+                <!--<li><span>Shredder</span></li>
+                <li><span>Fax machine</span></li>
+                <li><span>On site storage of all documents</span></li>
+                <li><span>Low query rates with rapid resolution</span></li>
+                <li><span>Full time data/quality assurance coordinator</span></li> -->
+            <?php endwhile; ?>
+        </ul>
+        <!--div class="col-12 mb-3"><h2 class="title">The Tribe Difference</h1></div>
         <div class="col-lg-6">
             <p>The health and quality of life of millions have been improved because of advances in science and technology, and the willingness of individuals like you to take part in clinical research. Our study volunteers’ role is crucial in the quest for knowledge that will improve health and provide hope for future generations. With your help, the research studies at Tribe Clinical Research will help shape the future of medicine.</p>
             <p>Become a study volunteer to learn more about your condition, get access to new medications and treatments, and help further medical research for the entire healthcare community. During a clinical trial, the study volunteer will meet with a board-certified physician and receive one on one medical care. There is no cost to the study volunteer, and most clinical trials study volunteers are compensated for their time and participation while in the study.</p>
@@ -30,11 +55,19 @@
         <div class="col-lg-6">
             <p>We have managed over 100 phase II to IV clinical trials in partnership with over 20 pharmaceutical companies. Studies conducted include Diabetes Type 1, Diabetes Type 2, COPD, Asthma and Allergies, Irritable Bowel Syndrome, GERD, Inflammatory Bowel Disease, Hepatitis C, Osteoarthritis, Osteoporosis, Hypertension, Hyperlipidemia, Adolescent Migraine, Adult Migraine, Obesity, Vaccinations, and Acute Coronary Syndrome.</p>
             <p>Tribe Clinical Research is recognized for excellent patient care, outstanding patient enrollment, and quality data management. We continually exceed standards of Good Clinical Practices.</p>
+        </div-->
+    </div>
+    <div class="row">
+        <div class="testimonial">
+            <p class="quote">“</p>
+            <p>I love your facility and I wish it was mine. Monitors often tell facilities only what they are doing wrong so I wanted to make sure I told you that you are are doing a great job!</p>
+            <p class="author">Monitor</p>
+            <p class="source">Tribe Clinical Research</p>
         </div>
     </div>
 </section>
 
-<section class="mission container">
+<!-- <section class="mission container">
     <div class="row">
         <div class="col-12 mb-5 mt-5 mt-md-0">
             <div class="line"></div>
@@ -58,7 +91,7 @@
             <p class="title">Show Compassion</p>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="team">
     <div class="background"><img src="/wp-content/themes/tribe-research/img/our-team.jpg"></div>
