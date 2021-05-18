@@ -60,7 +60,8 @@
     <div class="row">
         <div class="testimonial">
             <?php $quote = get_field('quote'); ?>
-            <p class="quote">“</p>
+            <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+            <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
             <p><?php echo $quote['quote']; ?></p>
             <p class="author"><?php echo $quote['author']; ?></p>
             <p class="source"><?php echo $quote['position']; ?></p>
@@ -110,8 +111,8 @@
 
 <section class="medical-directors container pt-5 mt-5">
     <h2>Medical Directors:</h2>
-    <div class="carousel">
-        <div class="track">
+    <!--div class="carousel">
+        <div class="track"-->
             <?php while ( have_rows('md') ) : the_row(); 
                 $image = get_sub_field('image');
                 $name = get_sub_field('name');
@@ -125,19 +126,19 @@
                     </div>
                 </div>
             <?php endwhile; ?>
-        </div>
+        <!--/div>
         <div class="controls">
             <div class="prev"></div>
             <div class="next"></div>
         </div>
-    </div>
+    </div-->
 </section>
 
 <!-- Template Part -->
 <?php get_template_part('template-parts/cta') ?>
 
 <?php get_footer(); ?>
-<script>
+<!--script>
 jQuery(document).ready(function($) {
     $carousel = $('.carousel'),
     $track = $('.track'),
@@ -217,4 +218,4 @@ jQuery(document).ready(function($) {
         return shiftSlide(-1);
     });
 });
-</script>
+</script-->

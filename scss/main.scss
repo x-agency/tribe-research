@@ -66,6 +66,9 @@ body {
     background-color: white;
 }
 
+body.admin-bar .navbar {
+    top: 46px;
+}
 
 // **Home Page Styles**
 
@@ -78,7 +81,8 @@ body {
         background-image: url(/wp-content/themes/tribe-research/img/home-hero.jpg);
         background-size: cover;
         background-position: right top;
-        height: 95%;
+        background-repeat: no-repeat;
+        height: 95vh;
         display: flex;
         align-items: flex-end;
         padding-top: 140px;
@@ -95,7 +99,7 @@ body {
             }
 
             @include respond-above(md) {
-                width: 90%;
+                width: 75%;
             }
 
             @include respond-above(sm) {
@@ -104,7 +108,7 @@ body {
             }
 
             width: 100%;
-            height: 100%;
+            // height: 100%;
             position: relative;
             top: 75vw;
             margin-bottom: 55vw;;
@@ -114,6 +118,7 @@ body {
 
                 @include respond-above(md) {
                     padding: 0 0 0 20%;
+                    margin-bottom: 10vw;
                 }
 
                 br {
@@ -125,6 +130,10 @@ body {
                     line-height: 0.95em;
                     color: white;
                     font-weight: 800;
+
+                    @include respond-below(md) {
+                        margin-bottom: 1em;
+                    }
 
                     @include respond-above(xl) {
                         font-size: 4.5vw;
@@ -156,10 +165,11 @@ body {
 
             .hero-box {
                 background-color: $blue;
-                padding: 30px 15% 30px 20%;
+                // padding: 30px 15% 30px 20%;
+                padding: 30px;
 
                 @include respond-above(xxl) {
-                    padding: 50px 15% 50px 20%;
+                    padding: 50px 20%;
                 }
 
                 @include respond-above(md) { 
@@ -172,6 +182,10 @@ body {
                     color: white;
                     font-size: calc(max(14px, min(2.5vw, 20px)));
                     font-weight: 700;
+
+                    @include respond-below(md) {
+                        max-width: 21ch;
+                    }
 
                     &:last-child {
                         color: $purple;
@@ -205,6 +219,9 @@ body {
         .right {
             padding: 0 60px;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             .link {
                 margin-top: 20px;
@@ -250,8 +267,7 @@ body {
         z-index: 0;
 
         @media (min-width: 1900px) {
-            margin-top: -40px;
-            ;
+            height: 150px;
         }
 
         @include respond-below(md) {
@@ -614,12 +630,12 @@ body {
 
             &::after {
                 content: '';
-                width: 321px;
+                width: 219px;
                 height: 2px;
                 background: #cecece;
                 position: absolute;
                 bottom: 0.25em;
-                left: 9em;
+                left: 11.25em;
 
                 @include respond-below(xl) {
                     display: none;
@@ -650,17 +666,21 @@ svg * {
 }
 
 .medical-directors {
+    display: flex;
+    align-items: center;
 
     h2 {
         color: $blue;
         font-size: 40px;
         font-family: 'poppins';
+        flex: 1 1 5%;
     }
 
     .slide {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 1 1 30%;
 
         img {
             width: 250px;
@@ -679,7 +699,7 @@ svg * {
             }
 
             h3 {
-                color: $purple;
+                color: $blue;
             }
         }
     }
@@ -1147,7 +1167,14 @@ svg * {
         }
 
         .btn {
-            margin: 0 auto -1.5em;
+            margin: 1em 1em -1.5em auto;
+            color: white;
+            min-width: 300px;
+
+            & + .btn {
+                margin-left: 1em;
+                margin-right: auto;
+            }
         }
     }
 }
@@ -1162,7 +1189,9 @@ svg * {
     position: relative;
 
     p {
-        font-size: 17px;
+        font-size: 25px;
+        max-width: 870px;
+
     }
 
     .author {
@@ -1191,6 +1220,19 @@ svg * {
         @include respond-below(md) {
             display: none;
         }
+    }
+
+    .quote-left,
+    .quote-right {
+        position: absolute;
+        left: 0;
+        width: 50px;
+    }
+
+    .quote-right {
+        right: -2em;
+        left: unset;
+        transform: rotate(180deg);
     }
 
     @media (max-width: 1200px) {
@@ -1365,8 +1407,13 @@ svg * {
         top: 50%;
         transform: translateY(-50%);
 
+        h2 {
+            font-size: calc(max(24px, min(2.5vw, 40px)));
+        }
+
         h2.alt::after {
-            left: 15em;
+            left: 4.75em;
+            width: 500px
         }
 
         @media (max-width: 1199px) {
@@ -1394,7 +1441,8 @@ svg * {
         // color: $purple;
         color: #616060;
         font-family: 'Poppins';
-        font-size: calc(max(18px, min(2.5vw, 22px)));
+        font-size: calc(max(18px, min(2.5vw, 30px)));
+        margin-bottom: 2em;
 
         @media (max-width: 1199px) {
             text-align: center;
@@ -1434,6 +1482,7 @@ svg * {
             padding-bottom: 0.5em;
             margin-bottom: 1em;
             color: $purple;
+            font-size: calc(max(16px, min(2.5vw, 25px)));
         }
     }
 
@@ -1739,8 +1788,10 @@ p.title {
 
 
 .resources {
+    margin-top: 5rem;
+
     .container-fluid {
-        background: $purple;
+        background: $blue;
 
         .row {
             padding: 5rem 0;
@@ -1748,7 +1799,7 @@ p.title {
         }
 
         h2 {
-            color: $blue;
+            color: white;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-size: calc(max(25px, min(3vw, 40px)));

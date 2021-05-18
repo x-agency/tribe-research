@@ -84,11 +84,14 @@
             <?php endwhile; ?>
         </ul>
         <!--a href="" class="btn purple">Take Our Virtual Tour</a-->
+        <a href="" class="btn">Download Monitor Guidelines</a>
+        <a href="" class="btn">Take Our Virtual Tour</a>
     </div>
     <div class="row">
         <div class="testimonial">
             <?php $quote = get_field('quote'); ?>
-            <p class="quote">“</p>
+            <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+            <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
             <p><?php echo $quote['quote']; ?></p>
             <p class="author"><?php echo $quote['author']; ?></p>
             <p class="source"><?php echo $quote['position']; ?></p>
@@ -204,7 +207,7 @@
                 <?php endwhile; ?>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12 text-center">
             <div class="anchor" id="restaurants"></div>
                 <h2><strong>Restaurants</strong></h2>

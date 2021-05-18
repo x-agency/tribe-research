@@ -35,9 +35,9 @@
     </div>
 </section>
 
-<section class="accepting-banner">
+<!--section class="accepting-banner">
     <p><strong>Currently Accepting New Trials<strong></p>
-</section>
+</section-->
 
 <section class="studies container">
     <div class="row adults active">

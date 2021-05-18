@@ -33,7 +33,7 @@
             <div class="col-md-5 left">
                 <img src="/wp-content/themes/tribe-research/img/home-img-1.jpg" alt="">
             </div>
-            <div class="col-md-7 right">
+            <div class="col-md-7 right mb-4 mb-md-0">
                 <h1><?php echo $welcome['title']; ?></h1>
                 <p><?php echo $welcome['body']; ?></p>
                 <div class="link"><a href="<?php echo $welcome['link_url']; ?>" class="simple-link"><?php echo $welcome['link_text']; ?>
