@@ -10,25 +10,26 @@
 
 <?php $hero = get_field('hero'); ?>
 <section class="hero hero-overlap">
-    <img class="bg" src="/wp-content/themes/tribe-research/img/volunteers-hero.jpg">    
+    <img class="bg" src="<?php echo $hero['hero']; ?>">    
     <div class="content">
         <div class="text">
-            <img src="/wp-content/themes/tribe-research/img/participants-title.png"/>
+            <img src="<?php echo $hero['title']; ?>"/>
             <p><?php echo $hero['body']; ?></p>
         </div>
-        <img src="/wp-content/themes/tribe-research/img/volunteers-1.jpg" alt="Female doctor with hand on shoulder of female patient.">  
+        <img src="<?php echo $hero['image']; ?>" alt="">  
     </div>
 </section>
 
+<?php $video = get_field('video'); ?>
 <section class="video container">
     <div class="row">
-        <img class="modal-thumbnail" src="/wp-content/themes/tribe-research/img/modal.jpg" alt="">
+        <img class="modal-thumbnail" src="<?php echo $video['image']; ?>" alt="">
     </div>
 </section>
 <div class="modal">
     <div style="padding:56.25% 0 0 0;position:relative;">
         <div class="close">+</div>
-        <iframe src="https://player.vimeo.com/video/551633583?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/<?php echo $video['link']; ?>?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </div>
@@ -81,6 +82,7 @@
 </section> -->
 
 <section class="faq container">
+    <div class="anchor" id="faq"></div>
     <div class="row gray-container">
         <div class="anchor" id="our-site"></div>
         <h2 class="offset-lg-1">Frequently Asked Questions:</h2>        
@@ -155,7 +157,7 @@
                 <h2>Resources</h2>
             </div>
             <?php $i = 0; while ( have_rows('resources') ) : the_row();
-                $image = get_sub_field('image');
+                $image = get_sub_field('resource');
                 $link = get_sub_field('link');
             ?>
                 <div class="col-xl-2 col-lg-6 text-center mb-xl-0 mb-5">

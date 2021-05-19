@@ -8,11 +8,11 @@
     ?>
 <?php get_header(); ?>
 
+<?php $hero = get_field('hero'); ?>
 <section class="hero">
-    <img class="bg" src="/wp-content/themes/tribe-research/img/trials-hero.jpg">
+    <img class="bg" src="<?php echo $hero['hero']; ?>">
     <div class="title">
-        <img src="/wp-content/themes/tribe-research/img/clinical.png">
-        <h1>Trials</h1>
+        <img src="<?php echo $hero['title']; ?>">
     </div>
 </section>
 
@@ -59,7 +59,7 @@
                 <p class="enrolling <?php if ( $enrolling == true ) echo 'active'; ?>">NOW ENROLLING</p>
                 <p class="study-title"><?php echo $title; ?></p>
                 <!-- <p class="study-id"><?php echo $id; ?></p> -->
-                <a href="<?php echo $link; ?>" class="simple-link mb-3">Download PDF</a>
+                <a href="<?php echo $link; ?>" class="simple-link mb-3" target="_blank" >Download PDF</a>
             </div>
         <?php endwhile; ?>
     </div>
@@ -71,22 +71,20 @@
         </div>
         <?php while ( have_rows('pediatric') ) : the_row(); 
             $image = get_sub_field('image');
-            $desc = get_sub_field('desc');
+            $enrolling = get_sub_field('enrolling');
             $link = get_sub_field('link');
             $title = get_sub_field('title');
             $id = get_sub_field('id');
         ?>
-            <div class="col-md-4 col-xl-3 text-center study">
+            <div class="col-md-4 col-xl-3 text-center study mb-5">
                 <div class="study-image">
                     <img src="<?php echo $image; ?>" alt="">
-                    <div class="overlay">
-                        <p class="study-desc"><?php echo $desc; ?></p>
-                        <a href="<?php echo $link; ?>" class="btn">Download PDF</a>
-                    </div>
                 </div>
+                <p class="enrolling <?php if ( $enrolling == true ) echo 'active'; ?>">NOW ENROLLING</p>
                 <p class="study-title"><?php echo $title; ?></p>
-                <p class="study-id"><?php echo $id; ?></p>
-            </div> 
+                <!-- <p class="study-id"><?php echo $id; ?></p> -->
+                <a href="<?php echo $link; ?>" class="simple-link mb-3" target="_blank" >Download PDF</a>
+            </div>
         <?php endwhile; ?>
     </div>
 </section>

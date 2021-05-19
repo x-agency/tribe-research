@@ -10,8 +10,8 @@
 
 <?php $hero = get_field('content_hero'); ?>
 <section class="hero">
-    <img class="bg" src="/wp-content/themes/tribe-research/img/contact-hero.jpg">    
-    <img class="title" src="/wp-content/themes/tribe-research/img/contact-title.png"/>
+    <img class="bg" src="<?php echo $hero['hero']; ?>">    
+    <img class="title" src="<?php echo $hero['title']; ?>"/>
 </section>
 
 <?php $form = get_field('content_form'); ?>

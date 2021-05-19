@@ -8,12 +8,13 @@
     ?>
 <?php get_header(); ?>
 
+<?php $hero = get_field('content_hero'); ?>
 <section class="hero hero-overlap">
-    <img class="bg" src="/wp-content/themes/tribe-research/img/about-hero.jpg">    
+    <img class="bg" src="<?php echo $hero['hero']; ?>">    
     <div class="content">
-        <img src="/wp-content/themes/tribe-research/img/doctor.jpg" alt="Female doctor with hand on shoulder of female patient.">
+        <img src="<?php echo $hero['image']; ?>" alt="Female doctor with hand on shoulder of female patient.">
         <div class="text">
-            <img src="/wp-content/themes/tribe-research/img/about-text.png"/>
+            <img src="<?php echo $hero['title']; ?>"/>
             <!--h1>TRIBE CLINICAL RESEARCH</h1-->
         </div>    
     </div>
@@ -95,11 +96,11 @@
     </div>
 </section> -->
 
+<?php $team = get_field('content_team'); ?>
 <section class="team">
-    <div class="background"><img src="/wp-content/themes/tribe-research/img/our-team.jpg"></div>
+    <div class="background"><img src="<?php echo $team['banner_image']; ?>"></div>
     <div class="foreground">
         <div>
-            <?php $team = get_field('content_team'); ?>
             <h2><?php echo $team['title']; ?></h2>
             <h2 class="alt"><?php echo $team['subtitle']; ?></h2>
             <p><?php echo $team['body_1']; ?></p>

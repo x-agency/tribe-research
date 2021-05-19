@@ -10,11 +10,11 @@
 
 <?php $hero = get_field('content_hero'); ?>
 <section class="hero hero-overlap">
-    <img class="bg" src="/wp-content/themes/tribe-research/img/sponsors-hero.jpg">    
+    <img class="bg" src="<?php echo $hero['hero']; ?>">    
     <div class="content">
-        <img src="/wp-content/themes/tribe-research/img/sponsors.jpg" alt="Female doctor with hand on shoulder of female patient.">
+        <img src="<?php echo $hero['image']; ?>" alt="">
         <div class="text">
-            <img src="/wp-content/themes/tribe-research/img/sponsors-text.png"/>
+            <img src="<?php echo $hero['title']; ?>"/>
             <p><?php echo $hero['body']; ?></p>
         </div>    
     </div>
@@ -83,9 +83,12 @@
                 <li><span>Full time data/quality assurance coordinator</span></li> -->
             <?php endwhile; ?>
         </ul>
-        <!--a href="" class="btn purple">Take Our Virtual Tour</a-->
-        <a href="" class="btn">Download Monitor Guidelines</a>
-        <a href="" class="btn">Take Our Virtual Tour</a>
+        <?php while ( have_rows('buttons') ) : the_row();
+            $url = get_sub_field('url');
+            $text = get_sub_field('text');
+        ?>
+            <a href="<?php echo $url; ?>" target="_blank" class="btn"><?php echo $text; ?></a>
+        <?php endwhile; ?>
     </div>
     <div class="row">
         <div class="testimonial">
@@ -143,7 +146,7 @@
 <section class="our-area">
     <div class="section-hero mb-5">
         <div class="anchor" id="our-area"></div>
-        <div class="background"><img src="/wp-content/themes/tribe-research/img/sponsors-area-hero.jpg"></div>
+        <div class="background"><img src="<?php echo $area['banner_image']; ?>"></div>
         <div class="foreground">
             <div>
                 <h2 class="alt"><?php echo $area['title']; ?></h2>

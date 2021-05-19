@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				//echo file_get_contents( get_theme_file_uri( '/img/tcr-logo.svg' ) );
 				?>
 
-				<img src="/wp-content/themes/tribe-research/img/logo-white.png" alt="">
+				<img src="/wp-content/themes/tribe-research/img/Logo-white.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

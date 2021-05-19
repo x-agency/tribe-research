@@ -36,7 +36,7 @@
             <div class="col-md-7 right mb-4 mb-md-0">
                 <h1><?php echo $welcome['title']; ?></h1>
                 <p><?php echo $welcome['body']; ?></p>
-                <div class="link"><a href="<?php echo $welcome['link_url']; ?>" class="simple-link"><?php echo $welcome['link_text']; ?>
+                <div class="link"><a href="<?php echo $welcome['link_url']; ?>" target="_blank" class="simple-link"><?php echo $welcome['link_text']; ?>
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/tribe-font.svg" alt=""></div>
             </div>
@@ -61,7 +61,7 @@
                     $text = get_sub_field('link_text');
                 ?>
                 <div class="col-md-4 trial-block">
-                    <div class="trial-img"><img src="/wp-content/themes/tribe-research/img/trial-img-1.jpg" alt=""></div>
+                    <div class="trial-img"><img src="<?php echo $image; ?>" alt=""></div>
                     <div class="trial-title"><?php echo $title; ?></div>
                     <p><?php echo $body; ?></p>
                     <div class="btn-wrapper"><a href="<?php echo $url;?>" target="_blank" class="btn"><?php echo $text; ?></a></div>

@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<!-- Custom Footer Code -->
 	<footer>
-		<img src="/wp-content/themes/tribe-research/img/footer-logo.png" class="logo">
+		<img src="/wp-content/themes/tribe-research/img/Logo-blue.png" class="logo">
 		<div class="menu">
 			<div class="">
 				<a class="simple-link link-dark" href="/about"><strong>About Us</strong></a>

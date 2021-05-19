@@ -5,7 +5,7 @@ $(document).scroll(function () {
 });
 
 
-$(document).ready(function () {
+$(window).on('load', function() {
     $(".hamburger-menu").click(function () {
         $(this).toggleClass("is-active");
         $('#modalMenu').toggleClass('show');

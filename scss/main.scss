@@ -78,7 +78,7 @@ body.admin-bar .navbar {
     margin-bottom: 10rem;
 
     .hero-wrapper {
-        background-image: url(/wp-content/themes/tribe-research/img/home-hero.jpg);
+        background-image: url(/wp-content/themes/tribe-research/img/home-new.jpg);
         background-size: cover;
         background-position: right top;
         background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body.admin-bar .navbar {
 
         @include respond-below(sm) {
             padding-top: 0;
-            background-image: url(/wp-content/themes/tribe-research/img/home-mobile.jpg);
+            background-image: url(/wp-content/themes/tribe-research/img/home-mobile-new.jpg);
             background-position: 50% -30vw;
         }
 
@@ -725,7 +725,7 @@ svg * {
             text-align: center;
 
             img {
-                margin-bottom: 2em;
+                // margin-bottom: 2em;
                 width: calc(max(175px, min(40vw, 637px)));
             }
 
@@ -995,7 +995,7 @@ svg * {
             position: relative;
             min-width: 332px;
             min-height: 390px;
-            background: $purple;
+            // background: $purple;
             margin: 0 auto;
 
             .btn {
@@ -1566,6 +1566,7 @@ svg * {
         font-weight: bold;
         font-family: 'Open Sans';
         transform: rotate(45deg);
+        cursor: pointer;
 
         @include respond-below(lg) {
             font-size: 45px;
@@ -1745,6 +1746,13 @@ p.title {
                     33% 66%, 0% 66%, 0% 33%, 33% 33%);
         }
     }
+
+    ul {
+        padding-left: 2rem;
+        list-style: disc;
+        color: inherit;
+        font-size: inherit;
+    }
 }
 
 
@@ -1794,8 +1802,12 @@ p.title {
         background: $blue;
 
         .row {
-            padding: 5rem 0;
+            padding: 5rem;
             align-items: center;
+
+            @include respond-below(md) {
+                padding: 5rem 0;
+            }
         }
 
         h2 {
