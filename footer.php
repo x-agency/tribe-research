@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<li><a class="simple-link" href="/">Home</a></li>
 				<li><a class="simple-link" href="/about">About</a></li>
 				<li><a class="simple-link" href="/clinical-trials">Clinical Trials</a></li>
-				<li><a class="simple-link" href="/volunteers">Volunteers</a></li>
+				<li><a class="simple-link" href="/participants">Participants</a></li>
 				<li><a class="simple-link" href="/sponsors">Sponsors</a></li>
 				<li><a class="simple-link" href="/contact">Contact</a></li>
 			</ul>

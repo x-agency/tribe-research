@@ -118,7 +118,7 @@ body.admin-bar .navbar {
 
                 @include respond-above(md) {
                     padding: 0 0 0 20%;
-                    margin-bottom: 10vw;
+                    margin-bottom: 5vw;
                 }
 
                 br {
@@ -126,8 +126,8 @@ body.admin-bar .navbar {
                 }
 
                 h1 {
-                    font-size: 35px;
-                    line-height: 0.95em;
+                    font-size: 50px;
+                    line-height: 1em;
                     color: white;
                     font-weight: 800;
 
@@ -136,7 +136,7 @@ body.admin-bar .navbar {
                     }
 
                     @include respond-above(xl) {
-                        font-size: 4.5vw;
+                        font-size: 3.75vw;
                         line-height: 4.7vw;
                     }
                 }
@@ -167,6 +167,7 @@ body.admin-bar .navbar {
                 background-color: $blue;
                 // padding: 30px 15% 30px 20%;
                 padding: 30px;
+                padding-left: 20%;
 
                 @include respond-above(xxl) {
                     padding: 50px 20%;
@@ -180,7 +181,7 @@ body.admin-bar .navbar {
                 p {
                     @include primary-font;
                     color: white;
-                    font-size: calc(max(14px, min(2.5vw, 20px)));
+                    font-size: calc(max(14px, min(2vw, 20px)));
                     font-weight: 700;
 
                     @include respond-below(md) {
@@ -191,6 +192,12 @@ body.admin-bar .navbar {
                         color: $purple;
                         font-size: calc(max(17px, min(2.5vw, 30px)));
                     }
+                }
+
+                a {
+                    @include primary-font;
+                    font-weight: bold;
+                    font-size: calc(max(18px, min(2.5vw, 30px)));
                 }
             }
         }
@@ -241,7 +248,7 @@ body.admin-bar .navbar {
         .special-font {
             position: absolute;
             top: -50px;
-            left: -150px;
+            left: 0;
             width: 100%;
             opacity: .8;
 
@@ -252,8 +259,8 @@ body.admin-bar .navbar {
 
             img {
                 width: 100%;
-                transform-origin: top left;
-                transform: scale(1.3);
+                // transform-origin: top left;
+                // transform: scale(1.3);
             }
         }
 
@@ -306,7 +313,7 @@ body.admin-bar .navbar {
 
 
             .trial-block {
-                margin: 50px 10px 5px;
+                margin: 50px 10px 0px;
                 transform: translateY(20px);
                 flex: 1;
                 display: flex;
@@ -325,10 +332,12 @@ body.admin-bar .navbar {
                     text-align: center;
                     color: $blue;
                     font-size: 26px;
-                    font-weight: 600;
+                    font-weight: 500;
                     margin: 20px 0;
                     width: 100%;
                     flex: 0 1 auto;
+                    font-family: 'poppins', sans-serif;
+                    letter-spacing: -0.04em;
                 }
 
                 p {
@@ -429,6 +438,10 @@ body.admin-bar .navbar {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
+
+            @include respond-below(xl) {
+                display: none;
+            }
         }
 
         .text {
@@ -450,6 +463,10 @@ body.admin-bar .navbar {
                 margin: 0;
                 margin-bottom: 3rem;
                 width: calc(max(300px, min(50vw, 605px)));
+                
+                @include respond-below(xl) {
+                    display: none;
+                }
             }
         }
     }
@@ -528,6 +545,12 @@ body.admin-bar .navbar {
             right: 0%;
             top: 55%;
             z-index: -2;
+        }
+    }
+
+    @include respond-below(lg) {
+        .gray-container ul:nth-child(3) {
+            margin-left: 0;
         }
     }
 }
@@ -620,7 +643,7 @@ body.admin-bar .navbar {
     h2 {
         color: #616060;
         font-family: 'poppins';
-        font-size: calc(max(20px, min(2.5vw, 40px)));
+        font-size: calc(max(25px, min(2.5vw, 40px)));
         letter-spacing: -1px;
         position: relative;
 
@@ -669,11 +692,15 @@ svg * {
     display: flex;
     align-items: center;
 
+    @media (max-width: 1399px) {
+        flex-direction: column;
+    }
+
     h2 {
         color: $blue;
         font-size: 40px;
         font-family: 'poppins';
-        flex: 1 1 5%;
+        flex: 1 1 10%;
     }
 
     .slide {
@@ -682,9 +709,17 @@ svg * {
         justify-content: center;
         flex: 1 1 30%;
 
+        @media (max-width: 1399px) {
+            &:nth-child(2) {
+                margin: 3rem 0;
+            }
+        }
+
         img {
-            width: 250px;
-            height: 250px;
+            // width: 250px;
+            // height: 250px;
+            width: 187.5px;
+            height: 187.5px;
             border-radius: 50%;
             object-fit: cover;
             pointer-events: none;
@@ -753,6 +788,7 @@ svg * {
         @include primary-font;
         color: #616060;
         font-weight: bold;
+        margin-right: 75px;
     }
 
     .filter {
@@ -1131,7 +1167,7 @@ svg * {
             color: $purple;
             font-size: calc(max(25px, min(3vw, 30px)));
 
-            @media (max-width: 1000px) {
+            @media (max-width: 1024px) {
                 margin-left: 2rem;
             }
 
@@ -1144,7 +1180,7 @@ svg * {
                     color: $blue;
                     font-size: calc(max(20px, min(3vw, 22px)));
                     margin-bottom: 0.5em;
-                    font-weight: 600;
+                    font-weight: 500;
 
                     &::after {
                         content: '';
@@ -1167,14 +1203,15 @@ svg * {
         }
 
         .btn {
-            margin: 1em 1em -1.5em auto;
+            // margin: 1em 1em -1.5em auto;
+            margin: 1em auto -1.5em;
             color: white;
             min-width: 300px;
 
-            & + .btn {
-                margin-left: 1em;
-                margin-right: auto;
-            }
+            // & + .btn {
+            //     margin-left: 1em;
+            //     margin-right: auto;
+            // }
         }
     }
 }
@@ -1183,14 +1220,14 @@ svg * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 110ch;
+    max-width: 824px;
     width: 85%;
     margin: 7em auto 3em;
     position: relative;
 
     p {
         font-size: 25px;
-        max-width: 870px;
+        max-width: 824px;
 
     }
 
@@ -1408,7 +1445,7 @@ svg * {
         transform: translateY(-50%);
 
         h2 {
-            font-size: calc(max(24px, min(2.5vw, 40px)));
+            font-size: calc(max(25px, min(2.5vw, 40px)));
         }
 
         h2.alt::after {
@@ -1491,7 +1528,7 @@ svg * {
 
         @media (max-width: 1199px) {
             max-width: 35ch;
-            margin: 0 auto;
+            margin: 0 auto 2rem;
         }
 
         a {
@@ -1527,6 +1564,10 @@ svg * {
             img {
                 margin-bottom: calc(min(20vw, 10rem));
                 width: calc(max(300px, min(50vw, 851px)));
+
+                @include respond-below(xl) {
+                    display: none;
+                }
             }
         }
     }
@@ -1679,6 +1720,8 @@ p.title {
             margin-bottom: 0.5em;
             position: relative;
             margin-left: 0.5em;
+            font-family: 'poppins', sans-serif;
+            font-weight: 500;
 
             span {
                 color: $blue;

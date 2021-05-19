@@ -94,7 +94,7 @@
                     <div class="col-xl-5 offset-xl-1 mb-0">
                 <?php endif; ?> 
                 
-                <?php if (get_row_index() == 8) : ?>
+                <?php if (get_row_index() == 6) : ?>
                     </div>
                     <div class="col-xl-4">
                 <?php endif; ?> 

@@ -66,15 +66,18 @@ body {
 
 .simple-link {
     color: $blue;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     /*font-size: 18px;*/
     @include ease;
     font-size: 20px;
+    @include primary-font;
+    letter-spacing: -0.04em;
 
     svg {
-        width: 22px;
-        margin-left: 6px;
+        width: 26px;
+        margin-left: 2px;
+        margin-bottom: 3px;
         @include ease;
 
         path {

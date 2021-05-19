@@ -217,7 +217,7 @@
             </div>
             <div class="col-lg-3 offset-lg-3 restaurants active">
                 <h2>I-85/Pelham Road Area</h2>
-                <?php while( have_rows('restaurants_p') ) : the_row();
+                <?php while( have_rows('restaurants') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');
@@ -233,7 +233,7 @@
             </div>
             <div class="col-lg-3 offset-lg-1 restaurants active">
                 <h2>Downtown Greenville Area</h2>
-                <?php while( have_rows('restaurants') ) : the_row();
+                <?php while( have_rows('restaurants_p') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');

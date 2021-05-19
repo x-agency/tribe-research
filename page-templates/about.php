@@ -12,7 +12,7 @@
 <section class="hero hero-overlap">
     <img class="bg" src="<?php echo $hero['hero']; ?>">    
     <div class="content">
-        <img src="<?php echo $hero['image']; ?>" alt="Female doctor with hand on shoulder of female patient.">
+        <img src="<?php echo $hero['image']; ?>" alt="">
         <div class="text">
             <img src="<?php echo $hero['title']; ?>"/>
             <!--h1>TRIBE CLINICAL RESEARCH</h1-->

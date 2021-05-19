@@ -42,7 +42,7 @@ function bootstrap_js() {
 add_action('wp_enqueue_scripts', 'bootstrap_js');
 
 function custom_js() {
-wp_enqueue_script( 'custom_js', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ), filemtime(get_stylesheet_directory_uri() . '/js/main.js'), true );
+wp_enqueue_script( 'custom_js', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ), null, true );
 }
 
 add_action('wp_enqueue_scripts', 'custom_js');
