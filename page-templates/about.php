@@ -61,9 +61,11 @@
     <div class="row">
         <div class="testimonial">
             <?php $quote = get_field('quote'); ?>
-            <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
-            <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
-            <p><?php echo $quote['quote']; ?></p>
+            <div>
+                <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+                <p><?php echo $quote['quote']; ?></p>
+                <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+            </div>
             <p class="author"><?php echo $quote['author']; ?></p>
             <p class="source"><?php echo $quote['position']; ?></p>
         </div>

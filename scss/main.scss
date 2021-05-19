@@ -461,12 +461,12 @@ body.admin-bar .navbar {
 
             img {
                 margin: 0;
-                margin-bottom: 3rem;
+                margin-bottom: calc(min(20vw, 10rem));
                 width: calc(max(300px, min(50vw, 605px)));
                 
-                @include respond-below(xl) {
-                    display: none;
-                }
+                // @include respond-below(xl) {
+                //     display: none;
+                // }
             }
         }
     }
@@ -548,7 +548,7 @@ body.admin-bar .navbar {
         }
     }
 
-    @include respond-below(lg) {
+    @include respond-below(xl) {
         .gray-container ul:nth-child(3) {
             margin-left: 0;
         }
@@ -1220,15 +1220,46 @@ svg * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 824px;
+    max-width: 937px;
     width: 85%;
     margin: 7em auto 3em;
     position: relative;
 
-    p {
-        font-size: 25px;
-        max-width: 824px;
+    @include respond-below(md) {
+        width: 95%;
+    }
 
+    > div {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 25px;
+            margin: 0;
+            @include respond-below(xl) {
+                text-align: center;
+            }
+        }
+
+        .quote-left,
+        .quote-right {
+            width: 50px;
+            height: 45px;
+            flex: 0 0 50px;
+            margin-right: 2em;
+
+            @include respond-below(md) {
+                width: 27px;
+                height: 24px;
+                flex: 0 0 27px;
+            }
+        }
+    
+        .quote-right {
+            transform: rotate(180deg);
+            margin-right: 0;
+            margin-left: 2em;
+        }
     }
 
     .author {
@@ -1244,45 +1275,32 @@ svg * {
         font-style: italic;
     }
 
-    .quote {
-        font-family: 'poppins';
-        font-size: calc(max(125px, min(11vw, 200px)));
-        position: absolute;
-        top: 0.4em;
-        left: -0.4em;
-        display: inline-block;
-        color: $blue;
-        font-weight: 500;
+    // .quote {
+    //     font-family: 'poppins';
+    //     font-size: calc(max(125px, min(11vw, 200px)));
+    //     position: absolute;
+    //     top: 0.4em;
+    //     left: -0.4em;
+    //     display: inline-block;
+    //     color: $blue;
+    //     font-weight: 500;
 
-        @include respond-below(md) {
-            display: none;
-        }
-    }
+    //     @include respond-below(md) {
+    //         display: none;
+    //     }
+    // }
 
-    .quote-left,
-    .quote-right {
-        position: absolute;
-        left: 0;
-        width: 50px;
-    }
+    // @media (max-width: 1200px) {
 
-    .quote-right {
-        right: -2em;
-        left: unset;
-        transform: rotate(180deg);
-    }
+    //     .quote,
+    //     >p:nth-child(2) {
+    //         margin-left: 3rem;
 
-    @media (max-width: 1200px) {
-
-        .quote,
-        >p:nth-child(2) {
-            margin-left: 3rem;
-
-            @include respond-below(md) {
-                margin-left: 0;
-            }
-        }
-    }
+    //         @include respond-below(md) {
+    //             margin-left: 0;
+    //         }
+    //     }
+    // }
 }
 
 .monitor {
@@ -1565,9 +1583,9 @@ svg * {
                 margin-bottom: calc(min(20vw, 10rem));
                 width: calc(max(300px, min(50vw, 851px)));
 
-                @include respond-below(xl) {
-                    display: none;
-                }
+                // @include respond-below(xl) {
+                //     display: none;
+                // }
             }
         }
     }
@@ -1712,7 +1730,7 @@ p.title {
         color: $purple;
         font-size: calc(max(25px, min(3vw, 30px)));
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1199px) {
             margin-left: 2rem;
         }
 
@@ -1810,10 +1828,10 @@ p.title {
             white-space: nowrap;
         }
 
-        img {
-            float: left;
-            margin-right: 2em;
-        }
+        // img {
+        //     float: left;
+        //     margin-right: 2em;
+        // }
 
         .author-container {
             width: 624px;

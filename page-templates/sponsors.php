@@ -27,9 +27,9 @@
             <h2 class="mb-4">Experience The Difference</h2>
             <div class="filter">
                 <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <a class="simple-link" href="#our-facility">
+                <a class="simple-link" href="#our-site">
                     <div class="btn-alt">
-                        <p>Our Facilities</p>
+                        <p>Our Site</p>
                     </div>
                 </a>
                 <a class="simple-link" href="#monitor-guidelines">
@@ -56,8 +56,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="anchor" id="our-facility"></div>
-        <p class="title offset-lg-1">At our facilities, we offer:</p>
+        <div class="anchor" id="our-site"></div>
+        <p class="title offset-lg-1">At our site, we offer:</p>
         <ul class="col-xl-5 offset-xl-1 mb-0">
             <?php while ( have_rows('list_left') ) : the_row(); 
                 $left = get_sub_field('list_item');
@@ -93,9 +93,11 @@
     <div class="row">
         <div class="testimonial">
             <?php $quote = get_field('quote'); ?>
-            <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
-            <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
-            <p><?php echo $quote['quote']; ?></p>
+            <div>
+                <img class="quote-left" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+                <p><?php echo $quote['quote']; ?></p>
+                <img class="quote-right" src="/wp-content/themes/tribe-research/img/quote.jpg" alt="">
+            </div>
             <p class="author"><?php echo $quote['author']; ?></p>
             <p class="source"><?php echo $quote['position']; ?></p>
         </div>
