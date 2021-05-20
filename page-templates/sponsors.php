@@ -21,7 +21,7 @@
 </section>
 
 
-<section class="explore container">
+<section class="explore container mt-xl-5">
     <div class="row">
         <div class="controls col-12 my-5">
             <h2 class="mb-4">Experience The Difference</h2>
@@ -180,8 +180,8 @@
                 <h2><strong>Hotels</strong></h2>
             </div>
             <div class="col-lg-3 offset-lg-3 hotels active">
-                <h2>I-85/Pelham Road Area</h2>
-                <?php while( have_rows('hotels_p') ) : the_row();
+                <h2>I-85/Verdae/Woodruff Rd. Area</h2>
+                <?php while( have_rows('hotels') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');
@@ -197,7 +197,7 @@
             </div>
             <div class="col-lg-3 offset-lg-1 hotels active">
                 <h2>Downtown Greenville Area</h2>
-                <?php while( have_rows('hotels') ) : the_row();
+                <?php while( have_rows('hotels_p') ) : the_row();
                     $title = get_sub_field('title');
                     $link = get_sub_field('link');
                     $address1 = get_sub_field('address1');

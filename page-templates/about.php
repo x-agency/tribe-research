@@ -36,8 +36,8 @@
                 <li><span>High volume copier</span></li> -->
             <?php endwhile; ?>
         </ul>
-        <ul class="col-xl-4 offset-xl-1">
-            <?php while ( have_rows('list_left') ) : the_row();
+        <ul class="col-xl-5 offset-xl-1">
+            <?php while ( have_rows('list_right') ) : the_row();
                 $item = get_sub_field('list_item');
             ?>
                 <li><span><?php echo $item; ?></span></li>

@@ -365,6 +365,18 @@ body.admin-bar .navbar {
 
 // *About Page Styles
 .page-template-about {
+    .hero-overlap .content {
+        margin: -22% auto -12.5%;
+
+        @include respond-below(sm) {
+            margin: -30% auto -12.5%;
+        }
+
+        @include respond-below(xs) {
+            margin: -40% auto -12.5%;
+        }
+    }
+
     h2 {
         color: $purple;
         @include primary-font;
@@ -387,7 +399,7 @@ body.admin-bar .navbar {
 .hero-overlap {
 
     @include respond-above(xl) {
-        padding-bottom: 18vw;
+        padding-bottom: calc(min(18vw, 345px));
     }
 
     >img {
@@ -522,7 +534,7 @@ body.admin-bar .navbar {
         z-index: 0;
 
         @media (max-width: 1000px) {
-            margin-left: 2rem;
+            margin-left: 0;
         }
 
         &::before {
@@ -710,8 +722,15 @@ svg * {
         flex: 1 1 30%;
 
         @media (max-width: 1399px) {
+            flex-direction: column;
+            text-align: center;
+
             &:nth-child(2) {
                 margin: 3rem 0;
+            }
+
+            h3 {
+                margin-top: 1em;
             }
         }
 
