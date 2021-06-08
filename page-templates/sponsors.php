@@ -32,7 +32,12 @@
                         <p>Our Site</p>
                     </div>
                 </a>
-                <a class="simple-link" href="#monitor-guidelines">
+                <a class="simple-link" href="#our-site">
+                    <div class="btn-alt modal-btn">
+                        <p>Watch Video</p>
+                    </div>
+                </a>
+                <!--a class="simple-link" href="#monitor-guidelines">
                     <div class="btn-alt">
                         <p>Monitor Guidelines</p>
                     </div>
@@ -255,4 +260,30 @@
 
 <?php get_template_part('template-parts/cta') ?>
 
+<?php $video = get_field('video'); ?>
+<div class="modal">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <div class="close">+</div>
+        <iframe src="https://player.vimeo.com/video/<?php echo $video['link']; ?>?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+
 <?php get_footer(); ?>
+
+<script>
+jQuery(document).ready(function($) {
+    $('.modal iframe').attr("data-src", $('.modal iframe').attr("src"));
+    $('.modal iframe').attr("src", "");
+
+    $('.modal-btn').click(function() {
+        $('.modal').addClass('show');
+        $('.modal iframe').attr("src", $('.modal iframe').attr("data-src"));
+    });
+
+    $('.close').click(function() {
+        $('.modal').removeClass('show');
+        $('.modal iframe').attr("src", "");
+    });
+});
+</script>

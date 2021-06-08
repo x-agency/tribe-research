@@ -19,7 +19,7 @@
                 </div>
                 <div class="hero-box">
                     <p><?php echo $hero['body']; ?></p>
-                    <a class="simple-link purple" href="<?php echo $hero['link_url']; ?>" target="_blank"><?php echo $hero['link_text']; ?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
+                    <a class="simple-link purple" href="<?php echo $hero['link_url']; ?>"><?php echo $hero['link_text']; ?> <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="col-md-7 right mb-4 mb-md-0">
                 <h1><?php echo $welcome['title']; ?></h1>
                 <p><?php echo $welcome['body']; ?></p>
-                <div class="link"><a href="<?php echo $welcome['link_url']; ?>" target="_blank" class="simple-link"><?php echo $welcome['link_text']; ?>
+                <div class="link"><a href="<?php echo $welcome['link_url']; ?>" class="simple-link"><?php echo $welcome['link_text']; ?>
                         <?php echo file_get_contents(__DIR__ . '/../img/link-arrow.svg'); ?></div>
                 <div class="special-font"><img src="/wp-content/themes/tribe-research/img/home-text.png" alt=""></div>
             </div>
