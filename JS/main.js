@@ -100,8 +100,9 @@ $(window).on('load', function() {
                 faqItemHeightClosed = $(this).children('.title').height();
                 faqItemHeightOpen = $(this).height();
                 $(this).attr("data-closed", faqItemHeightClosed);
-                $(this).attr("data-open", faqItemHeightOpen);
-                $(this).css("max-height", "calc( 1em + " + faqItemHeightClosed + "px");
+                if ( !$(this).hasClass("open") ) {
+                    $(this).css("max-height", "calc( 1em + " + faqItemHeightClosed + "px");
+                }
             });
         }               
     }

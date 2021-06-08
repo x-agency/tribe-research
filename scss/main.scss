@@ -713,6 +713,10 @@ svg * {
         font-size: 40px;
         font-family: 'poppins';
         flex: 1 1 10%;
+
+        @include respond-below(lg) {
+            text-align: center;
+        }
     }
 
     .slide {
@@ -1133,6 +1137,10 @@ svg * {
                 align-self: center;
             }
         }
+    }
+
+    .controls h2 {
+        margin-right: unset;
     }
 }
 
