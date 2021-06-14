@@ -24,39 +24,44 @@
 <section class="explore container mt-xl-5">
     <div class="row">
         <div class="controls col-12 my-5">
-            <h2 class="mb-4">Experience The Difference</h2>
-            <div class="filter">
-                <div class="toggle-container"><div class="filter-toggle"></div></div>
-                <a class="simple-link" href="#our-site">
-                    <div class="btn-alt">
-                        <p>Our Site</p>
-                    </div>
-                </a>
-                <a class="simple-link" href="#our-site">
-                    <div class="btn-alt modal-btn">
-                        <p>Watch Video</p>
-                    </div>
-                </a>
-                <!--a class="simple-link" href="#monitor-guidelines">
-                    <div class="btn-alt">
-                        <p>Monitor Guidelines</p>
-                    </div>
-                </a>
-                <!-- <a class="simple-link" href="#daily-schedule">
-                    <div class="btn-alt">
-                        <p>Daily Schedule</p>
-                    </div>
-                </a> -->
-                <a class="simple-link" href="#our-area">
-                    <div class="btn-alt">
-                        <p>Our Area</p>
-                    </div>
-                </a>
-                <a class="simple-link" href="#hotels-restaurants">
-                    <div class="btn-alt">
-                        <p>Restaurants/Hotels</p>
-                    </div>
-                </a>
+            <div class="modal-thumbnail-container">
+                <img class="modal-thumbnail modal-btn" src="/wp-content/uploads/2021/05/modal.jpg">
+            </div>
+            <div class="filter-container">
+                <h2 class="mb-4">Experience The Difference</h2>
+                <div class="filter">
+                    <div class="toggle-container"><div class="filter-toggle"></div></div>
+                    <a class="simple-link" href="#our-site">
+                        <div class="btn-alt">
+                            <p>Our Site</p>
+                        </div>
+                    </a>
+                    <!--a class="simple-link" href="#our-site">
+                        <div class="btn-alt modal-btn">
+                            <p>Watch Video</p>
+                        </div>
+                    </a-->
+                    <!--a class="simple-link" href="#monitor-guidelines">
+                        <div class="btn-alt">
+                            <p>Monitor Guidelines</p>
+                        </div>
+                    </a>
+                    <!-- <a class="simple-link" href="#daily-schedule">
+                        <div class="btn-alt">
+                            <p>Daily Schedule</p>
+                        </div>
+                    </a> -->
+                    <a class="simple-link" href="#our-area">
+                        <div class="btn-alt">
+                            <p>Our Area</p>
+                        </div>
+                    </a>
+                    <a class="simple-link" href="#hotels-restaurants">
+                        <div class="btn-alt">
+                            <p>Restaurants/Hotels</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -1148,6 +1148,76 @@ svg * {
     .controls h2 {
         margin-right: unset;
     }
+
+    .modal-thumbnail-container img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    @media (min-width: 1200px) {
+        .explore .controls {
+            display: flex;
+            flex-direction: row;
+
+            .modal-thumbnail-container {
+                flex: 0 0 60%;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    margin: 0;
+                }
+            }
+
+            .filter-container {
+                flex: 0 1 40%;
+                margin-left: 5%;
+                position: relative;
+                z-index: 0;
+                min-width: 420px;
+
+                h2 {
+                    position: relative;
+                    text-align: left;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        background: $blue;
+                        height: 2px;
+                        width: calc(max(1044px, min(85vw, 1550px)));
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+
+                .filter {
+                    flex-direction: column;
+
+                    .simple-link + .simple-link {
+                        margin-top: 0.75em;
+                    }
+
+                    .btn-alt {
+                        display: block;
+                        background: none;
+                        text-align: left;
+                        padding: 0;
+                        margin: 0;
+
+                        p {
+                            line-height: 1.15em;
+                            transition: color 0.3s;
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .explore {
