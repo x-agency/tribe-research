@@ -365,15 +365,21 @@ body.admin-bar .navbar {
 
 // *About Page Styles
 .page-template-about {
-    .hero-overlap .content {
-        margin: -22% auto -12.5%;
-
-        @include respond-below(sm) {
-            margin: -30% auto -12.5%;
+    .hero-overlap { 
+        @media (min-width: 1200px) {
+            padding-bottom: calc(min(10vw, 345px));
         }
+        
+        .content {
+            margin: -22% auto -12.5%;
 
-        @include respond-below(xs) {
-            margin: -40% auto -12.5%;
+            @include respond-below(sm) {
+                margin: -30% auto -12.5%;
+            }
+
+            @include respond-below(xs) {
+                margin: -40% auto -12.5%;
+            }
         }
     }
 
