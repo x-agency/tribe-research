@@ -51,6 +51,7 @@
             $link = get_sub_field('link');
             $title = get_sub_field('title');
             $id = get_sub_field('id');
+            $desc = get_sub_field('desc');
         ?>
             <div class="col-md-4 col-xl-3 text-center study mb-5">
                 <div class="study-image">
@@ -58,7 +59,8 @@
                 </div>
                 <p class="enrolling <?php if ( $enrolling == true ) echo 'active'; ?>">NOW ENROLLING</p>
                 <p class="study-title"><?php echo $title; ?></p>
-                <!-- <p class="study-id"><?php echo $id; ?></p> -->
+                <p class="study-id"><?php echo $id; ?></p>
+                <p class="study-desc"><?php echo $desc; ?></p>
                 <a href="<?php echo $link; ?>" class="simple-link mb-3" target="_blank" >Download PDF</a>
             </div>
         <?php endwhile; ?>
@@ -75,6 +77,7 @@
             $link = get_sub_field('link');
             $title = get_sub_field('title');
             $id = get_sub_field('id');
+            $desc = get_sub_field('desc');
         ?>
             <div class="col-md-4 col-xl-3 text-center study mb-5">
                 <div class="study-image">
@@ -82,7 +85,8 @@
                 </div>
                 <p class="enrolling <?php if ( $enrolling == true ) echo 'active'; ?>">NOW ENROLLING</p>
                 <p class="study-title"><?php echo $title; ?></p>
-                <!-- <p class="study-id"><?php echo $id; ?></p> -->
+                <p class="study-id"><?php echo $id; ?></p>
+                <p class="study-desc"><?php echo $desc; ?></p>
                 <a href="<?php echo $link; ?>" class="simple-link mb-3" target="_blank" >Download PDF</a>
             </div>
         <?php endwhile; ?>

@@ -1092,11 +1092,24 @@ svg * {
             }
         }
 
-        .study-title {
-            font-size: calc(max(14px, min(3vw, 20px)));
+        .study-title,
+        .study-id,
+        .study-desc {
+            font-size: calc(max(18px, min(3vw, 22px)));
             font-family: 'poppins';
             margin-bottom: 0;
             font-weight: bold;
+        }
+
+        .study-id,
+        .study-desc {
+            font-size: calc(max(16px, min(3vw, 18px)));
+            font-weight: normal;
+        }
+
+        .study-desc {
+            font-size: calc(max(14px, min(3vw, 16px)));
+            margin: 0.5em 0;
         }
 
         .enrolling {
